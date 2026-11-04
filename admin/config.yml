@@ -140,7 +140,7 @@ collections:
       label_singular: Saison
       collapsed: true
       summary: '{{fields.name}}  ·  {{fields.von | date(''DD.MM.YYYY'')}} – {{fields.bis | date(''DD.MM.YYYY'')}}'
-      hint: Vergangene Saisonen rutschen in der Preistabelle automatisch nach hinten. Neue Saison: unten „Saison hinzufügen“ und alle Felder ausfüllen.
+      hint: "Vergangene Saisonen rutschen in der Preistabelle automatisch nach hinten. Neue Saison: unten „Saison hinzufügen“ und alle Felder ausfüllen."
       fields:
       - label: Kennung
         name: id
