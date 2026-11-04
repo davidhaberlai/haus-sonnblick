@@ -5,9 +5,9 @@
 # Anlegen der Seite anzeigt – Schritt für Schritt siehe ANLEITUNG-CMS.txt.
 backend:
   name: git-gateway
-  repo: GITHUB-NAME/haus-sonnblick                               # <- ersetzen
+  repo: davidhaberlai/haus-sonnblick
   branch: main
-  identity_url: https://auth.decapbridge.com/sites/SITE-ID        # <- ersetzen
+  identity_url: https://auth.decapbridge.com/sites/864b86f2-5ebc-49fa-aed7-70b9cab46fcf
   gateway_url: https://gateway.decapbridge.com
   commit_messages:
     update: "Inhalt geändert: {{collection}}"
