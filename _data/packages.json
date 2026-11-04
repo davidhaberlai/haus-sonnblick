@@ -1,0 +1,110 @@
+{
+  "leer": {
+    "de": "Derzeit haben wir keine eigenen Packages. Fragen Sie uns gern nach einem Angebot für Ihren Wunschzeitraum.",
+    "en": "We currently have no packages of our own. Feel free to ask us for an offer for your preferred dates.",
+    "it": "Al momento non abbiamo pacchetti propri. Chiedeteci volentieri un’offerta per il periodo desiderato."
+  },
+  "packages": [
+    {
+      "id": "advent",
+      "aktiv": true,
+      "von": "2026-12-18",
+      "bis": "2026-12-23",
+      "gratis_naechte": 1,
+      "badge": "5 = 4",
+      "bild": "images/2025-11-23_Drohne_03_Hotel-Sonnblick_01_Fotos_DJI_0134.JPG",
+      "de": {
+        "titel": "Adventliche Auszeit",
+        "kurztext": "Fünf Nächte bleiben, nur vier bezahlen – dazu ein Gutschein über 10 % für das Restaurant gellius.",
+        "text": "Bevor der Trubel der Feiertage beginnt: fünf ruhige Nächte am Südhang, die ersten Schwünge der Saison und Zeit für die Therme. Sie bleiben fünf Nächte und bezahlen nur vier.",
+        "leistungen": [
+          {
+            "punkt": "5 Nächte inklusive Frühstücksbuffet – nur 4 bezahlen"
+          },
+          {
+            "punkt": "Gutschein über 10 % für das Restaurant gellius"
+          },
+          {
+            "punkt": "Kostenloser Ski-Shuttle direkt unter dem Haus"
+          },
+          {
+            "punkt": "Passend zum Ski-Opening der Bergbahnen: 3 Skitage, 2 bezahlen"
+          },
+          {
+            "punkt": "Thermal-Römerbad rund 600 m vom Haus"
+          }
+        ],
+        "preis_vor": "ab",
+        "preis_ab": "€ 264",
+        "preis_text": "pro Person für 5 Nächte",
+        "preis_statt": "€ 330",
+        "beispiel": "Beispiel: Sonnensuite für zwei Personen inkl. Frühstück, zzgl. Nächtigungsabgabe € 4,50 pro Person und Nacht.",
+        "kleingedrucktes": "Gültig bei Anreise am 18. und Abreise am 23. Dezember 2026, nach Verfügbarkeit. Die geschenkte Nacht wird bei der Online-Anfrage automatisch abgezogen.",
+        "bild_alt": "Haus Sonnblick im Winter von oben, eingebettet in verschneiten Wald",
+        "badge_unten": "Nächte"
+      },
+      "en": {
+        "titel": "Advent Escape",
+        "kurztext": "Stay five nights, pay for only four – plus a 10 % voucher for Restaurant gellius.",
+        "text": "Before the holiday bustle begins: five quiet nights on the sunny slope, the first turns of the season and time for the thermal spa. Stay five nights and pay for only four.",
+        "leistungen": [
+          {
+            "punkt": "5 nights including breakfast buffet – pay for only 4"
+          },
+          {
+            "punkt": "10 % voucher for Restaurant gellius"
+          },
+          {
+            "punkt": "Free ski shuttle stopping right below the house"
+          },
+          {
+            "punkt": "Perfect with the cable cars’ Ski Opening: 3 ski days, pay for 2"
+          },
+          {
+            "punkt": "Thermal-Römerbad about 600 m from the house"
+          }
+        ],
+        "preis_vor": "from",
+        "preis_ab": "€ 264",
+        "preis_text": "per person for 5 nights",
+        "preis_statt": "€ 330",
+        "beispiel": "Example: Sun Suite for two people incl. breakfast, plus local tourist tax of € 4.50 per person per night.",
+        "kleingedrucktes": "Valid for arrival on 18 and departure on 23 December 2026, subject to availability. The free night is deducted automatically in the online request.",
+        "bild_alt": "Haus Sonnblick in winter from above, nestled in snowy forest",
+        "badge_unten": "nights"
+      },
+      "it": {
+        "titel": "Pausa d’Avvento",
+        "kurztext": "Cinque notti, ne pagate solo quattro – in più un buono del 10 % per il Ristorante gellius.",
+        "text": "Prima della frenesia delle feste: cinque notti tranquille sul versante soleggiato, le prime curve della stagione e tempo per le terme. Restate cinque notti e ne pagate solo quattro.",
+        "leistungen": [
+          {
+            "punkt": "5 notti con colazione a buffet – ne pagate solo 4"
+          },
+          {
+            "punkt": "Buono del 10 % per il Ristorante gellius"
+          },
+          {
+            "punkt": "Ski-shuttle gratuito con fermata proprio sotto la casa"
+          },
+          {
+            "punkt": "Ideale con lo Ski Opening degli impianti: 3 giorni di sci, ne pagate 2"
+          },
+          {
+            "punkt": "Terme Römerbad a circa 600 m dalla casa"
+          }
+        ],
+        "preis_vor": "da",
+        "preis_ab": "€ 264",
+        "preis_text": "a persona per 5 notti",
+        "preis_statt": "€ 330",
+        "beispiel": "Esempio: Suite Sole per due persone con colazione, più imposta di soggiorno di € 4,50 a persona a notte.",
+        "kleingedrucktes": "Valido con arrivo il 18 e partenza il 23 dicembre 2026, salvo disponibilità. La notte in omaggio viene detratta automaticamente nella richiesta online.",
+        "bild_alt": "Haus Sonnblick in inverno dall’alto, immersa nel bosco innevato",
+        "badge_unten": "notti"
+      },
+      "bild_breite": 1800,
+      "bild_hoehe": 1200
+    }
+  ]
+}

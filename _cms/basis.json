@@ -1,0 +1,276 @@
+{
+  "_hinweis": "Feste Zimmerdaten (Fotos, Belegung, Texte) für den Buchungsrechner. Pflege durch Karibu Studio, nicht über den Admin-Bereich.",
+  "rooms": {
+    "ez": {
+      "name": "Einzelzimmer",
+      "img": [
+        {
+          "src": "images/stories/content/einzelzimmer1_balkon.jpg",
+          "alt": "Einzelzimmer mit Bett, Sitzecke und Balkontür"
+        },
+        {
+          "src": "images/stories/header/2_zimmer/header_6.jpg",
+          "alt": "Einzelzimmer mit Holzmöbeln und Tisch"
+        },
+        {
+          "src": "assets/img/bad-renoviert-1086.jpg",
+          "alt": "Badezimmer mit Dusche und Waschtisch"
+        }
+      ],
+      "maxAdults": 1,
+      "maxTotal": 1,
+      "meta": "1 Person · Südbalkon",
+      "page": "einzelzimmer.html",
+      "maxKids": 0
+    },
+    "dz": {
+      "name": "Doppelzimmer, renoviert",
+      "img": [
+        {
+          "src": "assets/img/dz-golf-1560.jpg",
+          "alt": "Neu gestaltetes Doppelzimmer mit Holzpaneel und Balkontür"
+        },
+        {
+          "src": "assets/img/dz-bike-1600.jpg",
+          "alt": "Doppelzimmer Bike mit Mountainbike-Fototapete und Flat-TV"
+        },
+        {
+          "src": "images/IMG_4113_klein.jpeg",
+          "alt": "Zimmer mit Golf-Fototapete und Einbauschrank"
+        }
+      ],
+      "maxAdults": 2,
+      "maxTotal": 3,
+      "meta": "Doppelbett · 28 m² · 2 Personen, Zustellbett für 1 Kind bis 12 Jahre",
+      "page": "doppelzimmer.html#doppel",
+      "maxKids": 1
+    },
+    "dzs": {
+      "name": "Doppelzimmer",
+      "img": [
+        {
+          "src": "images/stories/content/doppelzimmer_1.jpg",
+          "alt": "Klassisches Doppelzimmer mit Holzbett"
+        },
+        {
+          "src": "images/stories/content/doppelzimmer_2.jpg",
+          "alt": "Doppelzimmer mit hellen Holzmöbeln"
+        },
+        {
+          "src": "assets/img/bad-renoviert-1086.jpg",
+          "alt": "Badezimmer mit Dusche und Waschtisch"
+        }
+      ],
+      "maxAdults": 2,
+      "maxTotal": 3,
+      "maxKids": 1,
+      "meta": "Doppelbett · klassisch eingerichtet · 28 m² · 2 Personen, Zustellbett für 1 Kind bis 8 Jahre",
+      "page": "doppelzimmer.html#doppel-standard"
+    },
+    "tw": {
+      "name": "Zweibettzimmer",
+      "img": [],
+      "maxAdults": 2,
+      "maxTotal": 2,
+      "maxKids": 0,
+      "meta": "Doppelbett · 24 m² · 2 Personen · kein Zustellbett",
+      "page": "doppelzimmer.html#zweibett"
+    },
+    "wsz": {
+      "name": "Wohn-Schlafzimmer, renoviert",
+      "img": [
+        {
+          "src": "images/IMG_3814.jpeg",
+          "alt": "Wohn-Schlafzimmer renoviert (Junior Suite Ski) mit Doppelbett, Schlafsesseln und Balkontür"
+        },
+        {
+          "src": "assets/img/bad-renoviert-1086.jpg",
+          "alt": "Badezimmer mit Dusche und Waschtisch"
+        }
+      ],
+      "maxAdults": 2,
+      "maxTotal": 4,
+      "meta": "Bis 4 Personen · 2 Erwachsene + 2 Kinder bis ca. 12 Jahre (Schlafsessel) · Südbalkon",
+      "page": "wohn-schlafzimmer.html#wsz-renoviert",
+      "maxKids": 2
+    },
+    "wszs": {
+      "name": "Wohn-Schlafzimmer",
+      "img": [
+        {
+          "src": "images/stories/content/wsz_2.jpg",
+          "alt": "Wohn-Schlafzimmer mit Sitzecke, Couch und Balkontür"
+        },
+        {
+          "src": "assets/img/bad-renoviert-1086.jpg",
+          "alt": "Badezimmer mit Dusche und Waschtisch"
+        }
+      ],
+      "maxAdults": 4,
+      "maxTotal": 4,
+      "maxKids": 2,
+      "meta": "Bis 4 Personen · 2 Erwachsene + 2 weitere Personen · Südbalkon",
+      "page": "wohn-schlafzimmer.html#wsz-standard"
+    },
+    "suite": {
+      "name": "Sonnensuite",
+      "img": [
+        {
+          "src": "images/stories/zimmer/suite/sonnblick_suite1.jpg",
+          "alt": "Sonnensuite mit Doppelbett und Blick ins Grüne"
+        },
+        {
+          "src": "images/stories/zimmer/suite/sonnblick_suite3.jpg",
+          "alt": "Sonnensuite, Schlafbereich mit Balkontür"
+        },
+        {
+          "src": "images/stories/zimmer/suite/sonnblick_suite4.jpg",
+          "alt": "Sonnensuite, Sitzgruppe"
+        }
+      ],
+      "maxAdults": 2,
+      "maxTotal": 2,
+      "meta": "45 m² · 2 Personen · Balkone Süd und West · kein Zustellbett",
+      "page": "sonnblick-suite.html",
+      "maxKids": 0
+    },
+    "fam": {
+      "name": "Familienappartement",
+      "img": [
+        {
+          "src": "images/stories/zimmer/halbapp/halbapp_1.jpg",
+          "alt": "Familienappartement, Schlafraum mit Doppelbett"
+        },
+        {
+          "src": "images/stories/zimmer/halbapp/halbapp_3.jpg",
+          "alt": "Familienappartement, Wohnraum mit Sitzgruppe"
+        },
+        {
+          "src": "images/stories/zimmer/halbapp/halbapp_5.jpg",
+          "alt": "Familienappartement, Bad mit Badewanne"
+        }
+      ],
+      "maxAdults": 4,
+      "maxTotal": 4,
+      "meta": "40 m² · Wohn- und Schlafraum · bis 4 Personen",
+      "page": "familiensuite.html",
+      "maxKids": 2
+    }
+  },
+  "i18n": {
+    "en": {
+      "rooms": {
+        "ez": {
+          "name": "Single room",
+          "meta": "1 person · south-facing balcony"
+        },
+        "dz": {
+          "name": "Double room, renovated",
+          "meta": "Double bed · 28 m² · 2 people, extra bed for 1 child up to 12 years"
+        },
+        "tw": {
+          "name": "Twin room",
+          "meta": "Double bed · 24 m² · 2 people · no extra bed"
+        },
+        "wsz": {
+          "name": "Living-bedroom, renovated",
+          "meta": "Up to 4 people · 2 adults + 2 children up to approx. 12 (sleeper chairs) · south-facing balcony"
+        },
+        "suite": {
+          "name": "Sun Suite",
+          "meta": "45 m² · 2 people · balconies facing south and west · no extra bed"
+        },
+        "fam": {
+          "name": "Family apartment",
+          "meta": "40 m² · living and bedroom · up to 4 people"
+        },
+        "dzs": {
+          "name": "Double room",
+          "meta": "Double bed · classic furnishings · 28 m² · 2 people, extra bed for 1 child up to 8 years"
+        },
+        "wszs": {
+          "name": "Living-bedroom",
+          "meta": "Up to 4 people · 2 adults + 2 more people · south-facing balcony"
+        }
+      },
+      "alt": {
+        "Wohn-Schlafzimmer renoviert (Junior Suite Ski) mit Doppelbett, Schlafsesseln und Balkontür": "Renovated living-bedroom (Junior Suite Ski) with double bed, sleeper chairs and balcony door",
+        "Doppelzimmer Bike mit Mountainbike-Fototapete und Flat-TV": "Bike double room with mountain-bike photo wallpaper and flat-screen TV",
+        "Einzelzimmer mit Bett, Sitzecke und Balkontür": "Single room with bed, seating area and balcony door",
+        "Einzelzimmer mit Holzmöbeln und Tisch": "Single room with wooden furniture and table",
+        "Badezimmer mit Dusche und Waschtisch": "Bathroom with shower and washbasin",
+        "Neu gestaltetes Doppelzimmer mit Holzpaneel und Balkontür": "Newly designed double room with wood panelling and balcony door",
+        "Doppelzimmer mit Eichenmöbeln und Fenster zum Berg": "Double room with oak furniture and a window facing the mountains",
+        "Neu gestaltetes Doppelzimmer mit Balkon": "Newly designed double room with balcony",
+        "Wohn-Schlafzimmer mit Sitzecke, Couch und Balkontür": "Living-bedroom with seating area, couch and balcony door",
+        "Sonnensuite mit Doppelbett und Blick ins Grüne": "Sun Suite with double bed and a view of the greenery",
+        "Sonnensuite, Schlafbereich mit Balkontür": "Sun Suite, sleeping area with balcony door",
+        "Sonnensuite, Sitzgruppe": "Sun Suite, seating area",
+        "Familienappartement, Schlafraum mit Doppelbett": "Family apartment, bedroom with double bed",
+        "Familienappartement, Wohnraum mit Sitzgruppe": "Family apartment, living room with seating area",
+        "Familienappartement, Bad mit Badewanne": "Family apartment, bathroom with bathtub",
+        "Zimmer mit Golf-Fototapete und Einbauschrank": "Room with golf photo wallpaper and built-in wardrobe",
+        "Renoviertes Wohn-Schlafzimmer mit Doppelbett, Holzpaneel und Blick ins Grüne": "Renovated living-bedroom with double bed, wood panelling and a view of the greenery",
+        "Klassisches Doppelzimmer mit Holzbett": "Classic double room with wooden bed",
+        "Doppelzimmer mit hellen Holzmöbeln": "Double room with light wooden furniture"
+      }
+    },
+    "it": {
+      "rooms": {
+        "ez": {
+          "name": "Camera singola",
+          "meta": "1 persona · balcone a sud"
+        },
+        "dz": {
+          "name": "Camera doppia, rinnovata",
+          "meta": "Letto matrimoniale · 28 m² · 2 persone, letto aggiuntivo per 1 bambino fino a 12 anni"
+        },
+        "tw": {
+          "name": "Camera a due letti",
+          "meta": "Letto matrimoniale · 24 m² · 2 persone · senza letto aggiuntivo"
+        },
+        "wsz": {
+          "name": "Camera con soggiorno, rinnovata",
+          "meta": "Fino a 4 persone · 2 adulti + 2 bambini fino a circa 12 anni (poltrone letto) · balcone a sud"
+        },
+        "suite": {
+          "name": "Suite Sole",
+          "meta": "45 m² · 2 persone · balconi a sud e a ovest · senza letto aggiuntivo"
+        },
+        "fam": {
+          "name": "Appartamento famiglia",
+          "meta": "40 m² · soggiorno e camera · fino a 4 persone"
+        },
+        "dzs": {
+          "name": "Camera doppia",
+          "meta": "Letto matrimoniale · arredamento classico · 28 m² · 2 persone, letto aggiuntivo per 1 bambino fino a 8 anni"
+        },
+        "wszs": {
+          "name": "Camera con soggiorno",
+          "meta": "Fino a 4 persone · 2 adulti + altre 2 persone · balcone a sud"
+        }
+      },
+      "alt": {
+        "Wohn-Schlafzimmer renoviert (Junior Suite Ski) mit Doppelbett, Schlafsesseln und Balkontür": "Camera con soggiorno rinnovata (Junior Suite Ski) con letto matrimoniale, poltrone letto e porta-finestra",
+        "Doppelzimmer Bike mit Mountainbike-Fototapete und Flat-TV": "Camera doppia Bike con carta da parati mountain bike e TV a schermo piatto",
+        "Einzelzimmer mit Bett, Sitzecke und Balkontür": "Camera singola con letto, angolo salotto e porta-finestra sul balcone",
+        "Einzelzimmer mit Holzmöbeln und Tisch": "Camera singola con mobili in legno e tavolo",
+        "Badezimmer mit Dusche und Waschtisch": "Bagno con doccia e lavabo",
+        "Neu gestaltetes Doppelzimmer mit Holzpaneel und Balkontür": "Camera doppia rinnovata con pannelli in legno e porta-finestra sul balcone",
+        "Doppelzimmer mit Eichenmöbeln und Fenster zum Berg": "Camera doppia con mobili in rovere e finestra sulle montagne",
+        "Neu gestaltetes Doppelzimmer mit Balkon": "Camera doppia rinnovata con balcone",
+        "Wohn-Schlafzimmer mit Sitzecke, Couch und Balkontür": "Camera con soggiorno, angolo salotto, divano e porta-finestra sul balcone",
+        "Sonnensuite mit Doppelbett und Blick ins Grüne": "Suite Sole con letto matrimoniale e vista sul verde",
+        "Sonnensuite, Schlafbereich mit Balkontür": "Suite Sole, zona notte con porta-finestra sul balcone",
+        "Sonnensuite, Sitzgruppe": "Suite Sole, salotto",
+        "Familienappartement, Schlafraum mit Doppelbett": "Appartamento famiglia, camera con letto matrimoniale",
+        "Familienappartement, Wohnraum mit Sitzgruppe": "Appartamento famiglia, soggiorno con salotto",
+        "Familienappartement, Bad mit Badewanne": "Appartamento famiglia, bagno con vasca",
+        "Zimmer mit Golf-Fototapete und Einbauschrank": "Camera con carta da parati a tema golf e armadio a muro",
+        "Renoviertes Wohn-Schlafzimmer mit Doppelbett, Holzpaneel und Blick ins Grüne": "Camera con soggiorno rinnovata con letto matrimoniale, pannelli in legno e vista sul verde",
+        "Klassisches Doppelzimmer mit Holzbett": "Camera doppia classica con letto in legno",
+        "Doppelzimmer mit hellen Holzmöbeln": "Camera doppia con mobili in legno chiaro"
+      }
+    }
+  }
+}

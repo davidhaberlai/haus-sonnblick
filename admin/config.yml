@@ -1,0 +1,707 @@
+# Haus Sonnblick – Inhaltsverwaltung (Decap CMS) · Karibu Studio
+#
+# LOGIN über DecapBridge (Netlify Git Gateway ist veraltet).
+# Die zwei markierten Werte durch die Werte ersetzen, die DecapBridge beim
+# Anlegen der Seite anzeigt – Schritt für Schritt siehe ANLEITUNG-CMS.txt.
+backend:
+  name: git-gateway
+  repo: GITHUB-NAME/haus-sonnblick                               # <- ersetzen
+  branch: main
+  identity_url: https://auth.decapbridge.com/sites/SITE-ID        # <- ersetzen
+  gateway_url: https://gateway.decapbridge.com
+  commit_messages:
+    update: "Inhalt geändert: {{collection}}"
+    uploadMedia: "Bild hochgeladen: {{path}}"
+
+# Nur für lokale Tests (npx decap-server) – online ohne Wirkung.
+local_backend: true
+
+locale: "de"
+logo_url: /assets/logo/logo-horizontal.svg
+site_url: https://haus-sonnblick.at
+display_url: https://haus-sonnblick.at
+
+# Hochgeladene Bilder. Die Website verkleinert sie automatisch –
+# auch große Handyfotos können direkt hochgeladen werden.
+media_folder: "assets/img/uploads"
+public_folder: "/assets/img/uploads"
+
+collections:
+- name: hinweis
+  label: Hinweis auf der Startseite
+  description: Kurze Mitteilung direkt unter dem großen Startbild, z. B. Betriebsurlaub, Saisonstart oder ein neues Angebot. Mit „Anzeigen bis“ verschwindet sie nach diesem Tag von selbst.
+  editor:
+    preview: false
+  files:
+  - name: hinweis
+    label: Hinweis auf der Startseite
+    file: _data/hinweis.json
+    fields:
+    - label: Hinweis anzeigen
+      name: aktiv
+      widget: boolean
+      default: false
+      required: false
+    - label: Anzeigen bis (optional)
+      name: anzeigen_bis
+      widget: datetime
+      format: YYYY-MM-DD
+      date_format: DD.MM.YYYY
+      time_format: false
+      required: false
+      default: ''
+      hint: Nach diesem Tag wird der Hinweis automatisch ausgeblendet. Leer lassen = bleibt, bis Sie ihn ausschalten.
+    - label: Deutsch
+      name: de
+      widget: object
+      fields:
+      - label: Text
+        name: text
+        widget: text
+        hint: 'Ein bis zwei Sätze. Ein Link im Text: [Linktext](kontakt.html)'
+      - label: Link-Beschriftung (optional)
+        name: link_text
+        widget: string
+        required: false
+        hint: z. B. „Zum Angebot“
+      - label: Link-Ziel (optional)
+        name: link_ziel
+        widget: string
+        required: false
+        hint: z. B. angebote.html oder https://…
+    - label: Englisch
+      name: en
+      widget: object
+      fields:
+      - label: Text
+        name: text
+        widget: text
+        hint: 'Ein bis zwei Sätze. Ein Link im Text: [Linktext](kontakt.html)'
+      - label: Link-Beschriftung (optional)
+        name: link_text
+        widget: string
+        required: false
+        hint: z. B. „Zum Angebot“
+      - label: Link-Ziel (optional)
+        name: link_ziel
+        widget: string
+        required: false
+        hint: z. B. angebote.html oder https://…
+      collapsed: true
+      hint: Leer lassen = auf der englischen Seite kein Hinweis.
+    - label: Italienisch
+      name: it
+      widget: object
+      fields:
+      - label: Text
+        name: text
+        widget: text
+        hint: 'Ein bis zwei Sätze. Ein Link im Text: [Linktext](kontakt.html)'
+      - label: Link-Beschriftung (optional)
+        name: link_text
+        widget: string
+        required: false
+        hint: z. B. „Zum Angebot“
+      - label: Link-Ziel (optional)
+        name: link_ziel
+        widget: string
+        required: false
+        hint: z. B. angebote.html oder https://…
+      collapsed: true
+- name: preise
+  label: Preise & Saisonen
+  description: Zimmerpreise pro Person und Nacht inkl. Frühstück. Die Änderungen erscheinen automatisch in den Preistabellen (Deutsch, Englisch, Italienisch), bei den „ab“-Preisen der Zimmer und im Buchungsrechner.
+  editor:
+    preview: false
+  files:
+  - name: preise
+    label: Preise & Saisonen
+    file: _data/preise.json
+    fields:
+    - label: Halbpension (€ pro Person und Tag)
+      name: halbpension
+      widget: number
+      value_type: float
+      min: 0
+    - label: Zuschlag Einzelnutzung (%)
+      name: einzelnutzung_prozent
+      widget: number
+      value_type: int
+      min: 0
+      hint: Doppelzimmer für 1 Person
+    - label: Zuschlag Kurzaufenthalt 1–2 Nächte (%)
+      name: kurzaufenthalt_prozent
+      widget: number
+      value_type: int
+      min: 0
+    - label: Saisonen
+      name: saisonen
+      widget: list
+      label_singular: Saison
+      collapsed: true
+      summary: '{{fields.name}}  ·  {{fields.von | date(''DD.MM.YYYY'')}} – {{fields.bis | date(''DD.MM.YYYY'')}}'
+      hint: Vergangene Saisonen rutschen in der Preistabelle automatisch nach hinten. Neue Saison: unten „Saison hinzufügen“ und alle Felder ausfüllen.
+      fields:
+      - label: Kennung
+        name: id
+        widget: hidden
+        required: false
+      - label: Name der Saison
+        name: name
+        widget: string
+        hint: z. B. „Winter 2027/28“
+      - label: Saison von
+        name: von
+        widget: datetime
+        format: YYYY-MM-DD
+        date_format: DD.MM.YYYY
+        time_format: false
+      - label: Saison bis
+        name: bis
+        widget: datetime
+        format: YYYY-MM-DD
+        date_format: DD.MM.YYYY
+        time_format: false
+      - label: Name des Grundpreises
+        name: grundpreis_name
+        widget: string
+        default: Nebensaison
+        hint: Gilt an allen Tagen der Saison, die in keinem Zeitraum unten liegen.
+      - label: Grundpreise (€)
+        name: grundpreise
+        widget: object
+        fields:
+        - label: Einzelzimmer
+          name: ez
+          widget: number
+          value_type: float
+          min: 1
+        - label: Doppelzimmer, renoviert
+          name: dz
+          widget: number
+          value_type: float
+          min: 1
+        - label: Doppelzimmer (klassisch)
+          name: dzs
+          widget: number
+          value_type: float
+          min: 1
+        - label: Zweibettzimmer
+          name: tw
+          widget: number
+          value_type: float
+          min: 1
+        - label: Wohn-Schlafzimmer, renoviert (Junior Suite Ski)
+          name: wsz
+          widget: number
+          value_type: float
+          min: 1
+        - label: Wohn-Schlafzimmer (klassisch)
+          name: wszs
+          widget: number
+          value_type: float
+          min: 1
+        - label: Sonnensuite
+          name: suite
+          widget: number
+          value_type: float
+          min: 1
+        - label: Familienappartement
+          name: fam
+          widget: number
+          value_type: float
+          min: 1
+      - label: Zeiträume mit eigenem Preis
+        name: zeitraeume
+        widget: list
+        label_singular: Zeitraum
+        collapsed: true
+        required: false
+        summary: '{{fields.name}}'
+        hint: z. B. Hauptsaison, Weihnachten & Silvester. Erscheinen als eigene Spalten in der Preistabelle.
+        fields:
+        - label: Name
+          name: name
+          widget: string
+        - label: Daten
+          name: daten
+          widget: list
+          label_singular: Zeitspanne
+          summary: '{{fields.von | date(''DD.MM.YYYY'')}} – {{fields.bis | date(''DD.MM.YYYY'')}}'
+          hint: Mehrere Zeitspannen möglich, z. B. zwei Hauptsaison-Wochen.
+          fields:
+          - label: Von (erste Nacht)
+            name: von
+            widget: datetime
+            format: YYYY-MM-DD
+            date_format: DD.MM.YYYY
+            time_format: false
+          - label: Bis (letzte Nacht)
+            name: bis
+            widget: datetime
+            format: YYYY-MM-DD
+            date_format: DD.MM.YYYY
+            time_format: false
+        - label: Preise in diesem Zeitraum (€)
+          name: preise
+          widget: object
+          fields:
+          - label: Einzelzimmer
+            name: ez
+            widget: number
+            value_type: float
+            min: 1
+          - label: Doppelzimmer, renoviert
+            name: dz
+            widget: number
+            value_type: float
+            min: 1
+          - label: Doppelzimmer (klassisch)
+            name: dzs
+            widget: number
+            value_type: float
+            min: 1
+          - label: Zweibettzimmer
+            name: tw
+            widget: number
+            value_type: float
+            min: 1
+          - label: Wohn-Schlafzimmer, renoviert (Junior Suite Ski)
+            name: wsz
+            widget: number
+            value_type: float
+            min: 1
+          - label: Wohn-Schlafzimmer (klassisch)
+            name: wszs
+            widget: number
+            value_type: float
+            min: 1
+          - label: Sonnensuite
+            name: suite
+            widget: number
+            value_type: float
+            min: 1
+          - label: Familienappartement
+            name: fam
+            widget: number
+            value_type: float
+            min: 1
+        - label: Übersetzung
+          name: en
+          widget: object
+          collapsed: true
+          fields:
+          - label: Name auf Englisch
+            name: name
+            widget: string
+            required: false
+        - label: Übersetzung Italienisch
+          name: it
+          widget: object
+          collapsed: true
+          fields:
+          - label: Name auf Italienisch
+            name: name
+            widget: string
+            required: false
+      - label: Nächtigungsabgabe (€ pro Person und Nacht)
+        name: ortstaxe
+        widget: number
+        value_type: float
+        min: 0
+      - label: Kinder im Zusatzbett (€ pro Tag)
+        name: kinder
+        widget: object
+        fields:
+        - label: 0–2 Jahre
+          name: k0_2
+          widget: number
+          value_type: float
+          min: 0
+        - label: 3–8 Jahre
+          name: k3_8
+          widget: number
+          value_type: float
+          min: 0
+        - label: 9–13 Jahre
+          name: k9_13
+          widget: number
+          value_type: float
+          min: 0
+      - label: Zusatz zum Preishinweis (optional)
+        name: zusatz
+        widget: text
+        required: false
+        hint: 'Wird an den Satz unter der Tabelle angehängt, z. B. „Im Sommer inklusive: Kärnten Card …“'
+      - label: Eigener Hinweis unter der Tabelle (optional)
+        name: hinweis
+        widget: text
+        required: false
+        hint: 'Ein Link im Text: [Linktext](angebote.html#bergbahnen)'
+      - label: Englisch
+        name: en
+        widget: object
+        collapsed: true
+        hint: Leere Felder werden auf Deutsch angezeigt.
+        fields:
+        - label: Name der Saison
+          name: name
+          widget: string
+          required: false
+        - label: Name des Grundpreises
+          name: grundpreis_name
+          widget: string
+          required: false
+        - label: Zusatz zum Preishinweis
+          name: zusatz
+          widget: text
+          required: false
+        - label: Eigener Hinweis unter der Tabelle
+          name: hinweis
+          widget: text
+          required: false
+      - label: Italienisch
+        name: it
+        widget: object
+        collapsed: true
+        hint: Leere Felder werden auf Deutsch angezeigt.
+        fields:
+        - label: Name der Saison
+          name: name
+          widget: string
+          required: false
+        - label: Name des Grundpreises
+          name: grundpreis_name
+          widget: string
+          required: false
+        - label: Zusatz zum Preishinweis
+          name: zusatz
+          widget: text
+          required: false
+        - label: Eigener Hinweis unter der Tabelle
+          name: hinweis
+          widget: text
+          required: false
+- name: packages
+  label: Angebote & Packages
+  description: Eigene Packages des Hauses. Sie erscheinen auf der Seite „Angebote & Packages“, auf der Startseite, bei den Preisen und im Buchungsrechner (die geschenkten Nächte werden automatisch abgezogen).
+    Nach dem Abreisetag verschwindet ein Package von selbst.
+  editor:
+    preview: false
+  files:
+  - name: packages
+    label: Angebote & Packages
+    file: _data/packages.json
+    fields:
+    - label: Packages
+      name: packages
+      widget: list
+      label_singular: Package
+      collapsed: true
+      summary: '{{fields.id}}  ·  {{fields.von | date(''DD.MM.YYYY'')}} – {{fields.bis | date(''DD.MM.YYYY'')}}'
+      fields:
+      - label: Anzeigen
+        name: aktiv
+        widget: boolean
+        default: true
+        required: false
+      - label: Kurzname
+        name: id
+        widget: string
+        pattern:
+        - ^[a-z0-9-]+$
+        - Nur Kleinbuchstaben, Zahlen und Bindestriche, z. B. advent-2026
+        hint: Wird für den Link verwendet, z. B. advent-2026
+      - label: Anreise
+        name: von
+        widget: datetime
+        format: YYYY-MM-DD
+        date_format: DD.MM.YYYY
+        time_format: false
+      - label: Abreise
+        name: bis
+        widget: datetime
+        format: YYYY-MM-DD
+        date_format: DD.MM.YYYY
+        time_format: false
+      - label: Geschenkte Nächte
+        name: gratis_naechte
+        widget: number
+        value_type: int
+        min: 0
+        default: 0
+        hint: z. B. 1 bei „5 = 4“. Der Buchungsrechner zieht sie bei genau dieser An- und Abreise ab.
+      - label: Kennzeichen (optional)
+        name: badge
+        widget: string
+        required: false
+        hint: Kurz und groß dargestellt, z. B. „5 = 4“
+      - label: Bild
+        name: bild
+        widget: image
+        choose_url: true
+        hint: Querformat, mindestens 1600 Pixel breit.
+      - label: Bildbreite
+        name: bild_breite
+        widget: hidden
+        required: false
+      - label: Bildhöhe
+        name: bild_hoehe
+        widget: hidden
+        required: false
+      - label: Deutsch
+        name: de
+        widget: object
+        fields:
+        - label: Titel
+          name: titel
+          widget: string
+          hint: Das letzte Wort wird kursiv gesetzt, z. B. „Adventliche Auszeit“
+        - label: Kurztext (Startseite, Preise, Buchung)
+          name: kurztext
+          widget: string
+          hint: Ein Satz.
+        - label: Beschreibung
+          name: text
+          widget: text
+        - label: Leistungen
+          name: leistungen
+          widget: list
+          label_singular: Leistung
+          summary: '{{fields.punkt}}'
+          fields:
+          - label: Leistung
+            name: punkt
+            widget: string
+        - label: Preis – davor (optional)
+          name: preis_vor
+          widget: string
+          required: false
+          hint: z. B. „ab“
+        - label: Preis (optional)
+          name: preis_ab
+          widget: string
+          required: false
+          hint: z. B. „€ 264“
+        - label: Preis – danach (optional)
+          name: preis_text
+          widget: string
+          required: false
+          hint: z. B. „pro Person für 5 Nächte“
+        - label: Statt-Preis durchgestrichen (optional)
+          name: preis_statt
+          widget: string
+          required: false
+        - label: Preisbeispiel (optional)
+          name: beispiel
+          widget: text
+          required: false
+        - label: Kleingedrucktes (optional)
+          name: kleingedrucktes
+          widget: text
+          required: false
+        - label: Bildbeschreibung
+          name: bild_alt
+          widget: string
+          hint: Was ist auf dem Bild zu sehen? (für Suchmaschinen und Screenreader)
+        - label: Text unter dem Kennzeichen
+          name: badge_unten
+          widget: string
+          required: false
+          default: Nächte
+      - label: Englisch
+        name: en
+        widget: object
+        fields:
+        - label: Titel
+          name: titel
+          widget: string
+          hint: Das letzte Wort wird kursiv gesetzt, z. B. „Adventliche Auszeit“
+        - label: Kurztext (Startseite, Preise, Buchung)
+          name: kurztext
+          widget: string
+          hint: Ein Satz.
+        - label: Beschreibung
+          name: text
+          widget: text
+        - label: Leistungen
+          name: leistungen
+          widget: list
+          label_singular: Leistung
+          summary: '{{fields.punkt}}'
+          fields:
+          - label: Leistung
+            name: punkt
+            widget: string
+        - label: Preis – davor (optional)
+          name: preis_vor
+          widget: string
+          required: false
+          hint: z. B. „ab“
+        - label: Preis (optional)
+          name: preis_ab
+          widget: string
+          required: false
+          hint: z. B. „€ 264“
+        - label: Preis – danach (optional)
+          name: preis_text
+          widget: string
+          required: false
+          hint: z. B. „pro Person für 5 Nächte“
+        - label: Statt-Preis durchgestrichen (optional)
+          name: preis_statt
+          widget: string
+          required: false
+        - label: Preisbeispiel (optional)
+          name: beispiel
+          widget: text
+          required: false
+        - label: Kleingedrucktes (optional)
+          name: kleingedrucktes
+          widget: text
+          required: false
+        - label: Bildbeschreibung
+          name: bild_alt
+          widget: string
+          hint: Was ist auf dem Bild zu sehen? (für Suchmaschinen und Screenreader)
+        - label: Text unter dem Kennzeichen
+          name: badge_unten
+          widget: string
+          required: false
+          default: Nächte
+        collapsed: true
+        hint: Leere Felder werden auf Deutsch angezeigt – bitte übersetzen oder Karibu Studio Bescheid geben.
+      - label: Italienisch
+        name: it
+        widget: object
+        fields:
+        - label: Titel
+          name: titel
+          widget: string
+          hint: Das letzte Wort wird kursiv gesetzt, z. B. „Adventliche Auszeit“
+        - label: Kurztext (Startseite, Preise, Buchung)
+          name: kurztext
+          widget: string
+          hint: Ein Satz.
+        - label: Beschreibung
+          name: text
+          widget: text
+        - label: Leistungen
+          name: leistungen
+          widget: list
+          label_singular: Leistung
+          summary: '{{fields.punkt}}'
+          fields:
+          - label: Leistung
+            name: punkt
+            widget: string
+        - label: Preis – davor (optional)
+          name: preis_vor
+          widget: string
+          required: false
+          hint: z. B. „ab“
+        - label: Preis (optional)
+          name: preis_ab
+          widget: string
+          required: false
+          hint: z. B. „€ 264“
+        - label: Preis – danach (optional)
+          name: preis_text
+          widget: string
+          required: false
+          hint: z. B. „pro Person für 5 Nächte“
+        - label: Statt-Preis durchgestrichen (optional)
+          name: preis_statt
+          widget: string
+          required: false
+        - label: Preisbeispiel (optional)
+          name: beispiel
+          widget: text
+          required: false
+        - label: Kleingedrucktes (optional)
+          name: kleingedrucktes
+          widget: text
+          required: false
+        - label: Bildbeschreibung
+          name: bild_alt
+          widget: string
+          hint: Was ist auf dem Bild zu sehen? (für Suchmaschinen und Screenreader)
+        - label: Text unter dem Kennzeichen
+          name: badge_unten
+          widget: string
+          required: false
+          default: Nächte
+        collapsed: true
+        hint: Leere Felder werden auf Deutsch angezeigt – bitte übersetzen oder Karibu Studio Bescheid geben.
+    - label: Text, wenn kein Package läuft
+      name: leer
+      widget: object
+      collapsed: true
+      fields:
+      - label: Deutsch
+        name: de
+        widget: text
+      - label: Englisch
+        name: en
+        widget: text
+      - label: Italienisch
+        name: it
+        widget: text
+- name: galerie
+  label: Bildergalerie
+  description: Alle Bilder der Seite „Bildergalerie“. Reihenfolge per Ziehen ändern. Neue Fotos können direkt vom Handy hochgeladen werden – sie werden automatisch verkleinert.
+  editor:
+    preview: false
+  files:
+  - name: galerie
+    label: Bildergalerie
+    file: _data/galerie.json
+    fields:
+    - label: Bilder
+      name: bilder
+      widget: list
+      label_singular: Bild
+      collapsed: true
+      add_to_top: true
+      summary: '{{fields.de}}  ({{fields.kategorie}})'
+      fields:
+      - label: Bild
+        name: bild
+        widget: image
+        choose_url: true
+      - label: Kategorie
+        name: kategorie
+        widget: select
+        default: haus
+        options:
+        - label: Haus
+          value: haus
+        - label: Zimmer
+          value: zimmer
+        - label: Sommer
+          value: sommer
+        - label: Winter
+          value: winter
+        - label: Thermen
+          value: thermen
+      - label: Bildunterschrift Deutsch
+        name: de
+        widget: string
+      - label: Bildunterschrift Englisch
+        name: en
+        widget: string
+        required: false
+        hint: Leer = deutsche Unterschrift
+      - label: Bildunterschrift Italienisch
+        name: it
+        widget: string
+        required: false
+        hint: Leer = deutsche Unterschrift
+      - label: Breite
+        name: breite
+        widget: hidden
+        required: false
+      - label: Höhe
+        name: hoehe
+        widget: hidden
+        required: false

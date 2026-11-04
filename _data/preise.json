@@ -1,0 +1,282 @@
+{
+  "halbpension": 27,
+  "einzelnutzung_prozent": 30,
+  "kurzaufenthalt_prozent": 10,
+  "saisonen": [
+    {
+      "id": "S26",
+      "name": "Sommer 2026",
+      "von": "2026-05-14",
+      "bis": "2026-10-11",
+      "grundpreis_name": "Nebensaison",
+      "grundpreise": {
+        "ez": 59,
+        "dz": 66,
+        "dzs": 61,
+        "tw": 61,
+        "wsz": 68,
+        "wszs": 63,
+        "suite": 69,
+        "fam": 65
+      },
+      "zeitraeume": [
+        {
+          "name": "Musi-Wanderwoche",
+          "daten": [
+            {
+              "von": "2026-06-15",
+              "bis": "2026-06-21"
+            }
+          ],
+          "preise": {
+            "ez": 72,
+            "dz": 73,
+            "dzs": 68,
+            "tw": 68,
+            "wsz": 76,
+            "wszs": 71,
+            "suite": 78,
+            "fam": 74
+          },
+          "en": {
+            "name": "Music & Hiking Week"
+          },
+          "it": {
+            "name": "Settimana escursionistica con musica"
+          }
+        },
+        {
+          "name": "Hauptsaison",
+          "daten": [
+            {
+              "von": "2026-07-11",
+              "bis": "2026-09-06"
+            }
+          ],
+          "preise": {
+            "ez": 63,
+            "dz": 71,
+            "dzs": 64,
+            "tw": 64,
+            "wsz": 72,
+            "wszs": 67,
+            "suite": 73,
+            "fam": 69
+          },
+          "en": {
+            "name": "High season"
+          },
+          "it": {
+            "name": "Alta stagione"
+          }
+        }
+      ],
+      "ortstaxe": 2.7,
+      "kinder": {
+        "k0_2": 15,
+        "k3_8": 29,
+        "k9_13": 39
+      },
+      "zusatz": "Im Sommer inklusive: Kärnten Card ab dem Anreisetag und Golf auf dem Golfplatz Bad Kleinkirchheim ohne Greenfee.",
+      "hinweis": "",
+      "en": {
+        "name": "Summer 2026",
+        "grundpreis_name": "Low season",
+        "zusatz": "Included in summer: Kärnten Card from the day of arrival and golf at Bad Kleinkirchheim golf course without green fees.",
+        "hinweis": ""
+      },
+      "it": {
+        "name": "Estate 2026",
+        "grundpreis_name": "Bassa stagione",
+        "zusatz": "Inclusi in estate: Kärnten Card dal giorno di arrivo e golf al campo di Bad Kleinkirchheim senza green fee.",
+        "hinweis": ""
+      }
+    },
+    {
+      "id": "W26",
+      "name": "Winter 2026/27",
+      "von": "2026-12-18",
+      "bis": "2027-03-31",
+      "grundpreis_name": "Nebensaison",
+      "grundpreise": {
+        "ez": 63,
+        "dz": 73,
+        "dzs": 63,
+        "tw": 63,
+        "wsz": 75,
+        "wszs": 65,
+        "suite": 71,
+        "fam": 66
+      },
+      "zeitraeume": [
+        {
+          "name": "Weihnachten & Silvester",
+          "daten": [
+            {
+              "von": "2026-12-25",
+              "bis": "2027-01-05"
+            }
+          ],
+          "preise": {
+            "ez": 78,
+            "dz": 87,
+            "dzs": 77,
+            "tw": 77,
+            "wsz": 90,
+            "wszs": 80,
+            "suite": 87,
+            "fam": 81
+          },
+          "en": {
+            "name": "Christmas & New Year"
+          },
+          "it": {
+            "name": "Natale e Capodanno"
+          }
+        },
+        {
+          "name": "Hauptsaison",
+          "daten": [
+            {
+              "von": "2027-01-21",
+              "bis": "2027-01-23"
+            },
+            {
+              "von": "2027-02-01",
+              "bis": "2027-02-28"
+            }
+          ],
+          "preise": {
+            "ez": 69,
+            "dz": 80,
+            "dzs": 70,
+            "tw": 70,
+            "wsz": 84,
+            "wszs": 74,
+            "suite": 80,
+            "fam": 75
+          },
+          "en": {
+            "name": "High season"
+          },
+          "it": {
+            "name": "Alta stagione"
+          }
+        }
+      ],
+      "ortstaxe": 4.5,
+      "kinder": {
+        "k0_2": 15,
+        "k3_8": 29,
+        "k9_13": 39
+      },
+      "zusatz": "",
+      "hinweis": "Dazu passend: die [Aktionswochen der Bergbahnen 2026/27](angebote.html#bergbahnen) – Ski-Opening mit Gratis-Skitag, 1-€-Skipass für Kinder, Ski-Wellness-Wochen und Sonnenskilauf.",
+      "en": {
+        "name": "Winter 2026/27",
+        "grundpreis_name": "Low season",
+        "zusatz": "",
+        "hinweis": "A perfect match: the [cable cars’ special weeks 2026/27](angebote.html#bergbahnen) – Ski Opening with a free ski day, € 1 ski pass for children, Ski Wellness Weeks and spring sun skiing."
+      },
+      "it": {
+        "name": "Inverno 2026/27",
+        "grundpreis_name": "Bassa stagione",
+        "zusatz": "",
+        "hinweis": "Da abbinare: le [settimane promozionali degli impianti 2026/27](angebote.html#bergbahnen) – Ski Opening con giornata gratuita, skipass bambini a 1 €, Settimane Sci & Wellness e sci di primavera."
+      }
+    },
+    {
+      "id": "S27",
+      "name": "Sommer 2027",
+      "von": "2027-05-14",
+      "bis": "2027-10-17",
+      "grundpreis_name": "Standard",
+      "grundpreise": {
+        "ez": 62,
+        "dz": 69,
+        "dzs": 63,
+        "tw": 63,
+        "wsz": 71,
+        "wszs": 66,
+        "suite": 71,
+        "fam": 68
+      },
+      "zeitraeume": [
+        {
+          "name": "Top-Wochen",
+          "daten": [
+            {
+              "von": "2027-06-13",
+              "bis": "2027-06-20"
+            },
+            {
+              "von": "2027-09-05",
+              "bis": "2027-09-12"
+            }
+          ],
+          "preise": {
+            "ez": 75,
+            "dz": 76,
+            "dzs": 71,
+            "tw": 71,
+            "wsz": 81,
+            "wszs": 75,
+            "suite": 81,
+            "fam": 77
+          },
+          "en": {
+            "name": "Top weeks"
+          },
+          "it": {
+            "name": "Settimane top"
+          }
+        },
+        {
+          "name": "Hauptsaison",
+          "daten": [
+            {
+              "von": "2027-07-10",
+              "bis": "2027-09-04"
+            }
+          ],
+          "preise": {
+            "ez": 68,
+            "dz": 78,
+            "dzs": 68,
+            "tw": 68,
+            "wsz": 79,
+            "wszs": 71,
+            "suite": 79,
+            "fam": 72
+          },
+          "en": {
+            "name": "High season"
+          },
+          "it": {
+            "name": "Alta stagione"
+          }
+        }
+      ],
+      "ortstaxe": 4.5,
+      "kinder": {
+        "k0_2": 15,
+        "k3_8": 30,
+        "k9_13": 40
+      },
+      "zusatz": "Im Sommer inklusive: Kärnten Card ab dem Anreisetag und Golf auf dem Golfplatz Bad Kleinkirchheim ohne Greenfee.",
+      "hinweis": "",
+      "en": {
+        "name": "Summer 2027",
+        "grundpreis_name": "Standard",
+        "zusatz": "Included in summer: Kärnten Card from the day of arrival and golf at Bad Kleinkirchheim golf course without green fees.",
+        "hinweis": ""
+      },
+      "it": {
+        "name": "Estate 2027",
+        "grundpreis_name": "Standard",
+        "zusatz": "Inclusi in estate: Kärnten Card dal giorno di arrivo e golf al campo di Bad Kleinkirchheim senza green fee.",
+        "hinweis": ""
+      }
+    }
+  ]
+}

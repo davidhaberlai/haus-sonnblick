@@ -1,0 +1,289 @@
+{
+  "bilder": [
+    {
+      "bild": "/assets/img/haus-sonnenuntergang-1600.jpg",
+      "kategorie": "haus",
+      "de": "Das Haus im Abendrot",
+      "en": "The house in the sunset glow",
+      "it": "La casa al tramonto"
+    },
+    {
+      "bild": "images/2025-11-23_Drohne_03_Hotel-Sonnblick_01_Fotos_DJI_0134.JPG",
+      "kategorie": "haus",
+      "de": "Das Haus im Winter von oben",
+      "en": "The house in winter from above",
+      "it": "La casa in inverno dall’alto",
+      "breite": 1800,
+      "hoehe": 1200
+    },
+    {
+      "bild": "images/stories/header/1_hotel_lage/header_2.jpg",
+      "kategorie": "haus",
+      "de": "Das Haus im Sommer am Waldrand",
+      "en": "The house in summer at the edge of the forest",
+      "it": "La casa in estate al limitare del bosco",
+      "breite": 1472,
+      "hoehe": 486
+    },
+    {
+      "bild": "/assets/img/haus-nacht-1360.jpg",
+      "kategorie": "haus",
+      "de": "Das Haus am Abend",
+      "en": "The house in the evening",
+      "it": "La casa di sera"
+    },
+    {
+      "bild": "/assets/img/eingang-574.jpg",
+      "kategorie": "haus",
+      "de": "Eingang mit Wintergarten und Relief",
+      "en": "Entrance with conservatory and relief",
+      "it": "Ingresso con giardino d’inverno e rilievo"
+    },
+    {
+      "bild": "/assets/img/wintergarten-1448.jpg",
+      "kategorie": "haus",
+      "de": "Wintergarten",
+      "en": "Conservatory",
+      "it": "Giardino d’inverno"
+    },
+    {
+      "bild": "images/stories/header/6_winter/header_6.jpg",
+      "kategorie": "haus",
+      "de": "Das Haus im tief verschneiten Winter",
+      "en": "The house in deep winter snow",
+      "it": "La casa nella neve alta",
+      "breite": 1472,
+      "hoehe": 486
+    },
+    {
+      "bild": "/assets/img/dz-golf-1560.jpg",
+      "kategorie": "zimmer",
+      "de": "Doppelzimmer renoviert",
+      "en": "Renovated double room",
+      "it": "Camera doppia rinnovata"
+    },
+    {
+      "bild": "images/IMG_4113_klein.jpeg",
+      "kategorie": "zimmer",
+      "de": "Neu gestaltetes Zimmer",
+      "en": "Newly designed room",
+      "it": "Camera rinnovata",
+      "breite": 1200,
+      "hoehe": 811
+    },
+    {
+      "bild": "images/IMG_3814.jpeg",
+      "kategorie": "zimmer",
+      "de": "Wohn-Schlafzimmer renoviert",
+      "en": "Renovated living-bedroom",
+      "it": "Camera con soggiorno rinnovata",
+      "breite": 1277,
+      "hoehe": 948
+    },
+    {
+      "bild": "images/stories/zimmer/suite/sonnblick_suite1.jpg",
+      "kategorie": "zimmer",
+      "de": "Sonnensuite",
+      "en": "Sun Suite",
+      "it": "Suite Sole",
+      "breite": 800,
+      "hoehe": 533
+    },
+    {
+      "bild": "images/stories/zimmer/suite/sonnblick_suite3.jpg",
+      "kategorie": "zimmer",
+      "de": "Sonnensuite, Wohnbereich",
+      "en": "Sun Suite, living area",
+      "it": "Suite Sole, zona giorno",
+      "breite": 800,
+      "hoehe": 533
+    },
+    {
+      "bild": "images/stories/zimmer/halbapp/halbapp_1.jpg",
+      "kategorie": "zimmer",
+      "de": "Familienappartement",
+      "en": "Family apartment",
+      "it": "Appartamento famiglia",
+      "breite": 800,
+      "hoehe": 533
+    },
+    {
+      "bild": "images/stories/zimmer/halbapp/halbapp_6.jpg",
+      "kategorie": "zimmer",
+      "de": "Familienappartement, Bad mit Badewanne",
+      "en": "Family apartment, bathroom with bathtub",
+      "it": "Appartamento famiglia, bagno con vasca",
+      "breite": 533,
+      "hoehe": 800
+    },
+    {
+      "bild": "images/stories/content/einzelzimmer1_balkon.jpg",
+      "kategorie": "zimmer",
+      "de": "Einzelzimmer mit Balkon",
+      "en": "Single room with balcony",
+      "it": "Camera singola con balcone",
+      "breite": 800,
+      "hoehe": 533
+    },
+    {
+      "bild": "/assets/img/bad-renoviert-1086.jpg",
+      "kategorie": "zimmer",
+      "de": "Badezimmer",
+      "en": "Bathroom",
+      "it": "Bagno"
+    },
+    {
+      "bild": "images/stories/header/3_pauschalen/sommer/header_6.jpg",
+      "kategorie": "sommer",
+      "de": "Wandern am Bergsee",
+      "en": "Hiking by a mountain lake",
+      "it": "Escursione al lago alpino",
+      "breite": 1472,
+      "hoehe": 486
+    },
+    {
+      "bild": "images/stories/content/wandern_rast.jpg",
+      "kategorie": "sommer",
+      "de": "Rast mit Aussicht",
+      "en": "A break with a view",
+      "it": "Una pausa panoramica",
+      "breite": 800,
+      "hoehe": 532
+    },
+    {
+      "bild": "images/stories/content/ort_bad_kleinkirchheim.jpg",
+      "kategorie": "sommer",
+      "de": "Bad Kleinkirchheim im Sommer",
+      "en": "Bad Kleinkirchheim in summer",
+      "it": "Bad Kleinkirchheim in estate",
+      "breite": 800,
+      "hoehe": 532
+    },
+    {
+      "bild": "images/stories/content/golfen.jpg",
+      "kategorie": "sommer",
+      "de": "Golfplatz Bad Kleinkirchheim",
+      "en": "Bad Kleinkirchheim golf course",
+      "it": "Campo da golf di Bad Kleinkirchheim",
+      "breite": 800,
+      "hoehe": 531
+    },
+    {
+      "bild": "images/stories/content/nockbike_1.jpg",
+      "kategorie": "sommer",
+      "de": "Mountainbiken in den Nockbergen",
+      "en": "Mountain biking in the Nock Mountains",
+      "it": "Mountain bike sui Monti Nock",
+      "breite": 800,
+      "hoehe": 534
+    },
+    {
+      "bild": "images/stories/header/5_sommer/header_6.jpg",
+      "kategorie": "sommer",
+      "de": "Bootsfahrt am See",
+      "en": "Boat trip on the lake",
+      "it": "Gita in barca sul lago",
+      "breite": 1472,
+      "hoehe": 486
+    },
+    {
+      "bild": "images/stories/header/3_pauschalen/sommer/header_7.jpg",
+      "kategorie": "sommer",
+      "de": "Musi-Wanderwoche",
+      "en": "Music & Hiking Week",
+      "it": "Settimana di escursioni con musica",
+      "breite": 1472,
+      "hoehe": 486
+    },
+    {
+      "bild": "images/stories/header/6_winter/header_2a.jpg",
+      "kategorie": "winter",
+      "de": "Skifahren mit Panoramablick",
+      "en": "Skiing with a panoramic view",
+      "it": "Sciare con vista panoramica",
+      "breite": 1472,
+      "hoehe": 486
+    },
+    {
+      "bild": "images/stories/content/skifahren5.jpg",
+      "kategorie": "winter",
+      "de": "Pistenspaß",
+      "en": "Fun on the slopes",
+      "it": "Divertimento sulle piste",
+      "breite": 800,
+      "hoehe": 533
+    },
+    {
+      "bild": "images/stories/header/6_winter/header_4.jpg",
+      "kategorie": "winter",
+      "de": "Langlaufen",
+      "en": "Cross-country skiing",
+      "it": "Sci di fondo",
+      "breite": 1472,
+      "hoehe": 486
+    },
+    {
+      "bild": "images/stories/content/kinder_schnee1.jpg",
+      "kategorie": "winter",
+      "de": "Kinder im Schnee",
+      "en": "Children in the snow",
+      "it": "Bambini nella neve",
+      "breite": 800,
+      "hoehe": 533
+    },
+    {
+      "bild": "images/stories/content/rodelspass.jpg",
+      "kategorie": "winter",
+      "de": "Rodeln",
+      "en": "Tobogganing",
+      "it": "Slittino",
+      "breite": 800,
+      "hoehe": 533
+    },
+    {
+      "bild": "images/stories/header/4_therme/header_1a.jpg",
+      "kategorie": "thermen",
+      "de": "Außenbecken im Winter",
+      "en": "Outdoor pool in winter",
+      "it": "Piscina esterna in inverno",
+      "breite": 1472,
+      "hoehe": 486
+    },
+    {
+      "bild": "images/stories/content/therme_roemerbad_16.jpg",
+      "kategorie": "thermen",
+      "de": "Thermal-Römerbad",
+      "en": "Thermal-Römerbad",
+      "it": "Terme Römerbad",
+      "breite": 800,
+      "hoehe": 531
+    },
+    {
+      "bild": "images/stories/header/4_therme/header_1.jpg",
+      "kategorie": "thermen",
+      "de": "Thermalbecken in der Halle",
+      "en": "Indoor thermal pool",
+      "it": "Piscina termale coperta",
+      "breite": 1472,
+      "hoehe": 486
+    },
+    {
+      "bild": "images/stories/content/therme_kathrein2.jpg",
+      "kategorie": "thermen",
+      "de": "Therme St. Kathrein",
+      "en": "Therme St. Kathrein",
+      "it": "Terme St. Kathrein",
+      "breite": 800,
+      "hoehe": 533
+    },
+    {
+      "bild": "images/stories/header/4_therme/header_3.jpg",
+      "kategorie": "thermen",
+      "de": "Sauna im Thermal-Römerbad",
+      "en": "Sauna at the Thermal-Römerbad",
+      "it": "Sauna alle Terme Römerbad",
+      "breite": 1472,
+      "hoehe": 486
+    }
+  ]
+}

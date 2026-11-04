@@ -1,0 +1,27 @@
+# Haus Sonnblick – Karibu Studio
+# Bei jedem Speichern im Admin-Bereich (/admin) schreibt das Skript die Inhalte
+# aus _data/ in die Seiten. Schlägt die Prüfung fehl, bleibt die bisherige
+# Version online (Meldung im Netlify-Deploy-Log).
+[build]
+  command = "node _cms/build.mjs"
+  publish = "."
+
+[build.environment]
+  NODE_VERSION = "22"
+
+[[headers]]
+  for = "/admin/*"
+  [headers.values]
+    X-Robots-Tag = "noindex"
+
+[[headers]]
+  for = "/_data/*"
+  [headers.values]
+    X-Robots-Tag = "noindex"
+
+# Interne Dateien nicht ausliefern
+[[redirects]]
+  from = "/_cms/*"
+  to = "/404.html"
+  status = 404
+  force = true
