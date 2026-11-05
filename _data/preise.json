@@ -4,95 +4,6 @@
   "kurzaufenthalt_prozent": 10,
   "saisonen": [
     {
-      "id": "S26",
-      "name": "Sommer 2026",
-      "von": "2026-05-14",
-      "bis": "2026-10-11",
-      "grundpreis_name": "Nebensaison",
-      "grundpreise": {
-        "ez": 59,
-        "dz": 66,
-        "dzs": 61,
-        "tw": 61,
-        "wsz": 68,
-        "wszs": 63,
-        "suite": 69,
-        "fam": 65
-      },
-      "zeitraeume": [
-        {
-          "name": "Musi-Wanderwoche",
-          "daten": [
-            {
-              "von": "2026-06-15",
-              "bis": "2026-06-21"
-            }
-          ],
-          "preise": {
-            "ez": 72,
-            "dz": 73,
-            "dzs": 68,
-            "tw": 68,
-            "wsz": 76,
-            "wszs": 71,
-            "suite": 78,
-            "fam": 74
-          },
-          "en": {
-            "name": "Music & Hiking Week"
-          },
-          "it": {
-            "name": "Settimana escursionistica con musica"
-          }
-        },
-        {
-          "name": "Hauptsaison",
-          "daten": [
-            {
-              "von": "2026-07-11",
-              "bis": "2026-09-06"
-            }
-          ],
-          "preise": {
-            "ez": 63,
-            "dz": 71,
-            "dzs": 64,
-            "tw": 64,
-            "wsz": 72,
-            "wszs": 67,
-            "suite": 73,
-            "fam": 69
-          },
-          "en": {
-            "name": "High season"
-          },
-          "it": {
-            "name": "Alta stagione"
-          }
-        }
-      ],
-      "ortstaxe": 2.7,
-      "kinder": {
-        "k0_2": 15,
-        "k3_8": 29,
-        "k9_13": 39
-      },
-      "zusatz": "Im Sommer inklusive: Kärnten Card ab dem Anreisetag und Golf auf dem Golfplatz Bad Kleinkirchheim ohne Greenfee.",
-      "hinweis": "",
-      "en": {
-        "name": "Summer 2026",
-        "grundpreis_name": "Low season",
-        "zusatz": "Included in summer: Kärnten Card from the day of arrival and golf at Bad Kleinkirchheim golf course without green fees.",
-        "hinweis": ""
-      },
-      "it": {
-        "name": "Estate 2026",
-        "grundpreis_name": "Bassa stagione",
-        "zusatz": "Inclusi in estate: Kärnten Card dal giorno di arrivo e golf al campo di Bad Kleinkirchheim senza green fee.",
-        "hinweis": ""
-      }
-    },
-    {
       "id": "W26",
       "name": "Winter 2026/27",
       "von": "2026-12-18",
@@ -216,7 +127,7 @@
           ],
           "preise": {
             "ez": 75,
-            "dz": 76,
+            "dz": 79,
             "dzs": 71,
             "tw": 71,
             "wsz": 81,
@@ -241,7 +152,7 @@
           ],
           "preise": {
             "ez": 68,
-            "dz": 78,
+            "dz": 76,
             "dzs": 68,
             "tw": 68,
             "wsz": 79,

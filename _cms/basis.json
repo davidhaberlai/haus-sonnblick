@@ -41,7 +41,7 @@
       ],
       "maxAdults": 2,
       "maxTotal": 3,
-      "meta": "Doppelbett · 28 m² · 2 Personen, Zustellbett für 1 Kind bis 12 Jahre",
+      "meta": "Doppelbett · 28 m² · 2 Personen, Zustellbett für 1 Kind bis 13 Jahre",
       "page": "doppelzimmer.html#doppel",
       "maxKids": 1
     },
@@ -90,7 +90,7 @@
       ],
       "maxAdults": 2,
       "maxTotal": 4,
-      "meta": "Bis 4 Personen · 2 Erwachsene + 2 Kinder bis ca. 12 Jahre (Schlafsessel) · Südbalkon",
+      "meta": "Bis 4 Personen · 2 Erwachsene + 2 Kinder bis 13 Jahre (Schlafsessel) · Südbalkon",
       "page": "wohn-schlafzimmer.html#wsz-renoviert",
       "maxKids": 2
     },
@@ -166,7 +166,7 @@
         },
         "dz": {
           "name": "Double room, renovated",
-          "meta": "Double bed · 28 m² · 2 people, extra bed for 1 child up to 12 years"
+          "meta": "Double bed · 28 m² · 2 people, extra bed for 1 child up to 13 years"
         },
         "tw": {
           "name": "Twin room",
@@ -174,7 +174,7 @@
         },
         "wsz": {
           "name": "Living-bedroom, renovated",
-          "meta": "Up to 4 people · 2 adults + 2 children up to approx. 12 (sleeper chairs) · south-facing balcony"
+          "meta": "Up to 4 people · 2 adults + 2 children up to 13 (sleeper chairs) · south-facing balcony"
         },
         "suite": {
           "name": "Sun Suite",
@@ -223,7 +223,7 @@
         },
         "dz": {
           "name": "Camera doppia, rinnovata",
-          "meta": "Letto matrimoniale · 28 m² · 2 persone, letto aggiuntivo per 1 bambino fino a 12 anni"
+          "meta": "Letto matrimoniale · 28 m² · 2 persone, letto aggiuntivo per 1 bambino fino a 13 anni"
         },
         "tw": {
           "name": "Camera a due letti",
@@ -231,7 +231,7 @@
         },
         "wsz": {
           "name": "Camera con soggiorno, rinnovata",
-          "meta": "Fino a 4 persone · 2 adulti + 2 bambini fino a circa 12 anni (poltrone letto) · balcone a sud"
+          "meta": "Fino a 4 persone · 2 adulti + 2 bambini fino a 13 anni (poltrone letto) · balcone a sud"
         },
         "suite": {
           "name": "Suite Sole",
