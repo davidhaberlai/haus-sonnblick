@@ -9,6 +9,11 @@
 [build.environment]
   NODE_VERSION = "22"
 
+# Formular-Anfragen per E-Mail ans Hotel (netlify/functions/submission-created.mjs)
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+
 [[headers]]
   for = "/admin/*"
   [headers.values]
@@ -22,6 +27,12 @@
 # Interne Dateien nicht ausliefern
 [[redirects]]
   from = "/_cms/*"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/netlify/*"
   to = "/404.html"
   status = 404
   force = true
