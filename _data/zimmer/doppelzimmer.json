@@ -1,0 +1,102 @@
+{
+  "fotos": [
+    {
+      "bild": "/assets/img/dz-golf-1560.jpg",
+      "de": "Neu gestaltetes Doppelzimmer mit Holzpaneel und Balkontür",
+      "en": "Newly designed double room with wood panelling and balcony door",
+      "it": "Camera doppia rinnovata con pannelli in legno e porta-finestra sul balcone"
+    },
+    {
+      "bild": "/assets/img/dz-bike-1600.jpg",
+      "de": "Doppelzimmer Bike mit Mountainbike-Fototapete und Flat-TV",
+      "en": "Bike double room with mountain-bike photo wallpaper and flat-screen TV",
+      "it": "Camera doppia Bike con carta da parati mountain bike e TV a schermo piatto"
+    },
+    {
+      "bild": "/images/IMG_4113_klein.jpeg",
+      "de": "Zimmer mit Golf-Fototapete und Einbauschrank",
+      "en": "Room with golf photo wallpaper and built-in wardrobe",
+      "it": "Camera con carta da parati fotografica a tema golf e armadio a muro"
+    },
+    {
+      "bild": "/images/stories/content/doppelzimmer_1.jpg",
+      "de": "Klassisches Doppelzimmer mit Holzbett",
+      "en": "Classic double room with wooden bed",
+      "it": "Camera doppia classica con letto in legno"
+    },
+    {
+      "bild": "/images/stories/content/doppelzimmer_2.jpg",
+      "de": "Doppelzimmer mit hellen Holzmöbeln",
+      "en": "Double room with light wooden furniture",
+      "it": "Camera doppia con mobili in legno chiaro"
+    },
+    {
+      "bild": "/assets/img/bad-renoviert-1086.jpg",
+      "de": "Badezimmer mit Dusche und Waschtisch",
+      "en": "Bathroom with shower and washbasin",
+      "it": "Bagno con doccia e lavabo"
+    }
+  ],
+  "varianten": {
+    "dz": [
+      {
+        "bild": "/assets/img/dz-golf-1560.jpg",
+        "de": "Doppelzimmer Golf, renoviert, mit zwei Bettdecken und Balkontür",
+        "en": "Renovated Golf double room with two duvets and balcony door",
+        "it": "Camera doppia Golf rinnovata con due piumini e porta-finestra"
+      },
+      {
+        "bild": "/images/IMG_4113_klein.jpeg",
+        "de": "Doppelzimmer Golf mit Fototapete und Einbauschrank",
+        "en": "Golf double room with photo wallpaper and built-in wardrobe",
+        "it": "Camera doppia Golf con carta da parati fotografica e armadio a muro"
+      },
+      {
+        "bild": "/assets/img/dz-bike-1600.jpg",
+        "de": "Doppelzimmer Bike mit Mountainbike-Fototapete und Flat-TV",
+        "en": "Bike double room with mountain-bike photo wallpaper and flat-screen TV",
+        "it": "Camera doppia Bike con carta da parati mountain bike e TV a schermo piatto"
+      },
+      {
+        "bild": "/assets/img/bad-renoviert-1086.jpg",
+        "de": "Renoviertes Bad mit Dusche",
+        "en": "Renovated bathroom with shower",
+        "it": "Bagno rinnovato con doccia"
+      }
+    ],
+    "dzs": [
+      {
+        "bild": "/assets/img/dz-klassisch-1448.jpg",
+        "de": "Klassisch eingerichtetes Doppelzimmer mit Holzbett und Balkontür",
+        "en": "Classically furnished double room with wooden bed and balcony door",
+        "it": "Camera doppia con arredamento classico, letto in legno e porta-finestra"
+      },
+      {
+        "bild": "/images/stories/content/doppelzimmer_1.jpg",
+        "de": "Klassisches Doppelzimmer mit Holzmöbeln",
+        "en": "Classic double room with wooden furniture",
+        "it": "Camera doppia classica con mobili in legno"
+      },
+      {
+        "bild": "/images/stories/content/doppelzimmer_2.jpg",
+        "de": "Doppelbett im klassischen Doppelzimmer",
+        "en": "Double bed in the classic double room",
+        "it": "Letto matrimoniale nella camera doppia classica"
+      },
+      {
+        "bild": "/assets/img/bad-renoviert-1086.jpg",
+        "de": "Renoviertes Bad mit Dusche",
+        "en": "Renovated bathroom with shower",
+        "it": "Bagno rinnovato con doccia"
+      }
+    ],
+    "tw": [
+      {
+        "bild": "/assets/img/zweibett-ausblick-1200.jpg",
+        "de": "Ausblick vom Balkon des Zweibettzimmers auf Bad Kleinkirchheim",
+        "en": "View from the twin room balcony over Bad Kleinkirchheim",
+        "it": "Vista dal balcone della camera a due letti su Bad Kleinkirchheim"
+      }
+    ]
+  }
+}

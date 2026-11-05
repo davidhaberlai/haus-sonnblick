@@ -647,6 +647,314 @@ collections:
       - label: Italienisch
         name: it
         widget: text
+- name: zimmerfotos
+  label: Zimmerfotos
+  description: Fotos der Zimmerseiten. Das erste Foto ist jeweils das große Bild oben auf der Seite und erscheint auch in der Zimmerübersicht. Reihenfolge per Ziehen ändern. Fotos können direkt vom Handy hochgeladen werden – sie werden automatisch verkleinert. Querformat sieht am besten aus.
+  editor:
+    preview: false
+  files:
+  - name: einzelzimmer
+    label: Einzelzimmer
+    file: _data/zimmer/einzelzimmer.json
+    fields:
+    - label: Fotos der Seite
+      name: fotos
+      widget: list
+      label_singular: Foto
+      collapsed: true
+      min: 1
+      summary: '{{fields.de}}'
+      hint: Erstes Foto = großes Bild oben und Bild in der Zimmerübersicht. Die weiteren erscheinen als kleine Bilder darunter.
+      fields:
+      - label: Bild
+        name: bild
+        widget: image
+        choose_url: false
+      - label: Bildbeschreibung Deutsch
+        name: de
+        widget: string
+        hint: Was ist auf dem Foto zu sehen? Erscheint beim Vergrößern und hilft bei Google.
+      - label: Bildbeschreibung Englisch
+        name: en
+        widget: string
+        required: false
+        hint: Leer = deutsche Beschreibung
+      - label: Bildbeschreibung Italienisch
+        name: it
+        widget: string
+        required: false
+        hint: Leer = deutsche Beschreibung
+  - name: doppelzimmer
+    label: Doppel- & Zweibettzimmer
+    file: _data/zimmer/doppelzimmer.json
+    fields:
+    - label: Fotos der Seite
+      name: fotos
+      widget: list
+      label_singular: Foto
+      collapsed: true
+      min: 1
+      summary: '{{fields.de}}'
+      hint: Erstes Foto = großes Bild oben und Bild in der Zimmerübersicht. Die weiteren erscheinen als kleine Bilder darunter.
+      fields:
+      - label: Bild
+        name: bild
+        widget: image
+        choose_url: false
+      - label: Bildbeschreibung Deutsch
+        name: de
+        widget: string
+        hint: Was ist auf dem Foto zu sehen? Erscheint beim Vergrößern und hilft bei Google.
+      - label: Bildbeschreibung Englisch
+        name: en
+        widget: string
+        required: false
+        hint: Leer = deutsche Beschreibung
+      - label: Bildbeschreibung Italienisch
+        name: it
+        widget: string
+        required: false
+        hint: Leer = deutsche Beschreibung
+    - label: Fotos der Varianten
+      name: varianten
+      widget: object
+      collapsed: true
+      hint: Diese Fotos klappen bei der jeweiligen Variante auf und erscheinen im Anfrage-System.
+      fields:
+      - label: Doppelzimmer mit Balkon, renoviert
+        name: dz
+        widget: list
+        label_singular: Foto
+        collapsed: true
+        min: 1
+        summary: '{{fields.de}}'
+        hint: Am schönsten mit 4 Fotos (bei 5 Fotos wird das erste groß).
+        fields:
+        - label: Bild
+          name: bild
+          widget: image
+          choose_url: false
+        - label: Bildbeschreibung Deutsch
+          name: de
+          widget: string
+          hint: Was ist auf dem Foto zu sehen? Erscheint beim Vergrößern und hilft bei Google.
+        - label: Bildbeschreibung Englisch
+          name: en
+          widget: string
+          required: false
+          hint: Leer = deutsche Beschreibung
+        - label: Bildbeschreibung Italienisch
+          name: it
+          widget: string
+          required: false
+          hint: Leer = deutsche Beschreibung
+      - label: Doppelzimmer mit Balkon (klassisch)
+        name: dzs
+        widget: list
+        label_singular: Foto
+        collapsed: true
+        min: 1
+        summary: '{{fields.de}}'
+        hint: Am schönsten mit 4 Fotos (bei 5 Fotos wird das erste groß).
+        fields:
+        - label: Bild
+          name: bild
+          widget: image
+          choose_url: false
+        - label: Bildbeschreibung Deutsch
+          name: de
+          widget: string
+          hint: Was ist auf dem Foto zu sehen? Erscheint beim Vergrößern und hilft bei Google.
+        - label: Bildbeschreibung Englisch
+          name: en
+          widget: string
+          required: false
+          hint: Leer = deutsche Beschreibung
+        - label: Bildbeschreibung Italienisch
+          name: it
+          widget: string
+          required: false
+          hint: Leer = deutsche Beschreibung
+      - label: Zweibettzimmer mit Balkon
+        name: tw
+        widget: list
+        label_singular: Foto
+        collapsed: true
+        min: 1
+        summary: '{{fields.de}}'
+        hint: Am schönsten mit 4 Fotos (bei 5 Fotos wird das erste groß).
+        fields:
+        - label: Bild
+          name: bild
+          widget: image
+          choose_url: false
+        - label: Bildbeschreibung Deutsch
+          name: de
+          widget: string
+          hint: Was ist auf dem Foto zu sehen? Erscheint beim Vergrößern und hilft bei Google.
+        - label: Bildbeschreibung Englisch
+          name: en
+          widget: string
+          required: false
+          hint: Leer = deutsche Beschreibung
+        - label: Bildbeschreibung Italienisch
+          name: it
+          widget: string
+          required: false
+          hint: Leer = deutsche Beschreibung
+  - name: wohn-schlafzimmer
+    label: Wohn-Schlafzimmer
+    file: _data/zimmer/wohn-schlafzimmer.json
+    fields:
+    - label: Fotos der Seite
+      name: fotos
+      widget: list
+      label_singular: Foto
+      collapsed: true
+      min: 1
+      summary: '{{fields.de}}'
+      hint: Erstes Foto = großes Bild oben und Bild in der Zimmerübersicht. Die weiteren erscheinen als kleine Bilder darunter.
+      fields:
+      - label: Bild
+        name: bild
+        widget: image
+        choose_url: false
+      - label: Bildbeschreibung Deutsch
+        name: de
+        widget: string
+        hint: Was ist auf dem Foto zu sehen? Erscheint beim Vergrößern und hilft bei Google.
+      - label: Bildbeschreibung Englisch
+        name: en
+        widget: string
+        required: false
+        hint: Leer = deutsche Beschreibung
+      - label: Bildbeschreibung Italienisch
+        name: it
+        widget: string
+        required: false
+        hint: Leer = deutsche Beschreibung
+    - label: Fotos der Varianten
+      name: varianten
+      widget: object
+      collapsed: true
+      hint: Diese Fotos klappen bei der jeweiligen Variante auf und erscheinen im Anfrage-System.
+      fields:
+      - label: Wohn-Schlafzimmer, renoviert (Junior Suite Ski)
+        name: wsz
+        widget: list
+        label_singular: Foto
+        collapsed: true
+        min: 1
+        summary: '{{fields.de}}'
+        hint: Am schönsten mit 4 Fotos (bei 5 Fotos wird das erste groß).
+        fields:
+        - label: Bild
+          name: bild
+          widget: image
+          choose_url: false
+        - label: Bildbeschreibung Deutsch
+          name: de
+          widget: string
+          hint: Was ist auf dem Foto zu sehen? Erscheint beim Vergrößern und hilft bei Google.
+        - label: Bildbeschreibung Englisch
+          name: en
+          widget: string
+          required: false
+          hint: Leer = deutsche Beschreibung
+        - label: Bildbeschreibung Italienisch
+          name: it
+          widget: string
+          required: false
+          hint: Leer = deutsche Beschreibung
+      - label: Wohn-Schlafzimmer (klassisch)
+        name: wszs
+        widget: list
+        label_singular: Foto
+        collapsed: true
+        min: 1
+        summary: '{{fields.de}}'
+        hint: Am schönsten mit 4 Fotos (bei 5 Fotos wird das erste groß).
+        fields:
+        - label: Bild
+          name: bild
+          widget: image
+          choose_url: false
+        - label: Bildbeschreibung Deutsch
+          name: de
+          widget: string
+          hint: Was ist auf dem Foto zu sehen? Erscheint beim Vergrößern und hilft bei Google.
+        - label: Bildbeschreibung Englisch
+          name: en
+          widget: string
+          required: false
+          hint: Leer = deutsche Beschreibung
+        - label: Bildbeschreibung Italienisch
+          name: it
+          widget: string
+          required: false
+          hint: Leer = deutsche Beschreibung
+  - name: sonnblick-suite
+    label: Sonnensuite
+    file: _data/zimmer/sonnblick-suite.json
+    fields:
+    - label: Fotos der Seite
+      name: fotos
+      widget: list
+      label_singular: Foto
+      collapsed: true
+      min: 1
+      summary: '{{fields.de}}'
+      hint: Erstes Foto = großes Bild oben und Bild in der Zimmerübersicht. Die weiteren erscheinen als kleine Bilder darunter.
+      fields:
+      - label: Bild
+        name: bild
+        widget: image
+        choose_url: false
+      - label: Bildbeschreibung Deutsch
+        name: de
+        widget: string
+        hint: Was ist auf dem Foto zu sehen? Erscheint beim Vergrößern und hilft bei Google.
+      - label: Bildbeschreibung Englisch
+        name: en
+        widget: string
+        required: false
+        hint: Leer = deutsche Beschreibung
+      - label: Bildbeschreibung Italienisch
+        name: it
+        widget: string
+        required: false
+        hint: Leer = deutsche Beschreibung
+  - name: familiensuite
+    label: Familienappartement
+    file: _data/zimmer/familiensuite.json
+    fields:
+    - label: Fotos der Seite
+      name: fotos
+      widget: list
+      label_singular: Foto
+      collapsed: true
+      min: 1
+      summary: '{{fields.de}}'
+      hint: Erstes Foto = großes Bild oben und Bild in der Zimmerübersicht. Die weiteren erscheinen als kleine Bilder darunter.
+      fields:
+      - label: Bild
+        name: bild
+        widget: image
+        choose_url: false
+      - label: Bildbeschreibung Deutsch
+        name: de
+        widget: string
+        hint: Was ist auf dem Foto zu sehen? Erscheint beim Vergrößern und hilft bei Google.
+      - label: Bildbeschreibung Englisch
+        name: en
+        widget: string
+        required: false
+        hint: Leer = deutsche Beschreibung
+      - label: Bildbeschreibung Italienisch
+        name: it
+        widget: string
+        required: false
+        hint: Leer = deutsche Beschreibung
 - name: galerie
   label: Bildergalerie
   description: Alle Bilder der Seite „Bildergalerie“. Reihenfolge per Ziehen ändern. Neue Fotos können direkt vom Handy hochgeladen werden – sie werden automatisch verkleinert.

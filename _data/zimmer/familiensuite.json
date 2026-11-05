@@ -1,0 +1,46 @@
+{
+  "fotos": [
+    {
+      "bild": "/images/stories/zimmer/halbapp/halbapp_1.jpg",
+      "de": "Familienappartement, Schlafraum mit Doppelbett",
+      "en": "Family apartment, bedroom with double bed",
+      "it": "Appartamento famiglia, camera con letto matrimoniale"
+    },
+    {
+      "bild": "/images/stories/zimmer/halbapp/halbapp_2.jpg",
+      "de": "Familienappartement, Schlafraum",
+      "en": "Family apartment, bedroom",
+      "it": "Appartamento famiglia, camera"
+    },
+    {
+      "bild": "/images/stories/zimmer/halbapp/halbapp_3.jpg",
+      "de": "Familienappartement, Wohnraum mit Sitzgruppe",
+      "en": "Family apartment, living room with seating area",
+      "it": "Appartamento famiglia, soggiorno con salotto"
+    },
+    {
+      "bild": "/images/stories/zimmer/halbapp/halbapp_4.jpg",
+      "de": "Familienappartement, Doppelbett",
+      "en": "Family apartment, double bed",
+      "it": "Appartamento famiglia, letto matrimoniale"
+    },
+    {
+      "bild": "/images/stories/zimmer/halbapp/halbapp_5.jpg",
+      "de": "Familienappartement, Bad mit Badewanne",
+      "en": "Family apartment, bathroom with bathtub",
+      "it": "Appartamento famiglia, bagno con vasca"
+    },
+    {
+      "bild": "/images/stories/zimmer/halbapp/halbapp_6.jpg",
+      "de": "Familienappartement, Bad",
+      "en": "Family apartment, bathroom",
+      "it": "Appartamento famiglia, bagno"
+    },
+    {
+      "bild": "/images/stories/zimmer/halbapp/halbapp_7.jpg",
+      "de": "Familienappartement, Waschtisch",
+      "en": "Family apartment, washbasin",
+      "it": "Appartamento famiglia, lavabo"
+    }
+  ]
+}

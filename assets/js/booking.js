@@ -75,7 +75,7 @@
   const perName = n => (I && I.periods[n]) || n;
   const kidAges = (I && I.kidAges) || SB.kidAges;
   const altOf = a => (I && I.alt[a]) || a;
-  const src = s => (/^https?:/.test(s) ? s : BASE + s);
+  const src = s => (/^(https?:|\/)/.test(s) ? s : BASE + s);
   const nn = n => `${n} ${n === 1 ? T.night : T.nights}`;
 
   const fmtLong = new Intl.DateTimeFormat(LOC, { weekday: 'short', day: 'numeric', month: 'short', year: 'numeric' });

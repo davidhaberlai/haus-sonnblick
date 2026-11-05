@@ -1,0 +1,22 @@
+{
+  "fotos": [
+    {
+      "bild": "/images/stories/content/einzelzimmer1_balkon.jpg",
+      "de": "Einzelzimmer mit Bett, Sitzecke und Balkontür",
+      "en": "Single room with bed, seating area and balcony door",
+      "it": "Camera singola con letto, angolo salotto e porta-finestra sul balcone"
+    },
+    {
+      "bild": "/images/stories/header/2_zimmer/header_6.jpg",
+      "de": "Einzelzimmer mit Holzmöbeln und Tisch",
+      "en": "Single room with wooden furniture and table",
+      "it": "Camera singola con mobili in legno e tavolo"
+    },
+    {
+      "bild": "/assets/img/bad-renoviert-1086.jpg",
+      "de": "Badezimmer mit Dusche und Waschtisch",
+      "en": "Bathroom with shower and washbasin",
+      "it": "Bagno con doccia e lavabo"
+    }
+  ]
+}

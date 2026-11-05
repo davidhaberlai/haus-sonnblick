@@ -1,0 +1,58 @@
+{
+  "fotos": [
+    {
+      "bild": "/images/IMG_3814.jpeg",
+      "de": "Wohn-Schlafzimmer renoviert (Junior Suite Ski) mit Doppelbett, Schlafsesseln und Balkontür",
+      "en": "Renovated living-bedroom (Junior Suite Ski) with double bed, sleeper chairs and balcony door",
+      "it": "Camera con soggiorno rinnovata (Junior Suite Ski) con letto matrimoniale, poltrone letto e porta-finestra"
+    },
+    {
+      "bild": "/images/stories/content/wsz_2.jpg",
+      "de": "Wohn-Schlafzimmer mit Sitzecke, Couch und Balkontür",
+      "en": "Living-bedroom with seating area, couch and balcony door",
+      "it": "Camera con soggiorno, angolo salotto, divano e porta-finestra sul balcone"
+    },
+    {
+      "bild": "/assets/img/bad-renoviert-1086.jpg",
+      "de": "Badezimmer mit Dusche und Waschtisch",
+      "en": "Bathroom with shower and washbasin",
+      "it": "Bagno con doccia e lavabo"
+    }
+  ],
+  "varianten": {
+    "wsz": [
+      {
+        "bild": "/images/IMG_3814.jpeg",
+        "de": "Wohn-Schlafzimmer renoviert (Junior Suite Ski) mit Doppelbett, Schlafsesseln und Balkontür",
+        "en": "Renovated living-bedroom (Junior Suite Ski) with double bed, sleeper chairs and balcony door",
+        "it": "Camera con soggiorno rinnovata (Junior Suite Ski) con letto matrimoniale, poltrone letto e porta-finestra"
+      }
+    ],
+    "wszs": [
+      {
+        "bild": "/images/stories/zimmer/wohnsz/wsz_1.jpg",
+        "de": "Klassisches Wohn-Schlafzimmer mit Doppelbett und Sitzecke",
+        "en": "Classic living-bedroom with double bed and seating area",
+        "it": "Camera con soggiorno classica con letto matrimoniale e angolo salotto"
+      },
+      {
+        "bild": "/images/stories/zimmer/wohnsz/wsz_2.jpg",
+        "de": "Sitzecke mit Couch im klassischen Wohn-Schlafzimmer",
+        "en": "Seating area with couch in the classic living-bedroom",
+        "it": "Angolo salotto con divano nella camera con soggiorno classica"
+      },
+      {
+        "bild": "/images/stories/zimmer/wohnsz/wsz_3.jpg",
+        "de": "Doppelbett im klassischen Wohn-Schlafzimmer",
+        "en": "Double bed in the classic living-bedroom",
+        "it": "Letto matrimoniale nella camera con soggiorno classica"
+      },
+      {
+        "bild": "/images/stories/zimmer/wohnsz/wsz_5.jpg",
+        "de": "Bad mit Dusche im Wohn-Schlafzimmer",
+        "en": "Bathroom with shower in the living-bedroom",
+        "it": "Bagno con doccia nella camera con soggiorno"
+      }
+    ]
+  }
+}

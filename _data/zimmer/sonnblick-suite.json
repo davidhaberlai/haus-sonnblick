@@ -1,0 +1,52 @@
+{
+  "fotos": [
+    {
+      "bild": "/images/stories/zimmer/suite/sonnblick_suite1.jpg",
+      "de": "Sonnensuite mit Doppelbett und Blick ins Grüne",
+      "en": "Sun Suite with double bed and a view of the greenery",
+      "it": "Suite Sole con letto matrimoniale e vista sul verde"
+    },
+    {
+      "bild": "/images/stories/zimmer/suite/sonnblick_suite2.jpg",
+      "de": "Sonnensuite, Doppelbett",
+      "en": "Sun Suite, double bed",
+      "it": "Suite Sole, letto matrimoniale"
+    },
+    {
+      "bild": "/images/stories/zimmer/suite/sonnblick_suite3.jpg",
+      "de": "Sonnensuite, Schlafbereich mit Balkontür",
+      "en": "Sun Suite, sleeping area with balcony door",
+      "it": "Suite Sole, zona notte con porta-finestra sul balcone"
+    },
+    {
+      "bild": "/images/stories/zimmer/suite/sonnblick_suite4.jpg",
+      "de": "Sonnensuite, Sitzgruppe",
+      "en": "Sun Suite, seating area",
+      "it": "Suite Sole, salotto"
+    },
+    {
+      "bild": "/images/stories/zimmer/suite/sonnblick_suite5.jpg",
+      "de": "Sonnensuite, Vorraum mit Schränken",
+      "en": "Sun Suite, hallway with wardrobes",
+      "it": "Suite Sole, ingresso con armadi"
+    },
+    {
+      "bild": "/images/stories/zimmer/suite/sonnblick_suite8.jpg",
+      "de": "Sonnensuite, Bad mit Doppelwaschbecken",
+      "en": "Sun Suite, bathroom with double washbasin",
+      "it": "Suite Sole, bagno con doppio lavabo"
+    },
+    {
+      "bild": "/images/stories/zimmer/suite/sonnblick_suite9.jpg",
+      "de": "Sonnensuite, Waschtisch",
+      "en": "Sun Suite, washbasin",
+      "it": "Suite Sole, lavabo"
+    },
+    {
+      "bild": "/images/stories/zimmer/suite/sonnblick_suite10.jpg",
+      "de": "Sonnensuite, Wohnbereich",
+      "en": "Sun Suite, living area",
+      "it": "Suite Sole, zona giorno"
+    }
+  ]
+}

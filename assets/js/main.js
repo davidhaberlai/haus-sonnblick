@@ -301,7 +301,7 @@
     const show = i => {
       idx = (i + list.length) % list.length;
       const im = $('img', list[idx]);
-      lbImg.src = im.currentSrc || im.src; lbImg.alt = im.alt; lbCap.textContent = im.alt;
+      lbImg.src = im.dataset.full || im.currentSrc || im.src; lbImg.alt = im.alt; lbCap.textContent = im.alt;
       const multi = list.length > 1; $('.lb__p', lb).hidden = !multi; $('.lb__n', lb).hidden = !multi;
     };
     const close = () => { lb.classList.remove('is-open'); doc.style.overflow = ''; if (last) last.focus(); };

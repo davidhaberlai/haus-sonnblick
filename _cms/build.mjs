@@ -2,8 +2,8 @@
    Karibu Studio · Läuft bei Netlify bei jedem Speichern im Admin-Bereich
    (Build command: node _cms/build.mjs). Keine Abhängigkeiten, nur Node.
 
-   Liest   _data/preise.json, _data/packages.json, _data/galerie.json, _data/hinweis.json
-           und _cms/basis.json (feste Zimmerdaten, Übersetzungen)
+   Liest   _data/preise.json, _data/packages.json, _data/galerie.json, _data/hinweis.json,
+           _data/zimmer/*.json (Zimmerfotos) und _cms/basis.json (feste Zimmerdaten, Übersetzungen)
    Schreibt assets/js/data.js (Buchungsrechner) und die Bereiche zwischen
            <!-- cms:NAME --> … <!-- /cms:NAME --> in den HTML-Seiten (DE/EN/IT).
 
@@ -33,6 +33,15 @@ const preise = json('_data/preise.json');
 const packages = json('_data/packages.json');
 const galerie = json('_data/galerie.json');
 const hinweis = json('_data/hinweis.json');
+/* Zimmerfotos – eine Datei je Zimmerseite (erstes Foto = großes Bild, Zimmerübersicht, Anfrage) */
+const ZSEITEN = {
+  einzelzimmer: { rooms: ['ez'], name: 'Einzelzimmer' },
+  doppelzimmer: { var: ['dz', 'dzs', 'tw'], name: 'Doppel- & Zweibettzimmer' },
+  'wohn-schlafzimmer': { var: ['wsz', 'wszs'], name: 'Wohn-Schlafzimmer' },
+  'sonnblick-suite': { rooms: ['suite'], name: 'Sonnensuite' },
+  familiensuite: { rooms: ['fam'], name: 'Familienappartement' }
+};
+const zimmer = Object.fromEntries(Object.keys(ZSEITEN).map(k => [k, json(`_data/zimmer/${k}.json`)]));
 
 /* ------------------------------------------------------------ Helfer */
 const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -154,7 +163,7 @@ function bild(src, lang, breiten = [800, 1400, 2000]) {
   if (lokal.startsWith('assets/img/uploads/')) {
     const cdn = w => `/.netlify/images?url=/${encodeURI(lokal)}&w=${w}&q=80`;
     const ws = breiten.filter(w => !g || w < g.w).concat(g && g.w < breiten[breiten.length - 1] ? [g.w] : []);
-    return { src: cdn(ws[Math.min(1, ws.length - 1)] || 1400), srcset: ws.map(w => `${cdn(w)} ${w}w`).join(', '), g };
+    return { src: cdn(ws[Math.min(1, ws.length - 1)] || 1400), srcset: ws.map(w => `${cdn(w)} ${w}w`).join(', '), full: cdn(Math.min(g ? g.w : 2400, 2400)), g };
   }
   return { src: PRE[lang] + lokal, g };
 }
@@ -162,8 +171,9 @@ const imgTag = (b, alt, extra = '', sizes = '') => {
   if (!b) return '';
   const wh = b.g ? ` width="${b.g.w}" height="${b.g.h}"` : (b.w ? ` width="${b.w}" height="${b.h}"` : '');
   const ss = b.srcset ? ` srcset="${esc(b.srcset)}"${sizes ? ` sizes="${sizes}"` : ''}` : '';
+  const full = b.full ? ` data-full="${esc(b.full)}"` : ''; // große Fassung für die Lightbox
   const ext = b.ext ? ' referrerpolicy="no-referrer" class="ext"' : '';
-  return `<img src="${esc(b.src)}"${ss}${wh} alt="${esc(alt)}"${extra}${ext}>`;
+  return `<img src="${esc(b.src)}"${ss}${wh}${full} alt="${esc(alt)}"${extra}${ext}>`;
 };
 
 /* ------------------------------------------------------------ Preise prüfen */
@@ -213,6 +223,22 @@ const pkgs = (packages.packages || []).filter(p => p.aktiv !== false).map((p, i)
   const id = (p.id || name).toLowerCase().replace(/ä/g, 'ae').replace(/ö/g, 'oe').replace(/ü/g, 'ue').replace(/ß/g, 'ss').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
   const uid = pkgIds.has(id) ? `${id}-${i + 1}` : id; pkgIds.add(uid);
   return { ...p, id: uid, naechte: Math.round((Date.parse(p.bis) - Date.parse(p.von)) / 864e5), gratis: num(p.gratis_naechte) || 0 };
+});
+
+/* Zimmerfotos prüfen */
+const zListe = a => (Array.isArray(a) ? a : []).filter(x => x && String(x.bild || '').trim());
+Object.entries(ZSEITEN).forEach(([k, z]) => {
+  const d = zimmer[k];
+  const pruefe = (liste, wo) => {
+    if (!liste.length) fehler.push(`Zimmerfotos ${wo}: Es muss mindestens ein Foto geben.`);
+    liste.forEach((x, i) => {
+      if (!String(x.de || '').trim()) fehler.push(`Zimmerfotos ${wo}, Foto ${i + 1}: Bildbeschreibung (Deutsch) fehlt.`);
+      const s = String(x.bild).trim();
+      if (!/^https?:\/\//i.test(s) && !bildgroesse(path.join(ROOT, s.replace(/^\//, '')))) fehler.push(`Zimmerfotos ${wo}, Foto ${i + 1}: Bild nicht gefunden (${s}).`);
+    });
+  };
+  pruefe(zListe(d.fotos), z.name);
+  (z.var || []).forEach(r => pruefe(zListe(d.varianten && d.varianten[r]), `${z.name} – ${basis.rooms[r].name}`));
 });
 
 if (fehler.length) {
@@ -320,12 +346,60 @@ function hinweisHtml(l) {
   return `<aside class="notice" aria-label="${T[l].aktuell}"${h.anzeigen_bis ? ` data-bis="${h.anzeigen_bis}"` : ''}><div class="wrap"><div class="notice__in rv-up"><span class="notice__k">${T[l].aktuell}</span><p>${inline(t.text)}${link}</p></div></div></aside>`;
 }
 
+/* ------------------------------------------------------------ Zimmerfotos */
+const zAlt = (x, l) => String((l !== 'de' && x[l]) || x.de || '').trim();
+const anzahl = { de: n => (n === 1 ? '1 Foto' : `${n} Fotos`), en: n => (n === 1 ? '1 photo' : `${n} photos`), it: n => `${n} foto` };
+/* Bild für eine Zimmerseite; alte Fotos von der bisherigen Website behalten ihre leichte Farbkorrektur (.ext) */
+function zImg(x, l, breiten, extra, sizes) {
+  const b = bild(x.bild, l, breiten);
+  if (b && !b.g && x.breite && x.hoehe) { b.w = x.breite; b.h = x.hoehe; }
+  /* eigene Bilder wie dz-golf-1560.jpg: kleinere Fassungen daneben (dz-golf-800.jpg) mitverwenden */
+  const m = !b.srcset && !b.ext && String(x.bild).trim().replace(/^\//, '').match(/^(assets\/img\/.+)-(\d+)\.(jpe?g|webp|png)$/i);
+  if (m) {
+    const dir = path.dirname(m[1]), stem = path.basename(m[1]);
+    const ws = fs.readdirSync(path.join(ROOT, dir)).map(f => f.match(new RegExp(`^${stem.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}-(\\d+)\\.${m[3]}$`, 'i'))).filter(Boolean).map(f => Number(f[1])).sort((a, c) => a - c);
+    if (ws.length > 1) b.srcset = ws.map(w => `${PRE[l]}${dir}/${stem}-${w}.${m[3]} ${w}w`).join(', ');
+  }
+  const alt = zAlt(x, l);
+  const tag = imgTag(b, alt, extra, sizes);
+  return /^\/?images\//.test(String(x.bild).trim()) && !b.ext ? tag.replace(/>$/, ' class="ext">') : tag;
+}
+const lbBtn = (x, l, inner, cls = '', style = '') =>
+  `<button type="button"${cls ? ` class="${cls}"` : ''} data-lb aria-label="${esc(T[l].lupe + zAlt(x, l))}"${style ? ` style="${style}"` : ''}>${inner}</button>`;
+
+function zimmerMedia(k, l) {
+  const [h, ...rest] = zListe(zimmer[k].fotos);
+  const main = lbBtn(h, l, zImg(h, l, [800, 1400, 2000], ' loading="eager" decoding="async" fetchpriority="high"', '(min-width: 900px) 800px, 100vw'), 'rd__main pic rv', 'aspect-ratio:3/2;max-width:800px');
+  if (!rest.length) return `\n      ${main}\n      `;
+  const cls = rest.length === 5 ? ' thumbs--5' : rest.length === 4 ? ' thumbs--4' : '';
+  const th = rest.map(x => lbBtn(x, l, zImg(x, l, [400, 800, 1400], ' loading="lazy" decoding="async"', '(min-width: 900px) 270px, 50vw'))).join('');
+  return `\n      ${main}\n      <div class="thumbs${cls}">${th}</div>\n      `;
+}
+const zimmerVar = (k, r) => zListe(zimmer[k].varianten && zimmer[k].varianten[r]);
+function zimmerVarGrid(k, r, l) {
+  const f = zimmerVar(k, r);
+  return `<div class="var__grid" data-n="${f.length}">` + f.map((x, i) => lbBtn(x, l, zImg(x, l, [400, 800, 1400], ' loading="lazy" decoding="async"', f.length === 5 && !i ? '(min-width: 900px) 400px, 100vw' : '(min-width: 900px) 200px, 50vw'))).join('') + '</div>';
+}
+const zimmerKarte = (k, l) => zImg(zListe(zimmer[k].fotos)[0], l, [800, 1400], ' loading="lazy" decoding="async"', '(max-width: 600px) 100vw, (max-width: 900px) 50vw, 40vw');
+/* Fotos fürs Anfrage-System: Einzelseiten → Seitenfotos, Varianten → Fotos der Variante */
+const zimmerFuerAnfrage = {};
+Object.entries(ZSEITEN).forEach(([k, z]) => {
+  (z.rooms || []).forEach(r => { zimmerFuerAnfrage[r] = zListe(zimmer[k].fotos); });
+  (z.var || []).forEach(r => { zimmerFuerAnfrage[r] = zimmerVar(k, r); });
+});
+const anfrageImg = r => (zimmerFuerAnfrage[r] || []).slice(0, 3).map(x => ({ src: bild(x.bild, 'de', [800, 1400]).src, alt: zAlt(x, 'de') }));
+const anfrageAlt = l => {
+  const m = { ...basis.i18n[l].alt };
+  Object.values(zimmerFuerAnfrage).flat().forEach(x => { const de = zAlt(x, 'de'), t = zAlt(x, l); if (t && t !== de) m[de] = t; });
+  return m;
+};
+
 /* ------------------------------------------------------------ data.js (Buchungsrechner) */
 function dataJs() {
   const rooms = ROOMS.map(r => {
     const price = {};
     saisonen.forEach(s => { const o = { base: s.grund.preise[r] }; s.zr.forEach(z => { o[z.id] = z.preise[r]; }); price[s.id] = o; });
-    return { ...basis.rooms[r], id: r, price };
+    return { ...basis.rooms[r], img: anfrageImg(r), id: r, price };
   });
   const i18n = {};
   ['en', 'it'].forEach(l => {
@@ -333,7 +407,7 @@ function dataJs() {
     saisonen.forEach(s => { per[s.grund.name] = sName(s.grund, 'name', l); s.zr.forEach(z => { per[z.name] = sName(z, 'name', l); }); });
     const pk = {}, pkx = {};
     pkgs.forEach(p => { const t = pick(p, l); pk[p.id] = t.titel; pkx[p.id] = { badge: p.badge || '', note: t.kurztext || '' }; });
-    i18n[l] = { rooms: basis.i18n[l].rooms, alt: basis.i18n[l].alt, periods: per, kidAges: KID_AGES[l], packages: pk, packageText: pkx };
+    i18n[l] = { rooms: basis.i18n[l].rooms, alt: anfrageAlt(l), periods: per, kidAges: KID_AGES[l], packages: pk, packageText: pkx };
   });
   const SB = {
     seasons: saisonen.map(s => ({ id: s.id, name: s.name, from: s.von, to: s.bis, base: s.grund.name, periods: s.zr.map(z => ({ id: z.id, name: z.name, ranges: z.daten.map(d => [d.von, d.bis]) })), hp: G.hp, tax: s.tax, kids: s.kids })),
@@ -380,6 +454,14 @@ LANGS.forEach(l => {
   ['preise.html', 'ausstattung.html'].forEach(f => ersetzeAlle(d + f, 'hp', () => eur(G.hp, l)));
   ['zimmer.html', 'einzelzimmer.html', 'doppelzimmer.html', 'wohn-schlafzimmer.html', 'sonnblick-suite.html', 'familiensuite.html']
     .forEach(f => ersetzeAlle(d + f, 'ab', g => eur(abPreis(g), l)));
+  Object.entries(ZSEITEN).forEach(([k, z]) => {
+    ersetze(d + k + '.html', 'zfotos', zimmerMedia(k, l));
+    if (z.var) {
+      ersetzeAlle(d + k + '.html', 'zvar', r => zimmerVarGrid(k, r, l));
+      ersetzeAlle(d + k + '.html', 'zanz', r => anzahl[l](zimmerVar(k, r).length));
+    }
+  });
+  ersetzeAlle(d + 'zimmer.html', 'zkarte', k => zimmerKarte(k, l));
 });
 
 console.log(`✔ Inhalte übernommen (${geaendert} Datei${geaendert === 1 ? '' : 'en'} aktualisiert, Stand ${heute}).`);
