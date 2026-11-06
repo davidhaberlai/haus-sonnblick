@@ -57,7 +57,7 @@
       <div class="social" role="navigation" aria-label="Social Media"><a href="https://www.instagram.com/hotel_haus_sonnblick/" target="_blank" rel="noopener" aria-label="Haus Sonnblick auf Instagram" title="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3.25" y="3.25" width="17.5" height="17.5" rx="5" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="17.2" cy="6.8" r="1.05" fill="currentColor"/></svg></a><a href="https://www.facebook.com/profile.php?id=61596033185981" target="_blank" rel="noopener" aria-label="Haus Sonnblick auf Facebook" title="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M13.4 21v-7.6h2.6l.4-3h-3V8.5c0-.9.3-1.5 1.5-1.5h1.6V4.3c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.2H7.7v3h2.6V21" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></a></div>
       <div class="lang" role="navigation" aria-label="Sprache"><a href="kontakt.html" hreflang="de" lang="de" aria-current="true">DE</a><a href="en/kontakt.html" hreflang="en" lang="en">EN</a><a href="it/kontakt.html" hreflang="it" lang="it">IT</a></div>
       <a class="hdr__tel" href="tel:+434240331">+43 4240 331</a>
-      <a class="btn hdr__book" href="buchen.html">Buchen</a>
+      <a class="btn hdr__book" href="online-buchen" target="_blank" rel="noopener">Buchen</a>
     </div>
     <button class="burger" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mnav"><i></i><i></i><i></i></button>
   </div>
@@ -67,7 +67,7 @@
   <div class="mnav__foot">
     <div class="lang lang--m" role="navigation" aria-label="Sprache"><a href="kontakt.html" hreflang="de" lang="de" aria-current="true">DE</a><a href="en/kontakt.html" hreflang="en" lang="en">EN</a><a href="it/kontakt.html" hreflang="it" lang="it">IT</a></div>
     <div class="social social--m" role="navigation" aria-label="Social Media"><a href="https://www.instagram.com/hotel_haus_sonnblick/" target="_blank" rel="noopener" aria-label="Haus Sonnblick auf Instagram" title="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3.25" y="3.25" width="17.5" height="17.5" rx="5" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="17.2" cy="6.8" r="1.05" fill="currentColor"/></svg></a><a href="https://www.facebook.com/profile.php?id=61596033185981" target="_blank" rel="noopener" aria-label="Haus Sonnblick auf Facebook" title="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M13.4 21v-7.6h2.6l.4-3h-3V8.5c0-.9.3-1.5 1.5-1.5h1.6V4.3c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.2H7.7v3h2.6V21" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></a></div>
-    <a class="btn btn--sun" href="buchen.html">Zimmer buchen</a>
+    <a class="btn btn--sun" href="online-buchen" target="_blank" rel="noopener">Zimmer buchen</a>
     <p>Telefon <a href="tel:+434240331">+43 4240 331</a><br><a href="mailto:info@haus-sonnblick.at">info@haus-sonnblick.at</a></p>
   </div>
 </div>
@@ -94,7 +94,8 @@
         <p class="sr-only"><label>Bitte leer lassen <input name="firma" tabindex="-1" autocomplete="off"></label></p>
         <div class="field"><label for="k-name">Name</label><input id="k-name" name="name" autocomplete="name" required><span class="err">Bitte geben Sie Ihren Namen an.</span></div>
         <div class="field"><label for="k-mail">E-Mail</label><input id="k-mail" name="email" type="email" autocomplete="email" required><span class="err">Bitte geben Sie eine gültige E-Mail-Adresse an.</span></div>
-        <div class="field full"><label for="k-betreff">Betreff</label><select id="k-betreff" name="betreff"><option>Allgemeine Anfrage</option><option>Frage zu einer Buchung</option><option>Halbpension</option><option>Anreise &amp; Transfer</option></select></div>
+        <div class="field"><label for="k-tel">Telefon <small>(optional)</small></label><input id="k-tel" name="telefon" type="tel" autocomplete="tel"></div>
+        <div class="field"><label for="k-betreff">Betreff</label><select id="k-betreff" name="betreff"><option>Allgemeine Anfrage</option><option>Frage zu einer Buchung</option><option>Halbpension</option><option>Anreise &amp; Transfer</option></select></div>
         <div class="field full"><label for="k-msg">Nachricht</label><textarea id="k-msg" name="nachricht" required></textarea><span class="err">Bitte schreiben Sie uns eine kurze Nachricht.</span></div>
         <label class="check full"><input type="checkbox" name="datenschutz" required> <span>Ich stimme zu, dass meine Angaben zur Beantwortung meiner Anfrage verarbeitet werden. Details in der <a href="rechtliches.html#datenschutz">Datenschutzerklärung</a>.</span></label>
         <div class="full"><button class="btn" type="submit">Nachricht senden</button><p class="bmsg" id="contactMsg" role="status"></p></div>
@@ -130,7 +131,7 @@
       </div>
       <div>
         <h4>Aufenthalt</h4>
-        <ul><li><a href="zimmer.html">Zimmer &amp; Suiten</a></li><li><a href="preise.html">Preise &amp; Infos</a></li><li><a href="buchen.html">Buchen &amp; anfragen</a></li><li><a href="angebote.html">Angebote &amp; Packages</a></li><li><a href="gutscheine.html">Gutscheine</a></li><li><a href="anreise.html">Anreise</a></li><li><a href="kontakt.html">Kontakt</a></li></ul>
+        <ul><li><a href="zimmer.html">Zimmer &amp; Suiten</a></li><li><a href="preise.html">Preise &amp; Infos</a></li><li><a href="buchen.html">Buchen &amp; Kontakt</a></li><li><a href="angebote.html">Angebote &amp; Packages</a></li><li><a href="gutscheine.html">Gutscheine</a></li><li><a href="anreise.html">Anreise</a></li><li><a href="kontakt.html">Kontakt</a></li></ul>
       </div>
       <div>
         <h4>Service</h4>

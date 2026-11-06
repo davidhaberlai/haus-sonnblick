@@ -299,7 +299,7 @@ function packageSektionen(l) {
         ${leist.length ? `<ul class="ticks">\n          ${leist.map(x => `<li>${esc(x)}</li>`).join('\n          ')}\n        </ul>` : ''}
         ${preis}
         ${t.beispiel ? `<p class="draft-note">${inline(t.beispiel)}</p>` : ''}
-        <div class="pk__btns"><a class="btn btn--sun" href="buchen.html?an=${p.von}&amp;ab=${p.bis}">${T[l].anfragen}</a><a class="btn btn--ghost" href="kontakt.html">${T[l].kontakt}</a></div>
+        <div class="pk__btns"><a class="btn btn--sun" href="kontakt.html?package=${encodeURIComponent(t.titel)}#kontakt">${T[l].anfragen}</a><a class="btn btn--ghost" href="tel:+434240331">+43 4240 331</a></div>
         ${t.kleingedrucktes ? `<p class="draft-note pk__fine">${inline(t.kleingedrucktes)}</p>` : ''}
       </div>
     </div>

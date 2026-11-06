@@ -36,3 +36,23 @@
   to = "/404.html"
   status = 404
   force = true
+
+# Online-Buchung (feratel booking&more) – alle „Buchen“-Buttons der Website
+# zeigen auf diese Adressen. Ändert sich der Buchungslink, nur hier anpassen.
+[[redirects]]
+  from = "/online-buchen"
+  to = "https://direct.bookingandmore.com/accommodation/1e0c3a11-3899-4e10-b2c0-a07bb2e85c2f?lang=de"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/en/online-buchen"
+  to = "https://direct.bookingandmore.com/accommodation/1e0c3a11-3899-4e10-b2c0-a07bb2e85c2f?lang=en"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/it/online-buchen"
+  to = "https://direct.bookingandmore.com/accommodation/1e0c3a11-3899-4e10-b2c0-a07bb2e85c2f?lang=it"
+  status = 302
+  force = true

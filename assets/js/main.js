@@ -6,9 +6,9 @@
   const $$ = (s, c = document) => [...c.querySelectorAll(s)];
   const LANG = (doc.lang || 'de').slice(0, 2);
   const TT = {
-    de: { mOpen: 'Menü öffnen', mClose: 'Menü schließen', sentH: 'Danke für Ihre Nachricht!', sentP: 'Wir melden uns so rasch wie möglich bei Ihnen.', err: 'Bitte prüfen Sie die markierten Felder.', lb: 'Bildansicht', x: 'Schließen', prev: 'Vorheriges Bild', next: 'Nächstes Bild' },
-    en: { mOpen: 'Open menu', mClose: 'Close menu', sentH: 'Thank you for your message!', sentP: 'We will get back to you as soon as possible.', err: 'Please check the highlighted fields.', lb: 'Image view', x: 'Close', prev: 'Previous image', next: 'Next image' },
-    it: { mOpen: 'Apri il menu', mClose: 'Chiudi il menu', sentH: 'Grazie per il vostro messaggio!', sentP: 'Vi risponderemo il prima possibile.', err: 'Controllate i campi evidenziati.', lb: 'Visualizzazione immagine', x: 'Chiudi', prev: 'Immagine precedente', next: 'Immagine successiva' }
+    de: { mOpen: 'Menü öffnen', mClose: 'Menü schließen', sentH: 'Danke für Ihre Nachricht!', sentP: 'Wir melden uns so rasch wie möglich bei Ihnen.', err: 'Bitte prüfen Sie die markierten Felder.', pkg: 'Ich interessiere mich für das Package „%s“.\n\nWunschtermin: \nPersonen: ', lb: 'Bildansicht', x: 'Schließen', prev: 'Vorheriges Bild', next: 'Nächstes Bild' },
+    en: { mOpen: 'Open menu', mClose: 'Close menu', sentH: 'Thank you for your message!', sentP: 'We will get back to you as soon as possible.', err: 'Please check the highlighted fields.', pkg: 'I am interested in the package “%s”.\n\nPreferred dates: \nGuests: ', lb: 'Image view', x: 'Close', prev: 'Previous image', next: 'Next image' },
+    it: { mOpen: 'Apri il menu', mClose: 'Chiudi il menu', sentH: 'Grazie per il vostro messaggio!', sentP: 'Vi risponderemo il prima possibile.', err: 'Controllate i campi evidenziati.', pkg: 'Sono interessato/a al pacchetto «%s».\n\nDate desiderate: \nPersone: ', lb: 'Visualizzazione immagine', x: 'Chiudi', prev: 'Immagine precedente', next: 'Immagine successiva' }
   };
   const TXT = TT[LANG] || TT.de;
 
@@ -214,6 +214,10 @@
     const showSent = () => { cf.outerHTML = `<div class="sent kontakt__b"><h3>${TXT.sentH}</h3><p>${TXT.sentP}</p></div>`; };
     if (new URLSearchParams(location.search).get('gesendet')) showSent();
     else {
+      /* Aufruf über „Package anfragen“: Nachricht vorbefüllen */
+      const pkg = (new URLSearchParams(location.search).get('package') || '').slice(0, 120);
+      const msg = $('textarea[name="nachricht"]', cf);
+      if (pkg && msg && !msg.value) msg.value = TXT.pkg.replace('%s', pkg);
       $$('input,textarea', cf).forEach(i => i.addEventListener('input', () => { const f = i.closest('.field,.check'); if (f) f.classList.remove('is-bad'); }));
       cf.addEventListener('submit', async e => {
         e.preventDefault();

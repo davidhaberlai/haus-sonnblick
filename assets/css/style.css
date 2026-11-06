@@ -1317,3 +1317,42 @@ p:last-child{margin-bottom:0}
 .rent__btns{display:grid;gap:.7rem}
 #skischule{scroll-margin-top:6rem}
 @media (max-width:900px){.rent--flip .rent__txt,.rent--flip .rent__card{grid-column:1/-1;grid-row:auto}}
+
+/* ==========================================================================
+   Online-Buchung über feratel + Kontaktformular (V4.13)
+   ========================================================================== */
+/* Buchen-Seite: großer Buchungsblock */
+.obook-sec{padding:0 0 clamp(1rem,3vw,2rem)}
+.obook{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);background:var(--fir);color:var(--cream);min-height:clamp(30rem,44vw,36rem)}
+.obook__pic{position:relative;overflow:hidden;min-height:18rem}
+.obook__pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%;transform:scale(1.04);transition:transform 1.6s var(--ease)}
+.obook.is-in .obook__pic img{transform:scale(1)}
+.obook__body{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:1.15rem;padding:clamp(2rem,5vw,4.5rem)}
+.obook__body .eyebrow{color:var(--sun-soft)}
+.obook__body h2{font-size:clamp(2rem,3.6vw,3.1rem);line-height:1.08;max-width:15ch}
+.obook__body h2 em{color:var(--sun-soft)}
+.obook__body > p{margin:0;max-width:34rem;color:rgba(245,240,230,.8)}
+.obook__list{list-style:none;margin:.4rem 0 0;padding:0;display:grid;gap:.7rem}
+.obook__list li{display:flex;align-items:flex-start;gap:.75rem;font-size:.97rem;color:var(--cream)}
+.obook__list svg{flex:none;width:1.05rem;height:1.05rem;margin-top:.22rem;color:var(--sun)}
+.obook__act{display:flex;flex-direction:column;align-items:flex-start;gap:.8rem;margin-top:1rem}
+.obook__btn{min-height:3.8rem;padding:1rem 2.1rem;font-size:.95rem}
+.obook__btn:hover{background:var(--cream);border-color:var(--cream);color:var(--ink)}
+.obook__note{font-size:.8rem;line-height:1.5;color:rgba(245,240,230,.58)}
+@media (max-width:900px){
+  .obook{grid-template-columns:1fr;min-height:0}
+  .obook__pic{aspect-ratio:3/2;min-height:0}
+  .obook__btn{width:100%}
+}
+/* Kontaktbereich auf der Buchen-Seite */
+.kontakt__h{font-size:clamp(2rem,3.4vw,2.8rem);margin:.9rem 0 1.1rem}
+.field label small{font-size:inherit;font-weight:400;letter-spacing:.08em;text-transform:none;opacity:.8}
+
+/* Startseite: Buchungsleiste ohne Datumsfelder */
+.bookbar__form--cta{grid-template-columns:repeat(3,minmax(0,1fr)) auto}
+.bookbar__i{gap:.3rem}
+.bookbar__i span{font-size:.68rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-3)}
+.bookbar__i b{font-family:var(--serif);font-size:1.2rem;font-weight:400;line-height:1.25;color:var(--ink)}
+.bookbar__form--cta .bookbar__go{display:inline-flex;align-items:center;text-decoration:none}
+@media (max-width:1100px){.bookbar__form--cta .bookbar__i:nth-child(3){display:none}.bookbar__form--cta{grid-template-columns:repeat(2,minmax(0,1fr)) auto}}
+@media (max-width:860px){.bookbar__form--cta{grid-template-columns:1fr}.bookbar__form--cta .bookbar__go{grid-column:1/-1}}
