@@ -1,0 +1,142 @@
+{
+  "lage": [
+    {
+      "ziel": "Ski-Shuttle-Haltestelle",
+      "entfernung": "direkt unter dem Haus",
+      "ziel_en": "Ski shuttle stop",
+      "entfernung_en": "right below the house",
+      "ziel_it": "Fermata dello ski-shuttle",
+      "entfernung_it": "proprio sotto la casa"
+    },
+    {
+      "ziel": "Alpe-Adria-Trail",
+      "entfernung": "direkt hinter dem Haus",
+      "ziel_en": "Alpe-Adria-Trail",
+      "entfernung_en": "right behind the house",
+      "ziel_it": "Alpe-Adria-Trail",
+      "entfernung_it": "proprio dietro la casa"
+    },
+    {
+      "ziel": "Golfplatz Bad Kleinkirchheim",
+      "entfernung": "ca. 500 m",
+      "ziel_en": "Bad Kleinkirchheim golf course",
+      "entfernung_en": "approx. 500 m",
+      "ziel_it": "Campo da golf di Bad Kleinkirchheim",
+      "entfernung_it": "ca. 500 m"
+    },
+    {
+      "ziel": "Thermal-Römerbad",
+      "entfernung": "ca. 600 m",
+      "ziel_en": "Thermal-Römerbad",
+      "entfernung_en": "approx. 600 m",
+      "ziel_it": "Terme Römerbad",
+      "entfernung_it": "ca. 600 m"
+    },
+    {
+      "ziel": "Langlaufloipe",
+      "entfernung": "wenige Gehminuten",
+      "ziel_en": "Cross-country ski trail",
+      "entfernung_en": "a few minutes’ walk",
+      "ziel_it": "Pista da fondo",
+      "entfernung_it": "pochi minuti a piedi"
+    },
+    {
+      "ziel": "Gondelbahn Kaiserburg (Talstation)",
+      "entfernung": "ca. 1 km",
+      "ziel_en": "Kaiserburg gondola (valley station)",
+      "entfernung_en": "approx. 1 km",
+      "ziel_it": "Cabinovia Kaiserburg (stazione a valle)",
+      "entfernung_it": "ca. 1 km"
+    },
+    {
+      "ziel": "Flow Country Trail – Auffahrt mit der Kaiserburgbahn",
+      "entfernung": "ca. 1 km",
+      "ziel_en": "Flow Country Trail – uphill with the Kaiserburg gondola",
+      "entfernung_en": "approx. 1 km",
+      "ziel_it": "Flow Country Trail – salita con la cabinovia Kaiserburg",
+      "entfernung_it": "ca. 1 km"
+    },
+    {
+      "ziel": "Kaiserburg Bob (Rollbobbahn)",
+      "entfernung": "ca. 1,1 km",
+      "ziel_en": "Kaiserburg Bob (alpine coaster)",
+      "entfernung_en": "approx. 1.1 km",
+      "ziel_it": "Kaiserburg Bob (bob su rotaia)",
+      "entfernung_it": "ca. 1,1 km"
+    },
+    {
+      "ziel": "Sport 2000 Rent (Skiverleih)",
+      "entfernung": "ca. 1 km",
+      "ziel_en": "Sport 2000 Rent (ski rental)",
+      "entfernung_en": "approx. 1 km",
+      "ziel_it": "Sport 2000 Rent (noleggio sci)",
+      "entfernung_it": "ca. 1 km"
+    },
+    {
+      "ziel": "Skischule Brunner – 10 % für Hausgäste",
+      "entfernung": "ca. 1 km",
+      "ziel_en": "Skischule Brunner – 10 % off for guests",
+      "entfernung_en": "approx. 1 km",
+      "ziel_it": "Skischule Brunner – 10 % di sconto per gli ospiti",
+      "entfernung_it": "ca. 1 km"
+    },
+    {
+      "ziel": "Flughafen Klagenfurt",
+      "entfernung": "ca. 55 km",
+      "ziel_en": "Klagenfurt Airport",
+      "entfernung_en": "approx. 55 km",
+      "ziel_it": "Aeroporto di Klagenfurt",
+      "entfernung_it": "ca. 55 km"
+    }
+  ],
+  "sommer": [
+    {
+      "ziel": "Alpe-Adria-Trail",
+      "entfernung": "direkt hinter dem Haus",
+      "ziel_en": "Alpe-Adria-Trail",
+      "entfernung_en": "right behind the house",
+      "ziel_it": "Alpe-Adria-Trail",
+      "entfernung_it": "proprio dietro la casa"
+    },
+    {
+      "ziel": "Golfplatz Bad Kleinkirchheim",
+      "entfernung": "ca. 500 m",
+      "ziel_en": "Bad Kleinkirchheim golf course",
+      "entfernung_en": "approx. 500 m",
+      "ziel_it": "Campo da golf di Bad Kleinkirchheim",
+      "entfernung_it": "ca. 500 m"
+    },
+    {
+      "ziel": "Thermal-Römerbad",
+      "entfernung": "ca. 600 m",
+      "ziel_en": "Thermal-Römerbad",
+      "entfernung_en": "approx. 600 m",
+      "ziel_it": "Terme Römerbad",
+      "entfernung_it": "ca. 600 m"
+    },
+    {
+      "ziel": "Gondelbahn Kaiserburg",
+      "entfernung": "ca. 1 km",
+      "ziel_en": "Kaiserburg gondola",
+      "entfernung_en": "approx. 1 km",
+      "ziel_it": "Cabinovia Kaiserburg",
+      "entfernung_it": "ca. 1 km"
+    },
+    {
+      "ziel": "Flow Country Trail – Auffahrt mit der Kaiserburgbahn",
+      "entfernung": "ca. 1 km",
+      "ziel_en": "Flow Country Trail – uphill with the Kaiserburg gondola",
+      "entfernung_en": "approx. 1 km",
+      "ziel_it": "Flow Country Trail – salita con la cabinovia Kaiserburg",
+      "entfernung_it": "ca. 1 km"
+    },
+    {
+      "ziel": "Kaiserburg Bob",
+      "entfernung": "ca. 1,1 km",
+      "ziel_en": "Kaiserburg Bob",
+      "entfernung_en": "approx. 1.1 km",
+      "ziel_it": "Kaiserburg Bob",
+      "entfernung_it": "ca. 1,1 km"
+    }
+  ]
+}

@@ -1,0 +1,215 @@
+{
+  "saison": "2026/27",
+  "saisonende": "2027-04-15",
+  "einleitung_winter": "Mit diesen Angeboten der Bergbahnen wird der Skiurlaub 2026/27 günstiger – vom Gratis-Skitag im Dezember bis zum Sonnenskilauf ab März.",
+  "einleitung_angebote": "Die Bad Kleinkirchheimer Bergbahnen machen den Skiurlaub mit diesen Aktionen günstiger. Wir beraten Sie gern, welche Woche am besten zu Ihnen passt.",
+  "startseite_text": "Ski-Opening mit Gratis-Skitag, 1-€-Skipass für Kinder, Ski-Wellness-Wochen und Sonnenskilauf im März.",
+  "hinweis": "Angebote der Bad Kleinkirchheimer Bergbahnen für das Skigebiet Bad Kleinkirchheim, gültig bei Buchung über einen Partnerbetrieb; die Skipass-Angebote sind nicht miteinander kombinierbar. Geöffnete Abfahrten und Lifte sind witterungs- und auslastungsabhängig – die Bergbahnen informieren ab Saisonstart laufend über den aktuellen Stand. Alle Bedingungen auf [badkleinkirchheim.com](https://www.badkleinkirchheim.com/unterkuenfte/winter-aktionswochen/).",
+  "en": {
+    "einleitung_winter": "These cable car offers make your 2026/27 ski holiday more affordable – from a free ski day in December to spring sun skiing in March.",
+    "einleitung_angebote": "With these offers, the Bad Kleinkirchheim cable cars make your ski holiday more affordable. We are happy to advise you on which week suits you best.",
+    "startseite_text": "Ski Opening with a free ski day, € 1 ski pass for children, Ski Wellness Weeks and spring sun skiing in March.",
+    "hinweis": "Offers of the Bad Kleinkirchheim cable cars for the Bad Kleinkirchheim ski area, valid when booking with a partner accommodation; the ski pass offers cannot be combined. Open slopes and lifts depend on weather and demand – from the start of the season the cable cars provide regular updates. Full terms at [badkleinkirchheim.com](https://www.badkleinkirchheim.com/en/accommodations/winter-action-weeks/)."
+  },
+  "it": {
+    "einleitung_winter": "Con queste offerte degli impianti la vacanza sulla neve 2026/27 costa meno – dalla giornata di sci gratuita a dicembre allo sci di primavera a marzo.",
+    "einleitung_angebote": "Con queste offerte gli impianti di Bad Kleinkirchheim rendono la vacanza sulla neve più conveniente. Vi consigliamo volentieri la settimana più adatta a voi.",
+    "startseite_text": "Ski Opening con giornata di sci gratuita, skipass bambini a 1 €, Settimane Sci & Wellness e sci di primavera a marzo.",
+    "hinweis": "Offerte degli impianti di Bad Kleinkirchheim per il comprensorio sciistico di Bad Kleinkirchheim, valide prenotando presso una struttura partner; le offerte skipass non sono cumulabili. Le piste e gli impianti aperti dipendono dal meteo e dall’affluenza – da inizio stagione gli impianti informano costantemente sulla situazione attuale. Tutte le condizioni su [badkleinkirchheim.com](https://www.badkleinkirchheim.com/it/alloggi/settimane-promozionali-invernali/)."
+  },
+  "angebote": [
+    {
+      "kennzeichen": "3 = 2",
+      "titel": "Ski-Opening",
+      "kurzname": "Ski-Opening",
+      "zeitraeume": [
+        {
+          "von": "2026-12-04",
+          "bis": "2026-12-23"
+        }
+      ],
+      "punkte": [
+        {
+          "punkt": "Der 3-Tages-Skipass zum Preis von 2 Tagen, der 4-Tages-Skipass zum Preis von 3 Tagen."
+        },
+        {
+          "punkt": "Der Skipass ist eine „Wahlkarte“: An jedem Tag entscheiden Sie, ob Sie Ski fahren oder in die Therme gehen – Sauna gegen Aufzahlung."
+        },
+        {
+          "punkt": "Dazu Therme & Sauna zum Vorzugspreis: 15 % Ermäßigung mit Gästekarte oder Regionscard."
+        }
+      ],
+      "en": {
+        "kennzeichen": "3 = 2",
+        "titel": "Ski Opening",
+        "kurzname": "Ski Opening",
+        "punkte": [
+          {
+            "punkt": "The 3-day ski pass for the price of 2 days, the 4-day ski pass for the price of 3 days."
+          },
+          {
+            "punkt": "The pass is a “choice card”: each day you decide whether to ski or visit the thermal spa – sauna for a surcharge."
+          },
+          {
+            "punkt": "Plus spa & sauna at a special rate: 15 % off with the guest card or regional card."
+          }
+        ]
+      },
+      "it": {
+        "kennzeichen": "3 = 2",
+        "titel": "Ski Opening",
+        "kurzname": "Ski Opening",
+        "punkte": [
+          {
+            "punkt": "Lo skipass di 3 giorni al prezzo di 2, lo skipass di 4 giorni al prezzo di 3."
+          },
+          {
+            "punkt": "Lo skipass è una «carta a scelta»: ogni giorno decidete se sciare o andare alle terme – sauna con supplemento."
+          },
+          {
+            "punkt": "In più terme e sauna a prezzo agevolato: 15 % di sconto con la Gästekarte o la Regionscard."
+          }
+        ]
+      }
+    },
+    {
+      "kennzeichen": "1 €",
+      "titel": "1-€-Skipass für Kinder",
+      "kurzname": "1-€-Skipass",
+      "zeitraeume": [
+        {
+          "von": "2027-01-09",
+          "bis": "2027-03-05"
+        }
+      ],
+      "punkte": [
+        {
+          "punkt": "Elternfreundlich sparen: Ab einem 6-Tages-Skipass für Erwachsene fährt ein Kind bis 11,99 Jahre um 6 € mit – also 1 € pro Tag."
+        },
+        {
+          "punkt": "Ab 7 Tagen kostet der Kinderskipass 12 €, ab 13 Tagen 18 €."
+        },
+        {
+          "punkt": "Ein Kind pro vollzahlendem Erwachsenen; es werden zwei Skipässe ausgegeben."
+        }
+      ],
+      "en": {
+        "kennzeichen": "1 €",
+        "titel": "1-euro ski pass for kids",
+        "kurzname": "1-euro pass",
+        "punkte": [
+          {
+            "punkt": "Family-friendly savings: with an adult 6-day ski pass, one child up to 11.99 years skis for €6 – that is €1 per day."
+          },
+          {
+            "punkt": "From 7 days the child pass costs €12, from 13 days €18."
+          },
+          {
+            "punkt": "One child per full-paying adult; two separate ski passes are issued."
+          }
+        ]
+      },
+      "it": {
+        "kennzeichen": "1 €",
+        "titel": "Skipass da 1 € per bambini",
+        "kurzname": "Skipass 1 €",
+        "punkte": [
+          {
+            "punkt": "Risparmio a misura di famiglia: con uno skipass di 6 giorni per adulti un bambino fino a 11,99 anni scia per 6 € – cioè 1 € al giorno."
+          },
+          {
+            "punkt": "Da 7 giorni lo skipass bambino costa 12 €, da 13 giorni 18 €."
+          },
+          {
+            "punkt": "Un bambino per ogni adulto pagante; vengono emessi due skipass."
+          }
+        ]
+      }
+    },
+    {
+      "kennzeichen": "3×",
+      "titel": "Ski-Wellness-Wochen",
+      "kurzname": "Ski-Wellness",
+      "zeitraeume": [
+        {
+          "von": "2027-01-09",
+          "bis": "2027-01-29"
+        },
+        {
+          "von": "2027-02-20",
+          "bis": "2027-03-05"
+        }
+      ],
+      "punkte": [
+        {
+          "punkt": "Thermeneintritt im Thermal-Römerbad inklusive: ab 3-Tages-Skipass 1× Therme frei, ab 4 Tagen 2×, ab 6 Tagen 3×."
+        }
+      ],
+      "en": {
+        "kennzeichen": "3×",
+        "titel": "Ski & Wellness Weeks",
+        "kurzname": "Ski & Wellness",
+        "punkte": [
+          {
+            "punkt": "Entry to the Thermal Römerbad included: with a 3-day ski pass 1× spa entry, from 4 days 2×, from 6 days 3×."
+          }
+        ]
+      },
+      "it": {
+        "kennzeichen": "3×",
+        "titel": "Settimane Sci & Wellness",
+        "kurzname": "Sci & Wellness",
+        "punkte": [
+          {
+            "punkt": "Ingresso al Thermal Römerbad incluso: con skipass di 3 giorni 1× terme gratis, da 4 giorni 2×, da 6 giorni 3×."
+          }
+        ]
+      }
+    },
+    {
+      "kennzeichen": "−30 %",
+      "titel": "Sonnenskilauf",
+      "kurzname": "Sonnenskilauf",
+      "zeitraeume": [
+        {
+          "von": "2027-03-06",
+          "bis": ""
+        }
+      ],
+      "punkte": [
+        {
+          "punkt": "30 % Ermäßigung ab einem 3-Tages-Skipass."
+        },
+        {
+          "punkt": "Dazu 1× Thermeneintritt im Thermal-Römerbad gratis."
+        }
+      ],
+      "en": {
+        "kennzeichen": "−30 %",
+        "titel": "Spring skiing",
+        "kurzname": "Spring skiing",
+        "punkte": [
+          {
+            "punkt": "30 % off from a 3-day ski pass."
+          },
+          {
+            "punkt": "Plus 1× free entry to the Thermal Römerbad."
+          }
+        ]
+      },
+      "it": {
+        "kennzeichen": "−30 %",
+        "titel": "Sci di primavera",
+        "kurzname": "Sci di primavera",
+        "punkte": [
+          {
+            "punkt": "30 % di sconto a partire da uno skipass di 3 giorni."
+          },
+          {
+            "punkt": "In più 1× ingresso gratuito al Thermal Römerbad."
+          }
+        ]
+      }
+    }
+  ]
+}

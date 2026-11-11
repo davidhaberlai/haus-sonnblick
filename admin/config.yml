@@ -123,12 +123,13 @@ collections:
       widget: number
       value_type: float
       min: 0
-    - label: Zuschlag Einzelnutzung (%)
-      name: einzelnutzung_prozent
+    - label: Einzelnutzung – Abzug vom Preis für zwei Personen (%)
+      name: einzelnutzung_abzug_prozent
       widget: number
       value_type: int
       min: 0
-      hint: Doppelzimmer für 1 Person
+      max: 50
+      hint: 'Ein Zimmer für eine Person kostet den Preis für zwei Personen minus diesen Prozentsatz. Beispiel bei 20: € 63 × 2 = € 126, minus 20 % = € 100,80 pro Nacht.'
     - label: Zuschlag Kurzaufenthalt 1–2 Nächte (%)
       name: kurzaufenthalt_prozent
       widget: number
@@ -647,6 +648,590 @@ collections:
       - label: Italienisch
         name: it
         widget: text
+- name: aktionswochen
+  label: Aktionswochen der Bergbahnen
+  description: Die Winter-Aktionen der Bad Kleinkirchheimer Bergbahnen (Ski-Opening, Kinderskipass usw.). Erscheinen auf der Winterseite, unter „Angebote & Packages“ und als Karte auf der Startseite. Die Zeitleiste zeichnet sich aus den Daten von selbst.
+  editor:
+    preview: false
+  files:
+  - name: aktionswochen
+    label: Aktionswochen der Bergbahnen
+    file: _data/aktionswochen.json
+    fields:
+    - label: Saison
+      name: saison
+      widget: string
+      hint: z. B. „2027/28“ – erscheint in Überschrift und Startseiten-Karte.
+    - label: Saisonende der Bergbahnen
+      name: saisonende
+      widget: datetime
+      format: YYYY-MM-DD
+      date_format: DD.MM.YYYY
+      time_format: false
+      hint: Ende der Zeitleiste. Angebote ohne „Bis“-Datum laufen bis hierher.
+    - label: Angebote
+      name: angebote
+      widget: list
+      label_singular: Angebot
+      collapsed: true
+      min: 1
+      summary: '{{fields.kennzeichen}} · {{fields.titel}}'
+      fields:
+      - label: Kennzeichen
+        name: kennzeichen
+        widget: string
+        required: false
+        hint: Kurz und groß dargestellt, z. B. „3 = 2“, „1 €“, „−30 %“
+      - { label: Titel, name: titel, widget: string }
+      - label: Kurzname für die Zeitleiste
+        name: kurzname
+        widget: string
+        hint: Ein bis zwei Wörter, z. B. „Ski-Wellness“
+      - label: Zeiträume
+        name: zeitraeume
+        widget: list
+        label_singular: Zeitraum
+        min: 1
+        summary: '{{fields.von | date(''DD.MM.YYYY'')}} – {{fields.bis | date(''DD.MM.YYYY'')}}'
+        hint: Mehrere Zeiträume möglich. Beim letzten Zeitraum „Bis“ leer lassen = bis Saisonende.
+        fields:
+        - label: Von
+          name: von
+          widget: datetime
+          format: YYYY-MM-DD
+          date_format: DD.MM.YYYY
+          time_format: false
+        - label: Bis
+          name: bis
+          widget: datetime
+          format: YYYY-MM-DD
+          date_format: DD.MM.YYYY
+          time_format: false
+          required: false
+          default: ''
+      - label: Leistungen
+        name: punkte
+        widget: list
+        label_singular: Leistung
+        summary: '{{fields.punkt}}'
+        hint: Eine Leistung = ein Satz. Bei nur einer Leistung erscheint sie als Absatz.
+        fields:
+        - { label: Leistung, name: punkt, widget: text }
+      - label: Englisch
+        name: en
+        widget: object
+        collapsed: true
+        required: false
+        hint: Leere Felder werden auf Deutsch angezeigt.
+        fields:
+        - { label: Kennzeichen, name: kennzeichen, widget: string, required: false }
+        - { label: Titel, name: titel, widget: string, required: false }
+        - { label: Kurzname für die Zeitleiste, name: kurzname, widget: string, required: false }
+        - label: Leistungen
+          name: punkte
+          widget: list
+          required: false
+          summary: '{{fields.punkt}}'
+          hint: Leer lassen = deutsche Leistungen. Wenn ausgefüllt, bitte alle übersetzen.
+          fields:
+          - { label: Leistung, name: punkt, widget: text }
+      - label: Italienisch
+        name: it
+        widget: object
+        collapsed: true
+        required: false
+        hint: Leere Felder werden auf Deutsch angezeigt.
+        fields:
+        - { label: Kennzeichen, name: kennzeichen, widget: string, required: false }
+        - { label: Titel, name: titel, widget: string, required: false }
+        - { label: Kurzname für die Zeitleiste, name: kurzname, widget: string, required: false }
+        - label: Leistungen
+          name: punkte
+          widget: list
+          required: false
+          summary: '{{fields.punkt}}'
+          hint: Leer lassen = deutsche Leistungen. Wenn ausgefüllt, bitte alle übersetzen.
+          fields:
+          - { label: Leistung, name: punkt, widget: text }
+    - label: Einleitung auf der Winterseite
+      name: einleitung_winter
+      widget: text
+    - label: Einleitung auf der Seite „Angebote & Packages“
+      name: einleitung_angebote
+      widget: text
+    - label: Text auf der Startseite
+      name: startseite_text
+      widget: text
+      hint: Ein Satz für die Karte „Aktionswochen der Bergbahnen“ auf der Startseite.
+    - label: Hinweis unter den Angeboten
+      name: hinweis
+      widget: text
+      required: false
+      hint: 'Kleingedrucktes. Ein Link im Text: [badkleinkirchheim.com](https://www.badkleinkirchheim.com/…)'
+    - label: Englisch
+      name: en
+      widget: object
+      collapsed: true
+      required: false
+      hint: Leere Felder werden auf Deutsch angezeigt.
+      fields:
+      - { label: Einleitung Winterseite, name: einleitung_winter, widget: text, required: false }
+      - { label: Einleitung Angebote-Seite, name: einleitung_angebote, widget: text, required: false }
+      - { label: Text auf der Startseite, name: startseite_text, widget: text, required: false }
+      - { label: Hinweis unter den Angeboten, name: hinweis, widget: text, required: false }
+    - label: Italienisch
+      name: it
+      widget: object
+      collapsed: true
+      required: false
+      hint: Leere Felder werden auf Deutsch angezeigt.
+      fields:
+      - { label: Einleitung Winterseite, name: einleitung_winter, widget: text, required: false }
+      - { label: Einleitung Angebote-Seite, name: einleitung_angebote, widget: text, required: false }
+      - { label: Text auf der Startseite, name: startseite_text, widget: text, required: false }
+      - { label: Hinweis unter den Angeboten, name: hinweis, widget: text, required: false }
+- name: saisonseiten
+  label: Sommer & Winter
+  description: Die Seiten „Sommer“ und „Winter“ – Abschnitte mit Foto und Text, Kennzahlen, das große Bild oben und die passende Karte auf der Startseite.
+  editor:
+    preview: false
+  files:
+  - name: sommer
+    label: Sommerseite
+    file: _data/saison/sommer.json
+    fields:
+    - label: Abschnitte der Sommerseite
+      name: highlights
+      widget: list
+      label_singular: Abschnitt
+      collapsed: true
+      min: 1
+      summary: '{{fields.titel}}'
+      hint: Die Abschnitte mit Foto und Text auf der Sommerseite. Nummerierung und abwechselnde Anordnung (Foto links/rechts) passieren automatisch. Reihenfolge per Ziehen ändern.
+      fields:
+      - label: Foto
+        name: bild
+        widget: image
+        choose_url: false
+        hint: Querformat sieht am besten aus. Handyfotos können direkt hochgeladen werden.
+      - label: Bildausschnitt
+        name: ausschnitt
+        widget: select
+        required: false
+        default: mitte
+        hint: Welcher Teil des Fotos sichtbar bleibt, wenn es zugeschnitten wird (z. B. bei Hochformat-Fotos „etwas tiefer“).
+        options:
+        - { label: Mitte, value: mitte }
+        - { label: Etwas höher, value: oben }
+        - { label: Etwas tiefer, value: unten }
+        - { label: Etwas weiter links, value: links }
+        - { label: Etwas weiter rechts, value: rechts }
+      - label: Titel
+        name: titel
+        widget: string
+      - label: Kennzeichen (optional)
+        name: kennzeichen
+        widget: string
+        required: false
+        hint: Kleines Etikett unter dem Titel, z. B. „Inklusive“. Leer lassen = kein Etikett.
+      - label: Text
+        name: text
+        widget: text
+        hint: 'Ein Absatz, zwei bis vier Sätze. Ein Link im Text: [Linktext](kontakt.html)'
+      - label: Bildbeschreibung
+        name: bild_alt
+        widget: string
+        hint: Was ist auf dem Foto zu sehen? (für Google und Screenreader)
+      - label: Englisch
+        name: en
+        widget: object
+        collapsed: true
+        required: false
+        hint: Leere Felder werden auf Deutsch angezeigt.
+        fields:
+        - { label: Titel, name: titel, widget: string, required: false }
+        - { label: Kennzeichen, name: kennzeichen, widget: string, required: false }
+        - { label: Text, name: text, widget: text, required: false }
+        - { label: Bildbeschreibung, name: bild_alt, widget: string, required: false }
+      - label: Italienisch
+        name: it
+        widget: object
+        collapsed: true
+        required: false
+        hint: Leere Felder werden auf Deutsch angezeigt.
+        fields:
+        - { label: Titel, name: titel, widget: string, required: false }
+        - { label: Kennzeichen, name: kennzeichen, widget: string, required: false }
+        - { label: Text, name: text, widget: text, required: false }
+        - { label: Bildbeschreibung, name: bild_alt, widget: string, required: false }
+    - label: Kennzahlen
+      name: kennzahlen
+      widget: list
+      label_singular: Kennzahl
+      collapsed: true
+      required: false
+      max: 4
+      summary: '{{fields.zahl}} {{fields.text}}'
+      hint: Die großen Zahlen unter den Abschnitten, höchstens 4.
+      fields:
+      - label: Zahl
+        name: zahl
+        widget: string
+        hint: z. B. „1.000 km“ oder „100+“
+      - label: Text
+        name: text
+        widget: string
+      - label: Englisch
+        name: en
+        widget: object
+        collapsed: true
+        required: false
+        hint: Leere Felder werden auf Deutsch angezeigt.
+        fields:
+        - { label: Zahl, name: zahl, widget: string, required: false }
+        - { label: Text, name: text, widget: string, required: false }
+      - label: Italienisch
+        name: it
+        widget: object
+        collapsed: true
+        required: false
+        hint: Leere Felder werden auf Deutsch angezeigt.
+        fields:
+        - { label: Zahl, name: zahl, widget: string, required: false }
+        - { label: Text, name: text, widget: string, required: false }
+    - label: Großes Bild oben auf der Seite
+      name: bild_oben
+      widget: object
+      collapsed: true
+      fields:
+      - label: Foto
+        name: bild
+        widget: image
+        choose_url: false
+        hint: Breites Querformat – das Bild wird als flacher Streifen gezeigt. Handyfotos können direkt hochgeladen werden.
+      - { label: Bildbeschreibung Deutsch, name: de, widget: string }
+      - { label: Bildbeschreibung Englisch, name: en, widget: string, required: false }
+      - { label: Bildbeschreibung Italienisch, name: it, widget: string, required: false }
+    - label: Karte „Sommer“ auf der Startseite
+      name: startseite
+      widget: object
+      collapsed: true
+      hint: Die Sommer-Karte im Bereich „Zwei Jahreszeiten“ auf der Startseite.
+      fields:
+      - label: Foto
+        name: bild
+        widget: image
+        choose_url: false
+        hint: Querformat sieht am besten aus. Handyfotos können direkt hochgeladen werden.
+      - label: Bildausschnitt
+        name: ausschnitt
+        widget: select
+        required: false
+        default: mitte
+        hint: Welcher Teil des Fotos sichtbar bleibt, wenn es zugeschnitten wird (z. B. bei Hochformat-Fotos „etwas tiefer“).
+        options:
+        - { label: Mitte, value: mitte }
+        - { label: Etwas höher, value: oben }
+        - { label: Etwas tiefer, value: unten }
+        - { label: Etwas weiter links, value: links }
+        - { label: Etwas weiter rechts, value: rechts }
+      - label: Zeitraum
+        name: zeitraum
+        widget: string
+        hint: z. B. „Mai bis Oktober“
+      - { label: Titel, name: titel, widget: string }
+      - { label: Text, name: text, widget: text }
+      - { label: Bildbeschreibung, name: bild_alt, widget: string }
+      - label: Punkte
+        name: punkte
+        widget: list
+        required: false
+        summary: '{{fields.titel}}'
+        hint: Stichwort fett, daneben ein kurzer Satz – z. B. Skiverleih, Skischule.
+        fields:
+        - { label: Stichwort, name: titel, widget: string }
+        - { label: Text, name: text, widget: string, required: false }
+      - label: Englisch
+        name: en
+        widget: object
+        collapsed: true
+        required: false
+        hint: Leere Felder werden auf Deutsch angezeigt.
+        fields:
+        - { label: Zeitraum, name: zeitraum, widget: string, required: false }
+        - { label: Titel, name: titel, widget: string, required: false }
+        - { label: Text, name: text, widget: text, required: false }
+        - { label: Bildbeschreibung, name: bild_alt, widget: string, required: false }
+        - label: Punkte
+          name: punkte
+          widget: list
+          required: false
+          summary: '{{fields.titel}}'
+          hint: Leer lassen = deutsche Punkte. Wenn ausgefüllt, bitte alle Punkte übersetzen.
+          fields:
+          - { label: Stichwort, name: titel, widget: string }
+          - { label: Text, name: text, widget: string, required: false }
+      - label: Italienisch
+        name: it
+        widget: object
+        collapsed: true
+        required: false
+        hint: Leere Felder werden auf Deutsch angezeigt.
+        fields:
+        - { label: Zeitraum, name: zeitraum, widget: string, required: false }
+        - { label: Titel, name: titel, widget: string, required: false }
+        - { label: Text, name: text, widget: text, required: false }
+        - { label: Bildbeschreibung, name: bild_alt, widget: string, required: false }
+        - label: Punkte
+          name: punkte
+          widget: list
+          required: false
+          summary: '{{fields.titel}}'
+          hint: Leer lassen = deutsche Punkte. Wenn ausgefüllt, bitte alle Punkte übersetzen.
+          fields:
+          - { label: Stichwort, name: titel, widget: string }
+          - { label: Text, name: text, widget: string, required: false }
+  - name: winter
+    label: Winterseite
+    file: _data/saison/winter.json
+    fields:
+    - label: Abschnitte der Winterseite
+      name: highlights
+      widget: list
+      label_singular: Abschnitt
+      collapsed: true
+      min: 1
+      summary: '{{fields.titel}}'
+      hint: Die Abschnitte mit Foto und Text auf der Winterseite. Nummerierung und abwechselnde Anordnung (Foto links/rechts) passieren automatisch. Reihenfolge per Ziehen ändern.
+      fields:
+      - label: Foto
+        name: bild
+        widget: image
+        choose_url: false
+        hint: Querformat sieht am besten aus. Handyfotos können direkt hochgeladen werden.
+      - label: Bildausschnitt
+        name: ausschnitt
+        widget: select
+        required: false
+        default: mitte
+        hint: Welcher Teil des Fotos sichtbar bleibt, wenn es zugeschnitten wird (z. B. bei Hochformat-Fotos „etwas tiefer“).
+        options:
+        - { label: Mitte, value: mitte }
+        - { label: Etwas höher, value: oben }
+        - { label: Etwas tiefer, value: unten }
+        - { label: Etwas weiter links, value: links }
+        - { label: Etwas weiter rechts, value: rechts }
+      - label: Titel
+        name: titel
+        widget: string
+      - label: Kennzeichen (optional)
+        name: kennzeichen
+        widget: string
+        required: false
+        hint: Kleines Etikett unter dem Titel, z. B. „Kostenlos“. Leer lassen = kein Etikett.
+      - label: Text
+        name: text
+        widget: text
+        hint: 'Ein Absatz, zwei bis vier Sätze. Ein Link im Text: [Linktext](kontakt.html)'
+      - label: Bildbeschreibung
+        name: bild_alt
+        widget: string
+        hint: Was ist auf dem Foto zu sehen? (für Google und Screenreader)
+      - label: Englisch
+        name: en
+        widget: object
+        collapsed: true
+        required: false
+        hint: Leere Felder werden auf Deutsch angezeigt.
+        fields:
+        - { label: Titel, name: titel, widget: string, required: false }
+        - { label: Kennzeichen, name: kennzeichen, widget: string, required: false }
+        - { label: Text, name: text, widget: text, required: false }
+        - { label: Bildbeschreibung, name: bild_alt, widget: string, required: false }
+      - label: Italienisch
+        name: it
+        widget: object
+        collapsed: true
+        required: false
+        hint: Leere Felder werden auf Deutsch angezeigt.
+        fields:
+        - { label: Titel, name: titel, widget: string, required: false }
+        - { label: Kennzeichen, name: kennzeichen, widget: string, required: false }
+        - { label: Text, name: text, widget: text, required: false }
+        - { label: Bildbeschreibung, name: bild_alt, widget: string, required: false }
+    - label: Kennzahlen
+      name: kennzahlen
+      widget: list
+      label_singular: Kennzahl
+      collapsed: true
+      required: false
+      max: 4
+      summary: '{{fields.zahl}} {{fields.text}}'
+      hint: Die großen Zahlen unter den Abschnitten, höchstens 4.
+      fields:
+      - label: Zahl
+        name: zahl
+        widget: string
+        hint: z. B. „1.000 km“ oder „100+“
+      - label: Text
+        name: text
+        widget: string
+      - label: Englisch
+        name: en
+        widget: object
+        collapsed: true
+        required: false
+        hint: Leere Felder werden auf Deutsch angezeigt.
+        fields:
+        - { label: Zahl, name: zahl, widget: string, required: false }
+        - { label: Text, name: text, widget: string, required: false }
+      - label: Italienisch
+        name: it
+        widget: object
+        collapsed: true
+        required: false
+        hint: Leere Felder werden auf Deutsch angezeigt.
+        fields:
+        - { label: Zahl, name: zahl, widget: string, required: false }
+        - { label: Text, name: text, widget: string, required: false }
+    - label: Großes Bild oben auf der Seite
+      name: bild_oben
+      widget: object
+      collapsed: true
+      fields:
+      - label: Foto
+        name: bild
+        widget: image
+        choose_url: false
+        hint: Breites Querformat – das Bild wird als flacher Streifen gezeigt. Handyfotos können direkt hochgeladen werden.
+      - { label: Bildbeschreibung Deutsch, name: de, widget: string }
+      - { label: Bildbeschreibung Englisch, name: en, widget: string, required: false }
+      - { label: Bildbeschreibung Italienisch, name: it, widget: string, required: false }
+    - label: Karte „Winter“ auf der Startseite
+      name: startseite
+      widget: object
+      collapsed: true
+      hint: Die Winter-Karte im Bereich „Zwei Jahreszeiten“ auf der Startseite.
+      fields:
+      - label: Foto
+        name: bild
+        widget: image
+        choose_url: false
+        hint: Querformat sieht am besten aus. Handyfotos können direkt hochgeladen werden.
+      - label: Bildausschnitt
+        name: ausschnitt
+        widget: select
+        required: false
+        default: mitte
+        hint: Welcher Teil des Fotos sichtbar bleibt, wenn es zugeschnitten wird (z. B. bei Hochformat-Fotos „etwas tiefer“).
+        options:
+        - { label: Mitte, value: mitte }
+        - { label: Etwas höher, value: oben }
+        - { label: Etwas tiefer, value: unten }
+        - { label: Etwas weiter links, value: links }
+        - { label: Etwas weiter rechts, value: rechts }
+      - label: Zeitraum
+        name: zeitraum
+        widget: string
+        hint: z. B. „Mai bis Oktober“
+      - { label: Titel, name: titel, widget: string }
+      - { label: Text, name: text, widget: text }
+      - { label: Bildbeschreibung, name: bild_alt, widget: string }
+      - label: Punkte
+        name: punkte
+        widget: list
+        required: false
+        summary: '{{fields.titel}}'
+        hint: Stichwort fett, daneben ein kurzer Satz – z. B. Skiverleih, Skischule.
+        fields:
+        - { label: Stichwort, name: titel, widget: string }
+        - { label: Text, name: text, widget: string, required: false }
+      - label: Englisch
+        name: en
+        widget: object
+        collapsed: true
+        required: false
+        hint: Leere Felder werden auf Deutsch angezeigt.
+        fields:
+        - { label: Zeitraum, name: zeitraum, widget: string, required: false }
+        - { label: Titel, name: titel, widget: string, required: false }
+        - { label: Text, name: text, widget: text, required: false }
+        - { label: Bildbeschreibung, name: bild_alt, widget: string, required: false }
+        - label: Punkte
+          name: punkte
+          widget: list
+          required: false
+          summary: '{{fields.titel}}'
+          hint: Leer lassen = deutsche Punkte. Wenn ausgefüllt, bitte alle Punkte übersetzen.
+          fields:
+          - { label: Stichwort, name: titel, widget: string }
+          - { label: Text, name: text, widget: string, required: false }
+      - label: Italienisch
+        name: it
+        widget: object
+        collapsed: true
+        required: false
+        hint: Leere Felder werden auf Deutsch angezeigt.
+        fields:
+        - { label: Zeitraum, name: zeitraum, widget: string, required: false }
+        - { label: Titel, name: titel, widget: string, required: false }
+        - { label: Text, name: text, widget: text, required: false }
+        - { label: Bildbeschreibung, name: bild_alt, widget: string, required: false }
+        - label: Punkte
+          name: punkte
+          widget: list
+          required: false
+          summary: '{{fields.titel}}'
+          hint: Leer lassen = deutsche Punkte. Wenn ausgefüllt, bitte alle Punkte übersetzen.
+          fields:
+          - { label: Stichwort, name: titel, widget: string }
+          - { label: Text, name: text, widget: string, required: false }
+- name: entfernungen
+  label: Entfernungen
+  description: Die Entfernungslisten „vom Haus aus“ auf der Seite „Lage“ und auf der Sommerseite. Reihenfolge per Ziehen ändern.
+  editor:
+    preview: false
+  files:
+  - name: entfernungen
+    label: Entfernungen
+    file: _data/entfernungen.json
+    fields:
+    - label: Seite „Lage“
+      name: lage
+      widget: list
+      label_singular: Ziel
+      collapsed: true
+      min: 1
+      summary: '{{fields.ziel}} · {{fields.entfernung}}'
+      hint: Die vollständige Liste auf der Seite „Lage & Anreise“.
+      fields:
+      - { label: Ziel, name: ziel, widget: string }
+      - label: Entfernung
+        name: entfernung
+        widget: string
+        hint: z. B. „ca. 500 m“ oder „direkt hinter dem Haus“
+      - { label: Ziel Englisch, name: ziel_en, widget: string, required: false, hint: Leer = deutsch }
+      - { label: Entfernung Englisch, name: entfernung_en, widget: string, required: false, hint: 'z. B. „approx. 500 m“' }
+      - { label: Ziel Italienisch, name: ziel_it, widget: string, required: false, hint: Leer = deutsch }
+      - { label: Entfernung Italienisch, name: entfernung_it, widget: string, required: false, hint: 'z. B. „ca. 500 m“' }
+    - label: Sommerseite („Kurze Wege“)
+      name: sommer
+      widget: list
+      label_singular: Ziel
+      collapsed: true
+      min: 1
+      summary: '{{fields.ziel}} · {{fields.entfernung}}'
+      hint: Die kurze Liste auf der Sommerseite.
+      fields:
+      - { label: Ziel, name: ziel, widget: string }
+      - label: Entfernung
+        name: entfernung
+        widget: string
+        hint: z. B. „ca. 500 m“ oder „direkt hinter dem Haus“
+      - { label: Ziel Englisch, name: ziel_en, widget: string, required: false, hint: Leer = deutsch }
+      - { label: Entfernung Englisch, name: entfernung_en, widget: string, required: false, hint: 'z. B. „approx. 500 m“' }
+      - { label: Ziel Italienisch, name: ziel_it, widget: string, required: false, hint: Leer = deutsch }
+      - { label: Entfernung Italienisch, name: entfernung_it, widget: string, required: false, hint: 'z. B. „ca. 500 m“' }
 - name: zimmerfotos
   label: Zimmerfotos
   description: Fotos der Zimmerseiten. Das erste Foto ist jeweils das große Bild oben auf der Seite und erscheint auch in der Zimmerübersicht. Reihenfolge per Ziehen ändern. Fotos können direkt vom Handy hochgeladen werden – sie werden automatisch verkleinert. Querformat sieht am besten aus.

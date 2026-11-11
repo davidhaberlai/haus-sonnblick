@@ -1,0 +1,226 @@
+{
+  "bild_oben": {
+    "bild": "images/stories/header/6_winter/header_2a.jpg",
+    "de": "Skifahrer auf der Piste mit Blick über die verschneiten Nockberge",
+    "en": "Skier on the slope overlooking the snowy Nock Mountains",
+    "it": "Sciatore sulla pista con vista sui Monti Nock innevati"
+  },
+  "startseite": {
+    "bild": "images/stories/header/6_winter/header_2a.jpg",
+    "ausschnitt": "mitte",
+    "zeitraum": "Dezember bis März",
+    "titel": "Die Pisten im Blick",
+    "text": "Aus dem Wintergarten sehen Sie Kaiserburg, Strohsack und die Franz-Klammer-Abfahrt. Der kostenlose Ski-Shuttle hält direkt unterhalb des Hauses und bringt Sie ins Skigebiet Bad Kleinkirchheim.",
+    "bild_alt": "Skifahrer auf einer Piste mit Blick über die verschneiten Nockberge",
+    "punkte": [
+      {
+        "titel": "Ski-Shuttle",
+        "text": "Haltestelle direkt unter dem Haus, kostenlos"
+      },
+      {
+        "titel": "Langlauf",
+        "text": "Die Loipe ist nur ein paar Gehminuten entfernt"
+      },
+      {
+        "titel": "Skiverleih",
+        "text": "Sport 2000 Rent im Ort, ca. 1 km – online bis zu 20 % günstiger"
+      },
+      {
+        "titel": "Skischule",
+        "text": "Skischule Brunner, ca. 1 km – 10 % Rabatt für unsere Gäste"
+      },
+      {
+        "titel": "Thermen",
+        "text": "Thermal-Römerbad und Therme St. Kathrein im Ort"
+      }
+    ],
+    "en": {
+      "zeitraum": "December to March",
+      "titel": "The slopes in view",
+      "text": "From the conservatory you can see Kaiserburg, Strohsack and the Franz Klammer downhill run. The free ski shuttle stops right below the house and takes you to the Bad Kleinkirchheim ski area.",
+      "bild_alt": "Skier on a slope overlooking the snowy Nock Mountains",
+      "punkte": [
+        {
+          "titel": "Ski shuttle",
+          "text": "Stop right below the house, free of charge"
+        },
+        {
+          "titel": "Cross-country",
+          "text": "The trail is just a few minutes’ walk away"
+        },
+        {
+          "titel": "Ski rental",
+          "text": "Sport 2000 Rent in the village, approx. 1 km – up to 20 % cheaper online"
+        },
+        {
+          "titel": "Ski school",
+          "text": "Skischule Brunner, approx. 1 km – 10 % off for our guests"
+        },
+        {
+          "titel": "Thermal spas",
+          "text": "Thermal-Römerbad and Therme St. Kathrein in the village"
+        }
+      ]
+    },
+    "it": {
+      "zeitraum": "Da dicembre a marzo",
+      "titel": "Le piste in vista",
+      "text": "Dal giardino d’inverno vedete la Kaiserburg, lo Strohsack e la discesa Franz Klammer. Lo ski-shuttle gratuito ferma proprio sotto la casa e vi porta nel comprensorio Bad Kleinkirchheim.",
+      "bild_alt": "Sciatore su una pista con vista sui Monti Nock innevati",
+      "punkte": [
+        {
+          "titel": "Ski-shuttle",
+          "text": "Fermata proprio sotto la casa, gratuita"
+        },
+        {
+          "titel": "Sci di fondo",
+          "text": "La pista è a pochi minuti a piedi"
+        },
+        {
+          "titel": "Noleggio sci",
+          "text": "Sport 2000 Rent in paese, ca. 1 km – online fino al 20 % in meno"
+        },
+        {
+          "titel": "Scuola di sci",
+          "text": "Skischule Brunner, ca. 1 km – 10 % di sconto per i nostri ospiti"
+        },
+        {
+          "titel": "Terme",
+          "text": "Terme Römerbad e Terme St. Kathrein in paese"
+        }
+      ]
+    }
+  },
+  "highlights": [
+    {
+      "bild": "images/stories/content/skifahren5.jpg",
+      "ausschnitt": "mitte",
+      "titel": "Ski-Shuttle vor der Tür",
+      "kennzeichen": "",
+      "text": "Der kostenlose Ski-Shuttlebus hält direkt unterhalb des Hauses und bringt Sie zum Einstieg ins Skigebiet Bad Kleinkirchheim. 25 Lifte und Seilbahnen warten, dazu 18 km leichte, 77 km mittelschwere und 8 km schwere Pisten.",
+      "bild_alt": "Frisch präparierte Piste über dem Nebelmeer",
+      "en": {
+        "titel": "Ski shuttle at the door",
+        "kennzeichen": "",
+        "text": "The free ski shuttle bus stops right below the house and takes you to the Bad Kleinkirchheim ski area. 25 lifts and cable cars await, plus 18 km of easy, 77 km of intermediate and 8 km of difficult slopes.",
+        "bild_alt": "Freshly groomed slope above a sea of fog"
+      },
+      "it": {
+        "titel": "Ski-shuttle davanti alla porta",
+        "kennzeichen": "",
+        "text": "Lo ski-shuttle gratuito ferma proprio sotto la casa e vi porta nel comprensorio sciistico di Bad Kleinkirchheim. Vi aspettano 25 impianti, con 18 km di piste facili, 77 km di medie e 8 km di difficili.",
+        "bild_alt": "Pista appena battuta sopra un mare di nebbia"
+      }
+    },
+    {
+      "bild": "images/stories/winter/skispass_bkk.jpg",
+      "ausschnitt": "mitte",
+      "titel": "Pisten mit Geschichte",
+      "kennzeichen": "",
+      "text": "Aus dem Wintergarten blicken Sie auf Kaiserburg, Strohsack und die berühmte Franz-Klammer-Abfahrt, auf der schon Weltcup-Rennen gefahren wurden. Einsteiger sind bei vier Skischulen in besten Händen.",
+      "bild_alt": "Skifahrergruppe genießt die Aussicht auf der Piste",
+      "en": {
+        "titel": "Slopes with a history",
+        "kennzeichen": "",
+        "text": "From the conservatory you look out onto Kaiserburg, Strohsack and the famous Franz Klammer downhill run, where World Cup races have been held. Beginners are in the best hands at four ski schools.",
+        "bild_alt": "Group of skiers enjoying the view on the slope"
+      },
+      "it": {
+        "titel": "Piste con una storia",
+        "kennzeichen": "",
+        "text": "Dal giardino d’inverno guardate la Kaiserburg, lo Strohsack e la celebre discesa Franz Klammer, dove si sono disputate gare di Coppa del Mondo. I principianti sono in ottime mani in quattro scuole di sci.",
+        "bild_alt": "Gruppo di sciatori che si gode la vista sulla pista"
+      }
+    },
+    {
+      "bild": "images/stories/header/6_winter/header_4.jpg",
+      "ausschnitt": "links",
+      "titel": "Langlauf",
+      "kennzeichen": "",
+      "text": "Acht Kilometer Loipen gibt es in Bad Kleinkirchheim – eine davon verläuft nur wenige Gehminuten vom Haus entfernt.",
+      "bild_alt": "Langläufer in verschneiter Berglandschaft",
+      "en": {
+        "titel": "Cross-country",
+        "kennzeichen": "",
+        "text": "Bad Kleinkirchheim has eight kilometres of cross-country trails – one of them runs just a few minutes’ walk from the house.",
+        "bild_alt": "Cross-country skier in a snowy mountain landscape"
+      },
+      "it": {
+        "titel": "Sci di fondo",
+        "kennzeichen": "",
+        "text": "Bad Kleinkirchheim ha otto chilometri di piste da fondo – una passa a pochi minuti a piedi dalla casa.",
+        "bild_alt": "Fondista in un paesaggio montano innevato"
+      }
+    },
+    {
+      "bild": "images/stories/content/rodelspass.jpg",
+      "ausschnitt": "mitte",
+      "titel": "Abseits der Pisten",
+      "kennzeichen": "",
+      "text": "Über 2.000 Sonnenstunden im Jahr, vier Rodelbahnen – eine davon abends beleuchtet bei der Kaiserburg –, dazu Winterwandern und Eisstockschießen. Und bei der Musi-Woche im Jänner steht der Ort ganz im Zeichen der Volksmusik.",
+      "bild_alt": "Rodler auf einer verschneiten Rodelbahn",
+      "en": {
+        "titel": "Away from the slopes",
+        "kennzeichen": "",
+        "text": "Over 2,000 hours of sunshine a year, four toboggan runs – one of them floodlit in the evening at the Kaiserburg – plus winter hiking and curling. And during the Music Week in January, the village is all about folk music.",
+        "bild_alt": "Tobogganer on a snowy toboggan run"
+      },
+      "it": {
+        "titel": "Lontano dalle piste",
+        "kennzeichen": "",
+        "text": "Oltre 2.000 ore di sole all’anno, quattro piste da slittino – una illuminata la sera alla Kaiserburg –, escursioni invernali e curling bavarese. E durante la Settimana della musica a gennaio il paese è tutto per la musica popolare.",
+        "bild_alt": "Slittinista su una pista innevata"
+      }
+    }
+  ],
+  "kennzahlen": [
+    {
+      "zahl": "103 km",
+      "text": "Pisten in Bad Kleinkirchheim und St. Oswald",
+      "en": {
+        "zahl": "103 km",
+        "text": "of slopes in Bad Kleinkirchheim and St. Oswald"
+      },
+      "it": {
+        "zahl": "103 km",
+        "text": "di piste a Bad Kleinkirchheim e St. Oswald"
+      }
+    },
+    {
+      "zahl": "25",
+      "text": "Lifte und Seilbahnen",
+      "en": {
+        "zahl": "25",
+        "text": "lifts and cable cars"
+      },
+      "it": {
+        "zahl": "25",
+        "text": "impianti di risalita"
+      }
+    },
+    {
+      "zahl": "4",
+      "text": "Rodelbahnen",
+      "en": {
+        "zahl": "4",
+        "text": "toboggan runs"
+      },
+      "it": {
+        "zahl": "4",
+        "text": "piste da slittino"
+      }
+    },
+    {
+      "zahl": "8 km",
+      "text": "Loipen im Ort",
+      "en": {
+        "zahl": "8 km",
+        "text": "of cross-country trails in the village"
+      },
+      "it": {
+        "zahl": "8 km",
+        "text": "di piste da fondo in paese"
+      }
+    }
+  ]
+}

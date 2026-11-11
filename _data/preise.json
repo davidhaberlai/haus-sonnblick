@@ -1,6 +1,6 @@
 {
   "halbpension": 27,
-  "einzelnutzung_prozent": 30,
+  "einzelnutzung_abzug_prozent": 20,
   "kurzaufenthalt_prozent": 10,
   "saisonen": [
     {

@@ -1,0 +1,222 @@
+{
+  "bild_oben": {
+    "bild": "images/stories/header/3_pauschalen/sommer/header_6.jpg",
+    "de": "Wandergruppe an einem Bergsee in den Nockbergen",
+    "en": "Group of hikers by a mountain lake in the Nock Mountains",
+    "it": "Gruppo di escursionisti presso un lago alpino sui Monti Nock"
+  },
+  "startseite": {
+    "bild": "images/stories/header/3_pauschalen/sommer/header_6.jpg",
+    "ausschnitt": "mitte",
+    "zeitraum": "Mai bis Oktober",
+    "titel": "Wandern, golfen, durchatmen",
+    "text": "Der Biosphärenpark Nockberge beginnt praktisch vor der Tür. Im Sommer ist die Kärnten Card ab dem Anreisetag inklusive – und auf dem Golfplatz Bad Kleinkirchheim spielen Hausgäste ohne Greenfee.",
+    "bild_alt": "Wanderer an einem Bergsee in den Nockbergen",
+    "punkte": [
+      {
+        "titel": "Kärnten Card",
+        "text": "Freier oder ermäßigter Eintritt bei zahlreichen Ausflugszielen"
+      },
+      {
+        "titel": "Golf",
+        "text": "Golfplatz Bad Kleinkirchheim, ca. 500 m – ohne Greenfee"
+      },
+      {
+        "titel": "Wandern",
+        "text": "Einstieg in den Biosphärenpark direkt vom Haus"
+      }
+    ],
+    "en": {
+      "zeitraum": "May to October",
+      "titel": "Hiking, golfing, breathing deeply",
+      "text": "The Nock Mountains Biosphere Park starts practically on the doorstep. In summer, the Kärnten Card is included from the day of arrival – and house guests play at Bad Kleinkirchheim golf course without green fees.",
+      "bild_alt": "Hikers by a mountain lake in the Nock Mountains",
+      "punkte": [
+        {
+          "titel": "Kärnten Card",
+          "text": "Free or reduced entry at numerous attractions"
+        },
+        {
+          "titel": "Golf",
+          "text": "Bad Kleinkirchheim golf course, approx. 500 m – no green fees"
+        },
+        {
+          "titel": "Hiking",
+          "text": "Access to the Biosphere Park straight from the house"
+        }
+      ]
+    },
+    "it": {
+      "zeitraum": "Da maggio a ottobre",
+      "titel": "Camminare, giocare a golf, respirare",
+      "text": "Il Parco della Biosfera Monti Nock inizia praticamente davanti alla porta. In estate la Kärnten Card è inclusa dal giorno di arrivo – e gli ospiti giocano al golf di Bad Kleinkirchheim senza green fee.",
+      "bild_alt": "Escursionisti presso un lago alpino sui Monti Nock",
+      "punkte": [
+        {
+          "titel": "Kärnten Card",
+          "text": "Ingresso gratuito o ridotto in numerose attrazioni"
+        },
+        {
+          "titel": "Golf",
+          "text": "Golf di Bad Kleinkirchheim, ca. 500 m – senza green fee"
+        },
+        {
+          "titel": "Escursioni",
+          "text": "Accesso al Parco della Biosfera direttamente dalla casa"
+        }
+      ]
+    }
+  },
+  "highlights": [
+    {
+      "bild": "images/stories/header/5_sommer/header_6.jpg",
+      "ausschnitt": "mitte",
+      "titel": "Kärnten Card",
+      "kennzeichen": "Inklusive",
+      "text": "Ab dem Tag Ihrer Anreise erhalten Sie die Kärnten Card. Sie öffnet die Türen zu über 100 Ausflugszielen in ganz Kärnten – Bergbahnen, Schifffahrtslinien, Museen und vieles mehr – beliebig oft.",
+      "bild_alt": "Boot auf einem Kärntner See am Morgen",
+      "en": {
+        "titel": "Kärnten Card",
+        "kennzeichen": "Included",
+        "text": "From the day of your arrival you receive the Kärnten Card. It opens the doors to over 100 attractions throughout Carinthia – cable cars, boat lines, museums and much more – as often as you like.",
+        "bild_alt": "Boat on a Carinthian lake in the morning"
+      },
+      "it": {
+        "titel": "Kärnten Card",
+        "kennzeichen": "Incluso",
+        "text": "Dal giorno dell’arrivo ricevete la Kärnten Card. Apre le porte di oltre 100 attrazioni in tutta la Carinzia – impianti di risalita, battelli, musei e molto altro – tutte le volte che volete.",
+        "bild_alt": "Barca su un lago carinziano al mattino"
+      }
+    },
+    {
+      "bild": "/assets/img/uploads/3306d6a6-27b1-44cb-b93f-365c8799119a.jpg",
+      "ausschnitt": "unten",
+      "titel": "Golf ohne Greenfee",
+      "kennzeichen": "Inklusive",
+      "text": "Nur rund 500 Meter vom Haus entfernt liegt der höchstgelegene Golfplatz Kärntens, umgeben von Wiesen, Wäldern und Bergpanorama. Als Gast im Sonnblick spielen Sie dort ohne Greenfee – so oft Sie möchten.",
+      "bild_alt": "Golferin beim Abschlag auf dem Golfplatz Bad Kleinkirchheim",
+      "en": {
+        "titel": "Golf without green fees",
+        "kennzeichen": "Included",
+        "text": "Just 500 metres or so from the house lies Carinthia’s highest golf course, surrounded by meadows, forests and mountain panoramas. As a Sonnblick guest you play there without green fees – as often as you like.",
+        "bild_alt": "Golfer teeing off at Bad Kleinkirchheim golf course"
+      },
+      "it": {
+        "titel": "Golf senza green fee",
+        "kennzeichen": "Incluso",
+        "text": "A soli 500 metri circa dalla casa si trova il campo da golf più alto della Carinzia, circondato da prati, boschi e panorami di montagna. Come ospiti del Sonnblick giocate senza green fee – tutte le volte che volete.",
+        "bild_alt": "Golfista al tee sul campo da golf di Bad Kleinkirchheim"
+      }
+    },
+    {
+      "bild": "images/stories/content/wandern_rast.jpg",
+      "ausschnitt": "mitte",
+      "titel": "Wandern im Biosphärenpark",
+      "kennzeichen": "",
+      "text": "Zwischen 1.050 und 2.500 Metern finden Familien, Genusswanderer und Bergfexe ihre Wege: über 1.000 Kilometer markiert, mit Relax-Liegen und besonderen Plätzen am Wasser. Der Einstieg liegt direkt beim Haus. Auch der Alpe-Adria-Trail verläuft direkt hinter dem Haus – in Bad Kleinkirchheim enden und beginnen die Etappen 16 und 17.",
+      "bild_alt": "Wanderer rastet auf einer Almwiese mit Blick über die Berge",
+      "en": {
+        "titel": "Hiking in the Biosphere Park",
+        "kennzeichen": "",
+        "text": "Between 1,050 and 2,500 metres, families, leisurely walkers and seasoned mountaineers all find their paths: over 1,000 kilometres marked, with relaxation loungers and special spots by the water. The trailhead is right by the house. The Alpe-Adria-Trail also runs right behind the house – stages 16 and 17 end and begin in Bad Kleinkirchheim.",
+        "bild_alt": "Hiker resting on an alpine meadow overlooking the mountains"
+      },
+      "it": {
+        "titel": "Escursioni nel Parco della Biosfera",
+        "kennzeichen": "",
+        "text": "Tra i 1.050 e i 2.500 metri famiglie, escursionisti tranquilli e appassionati di montagna trovano il loro percorso: oltre 1.000 chilometri segnalati, con lettini relax e luoghi speciali vicino all’acqua. Il punto di partenza è proprio accanto alla casa. Anche l’Alpe-Adria-Trail passa proprio dietro la casa – a Bad Kleinkirchheim finiscono e iniziano le tappe 16 e 17.",
+        "bild_alt": "Escursionista in pausa su un prato alpino con vista sulle montagne"
+      }
+    },
+    {
+      "bild": "images/stories/content/nockbike_1.jpg",
+      "ausschnitt": "mitte",
+      "titel": "Mountainbiken",
+      "kennzeichen": "",
+      "text": "Die „Nocken“ sind runde, saftig grüne Gipfel – ideal für Bike-Touren abseits des Trubels. Rund um Bad Kleinkirchheim warten Almwege und Forststraßen für jedes Niveau. Mit der Kaiserburgbahn geht es hinauf zum Flow Country Trail, einem der längsten Flowtrails Europas.",
+      "bild_alt": "Mountainbiker mit Helm auf einem Almweg in den Nockbergen",
+      "en": {
+        "titel": "Mountain biking",
+        "kennzeichen": "",
+        "text": "The “Nocken” are round, lush green peaks – ideal for bike tours away from the crowds. Around Bad Kleinkirchheim, alpine paths and forest roads await riders of every level. The Kaiserburg gondola takes you up to the Flow Country Trail, one of the longest flow trails in Europe.",
+        "bild_alt": "Mountain biker with helmet on an alpine path in the Nock Mountains"
+      },
+      "it": {
+        "titel": "Mountain bike",
+        "kennzeichen": "",
+        "text": "I “Nocken” sono cime tondeggianti e verdissime – ideali per giri in bici lontano dalla folla. Intorno a Bad Kleinkirchheim vi aspettano sentieri d’alpeggio e strade forestali per ogni livello. Con la cabinovia Kaiserburg si sale al Flow Country Trail, uno dei flow trail più lunghi d’Europa.",
+        "bild_alt": "Mountain biker con casco su un sentiero d’alpeggio sui Monti Nock"
+      }
+    },
+    {
+      "bild": "images/stories/header/3_pauschalen/sommer/header_7.jpg",
+      "ausschnitt": "mitte",
+      "titel": "Musi-Wanderwochen",
+      "kennzeichen": "",
+      "text": "Im Juni wird in Bad Kleinkirchheim gewandert und musiziert: Unterwegs auf Almen und Hütten spielen Musikanten auf – ein besonderer Start in den Sommer.",
+      "bild_alt": "Viele Wanderer bei der Musi-Wanderwoche in den Bergen",
+      "en": {
+        "titel": "Music & Hiking Weeks",
+        "kennzeichen": "",
+        "text": "In June, Bad Kleinkirchheim hikes and makes music: musicians play along the way on alpine pastures and in huts – a special start to summer.",
+        "bild_alt": "Many hikers at the Music & Hiking Week in the mountains"
+      },
+      "it": {
+        "titel": "Settimane di escursioni con musica",
+        "kennzeichen": "",
+        "text": "A giugno a Bad Kleinkirchheim si cammina e si fa musica: lungo il percorso, su alpeggi e rifugi, suonano i musicisti – un inizio d’estate speciale.",
+        "bild_alt": "Tanti escursionisti alla settimana di escursioni con musica in montagna"
+      }
+    }
+  ],
+  "kennzahlen": [
+    {
+      "zahl": "1.000 km",
+      "text": "markierte Wanderwege",
+      "en": {
+        "zahl": "1,000 km",
+        "text": "of marked hiking trails"
+      },
+      "it": {
+        "zahl": "1.000 km",
+        "text": "di sentieri segnalati"
+      }
+    },
+    {
+      "zahl": "100+",
+      "text": "Ausflugsziele mit der Kärnten Card",
+      "en": {
+        "zahl": "100+",
+        "text": "attractions with the Kärnten Card"
+      },
+      "it": {
+        "zahl": "100+",
+        "text": "attrazioni con la Kärnten Card"
+      }
+    },
+    {
+      "zahl": "500 m",
+      "text": "zum Golfplatz",
+      "en": {
+        "zahl": "500 m",
+        "text": "to the golf course"
+      },
+      "it": {
+        "zahl": "500 m",
+        "text": "al campo da golf"
+      }
+    },
+    {
+      "zahl": "600 m",
+      "text": "zum Thermal-Römerbad",
+      "en": {
+        "zahl": "600 m",
+        "text": "to the Thermal-Römerbad"
+      },
+      "it": {
+        "zahl": "600 m",
+        "text": "alle Terme Römerbad"
+      }
+    }
+  ]
+}
