@@ -1,6 +1,13 @@
 {
   "bilder": [
     {
+      "kategorie": "sommer",
+      "bild": "/assets/img/uploads/badkleinkirchheimimsommer.jpeg",
+      "de": "Bad Kleinkirchheim im Sommer",
+      "en": "Bad Kleinkirchheim in summer time",
+      "it": "Bad Kleinkirchheim in estate"
+    },
+    {
       "bild": "/assets/img/haus-sonnenuntergang-1600.jpg",
       "kategorie": "haus",
       "de": "Das Haus im Abendrot",
