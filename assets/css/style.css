@@ -1356,3 +1356,7 @@ p:last-child{margin-bottom:0}
 .bookbar__form--cta .bookbar__go{display:inline-flex;align-items:center;text-decoration:none}
 @media (max-width:1100px){.bookbar__form--cta .bookbar__i:nth-child(3){display:none}.bookbar__form--cta{grid-template-columns:repeat(2,minmax(0,1fr)) auto}}
 @media (max-width:860px){.bookbar__form--cta{grid-template-columns:1fr}.bookbar__form--cta .bookbar__go{grid-column:1/-1}}
+
+/* Variantenfotos mit 3 Bildern (V4.15): Reihe füllt die Breite, Handy erstes Bild breit */
+.var__grid[data-n="3"]{grid-template-columns:repeat(3,1fr)}
+@media (max-width:420px){.var__grid[data-n="3"]{grid-template-columns:1fr 1fr}.var__grid[data-n="3"] button:first-child{grid-column:span 2;aspect-ratio:16/10}}
