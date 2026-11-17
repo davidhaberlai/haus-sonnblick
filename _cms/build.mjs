@@ -50,6 +50,49 @@ const saisonSeite = Object.fromEntries(Object.keys(SAISONEN_SEITEN).map(k => [k,
 const aktionswochen = json('_data/aktionswochen.json');
 const entfernungen = json('_data/entfernungen.json');
 
+/* Schutz gegen gelöschte Fotos (seit 17.11.2026): Wird in der Medienbibliothek ein Foto gelöscht,
+   das noch verwendet wird, bricht die Aktualisierung NICHT mehr ab. In Listen (Galerie, Zimmerfotos)
+   fällt das Foto weg, an festen Stellen erscheint ein Ersatzfoto des Hauses. Hinweis im Build-Log. */
+const ERSATZBILD = '/assets/img/haus-sonnenuntergang-1600.jpg';
+const warnungen = [];
+const dateiDa = s => /^https?:\/\//i.test(s) || fs.existsSync(path.join(ROOT, String(s).replace(/^\//, '')));
+(function fehlendeFotosAbfangen() {
+  /* Nur reine Fotolisten (Galerie, Zimmerfotos) dürfen Einträge verlieren – Packages oder Abschnitte nie */
+  const FOTOLISTEN = ['bilder', 'fotos', 'dz', 'dzs', 'tw', 'wsz', 'wszs'];
+  const istListe = (arr, key) => FOTOLISTEN.includes(key) && arr.every(x => x && typeof x === 'object' && 'bild' in x);
+  const lauf = (o, wo) => {
+    if (Array.isArray(o)) {
+      for (let i = o.length - 1; i >= 0; i--) {
+        const x = o[i];
+        if (x && typeof x === 'object' && typeof x.bild === 'string' && x.bild.trim() && !dateiDa(x.bild.trim()) && o.__liste) {
+          warnungen.push(`${wo}: Foto ${x.bild} existiert nicht mehr – ausgelassen.`);
+          o.splice(i, 1);
+        } else lauf(x, wo);
+      }
+      return;
+    }
+    if (!o || typeof o !== 'object') return;
+    for (const [k, v] of Object.entries(o)) {
+      if (k === 'bild' && typeof v === 'string' && v.trim() && !dateiDa(v.trim())) {
+        warnungen.push(`${wo}: Foto ${v} existiert nicht mehr – Ersatzfoto verwendet.`);
+        o[k] = ERSATZBILD;
+        delete o.bild_breite; delete o.bild_hoehe;
+      } else if (Array.isArray(v)) {
+        if (istListe(v, k)) Object.defineProperty(v, '__liste', { value: true });
+        lauf(v, wo);
+        /* Liste darf nicht leer werden (z. B. Zimmerfotos) */
+        if (v.__liste && !v.length) { v.push({ bild: ERSATZBILD, de: 'Haus Sonnblick', en: 'Haus Sonnblick', it: 'Haus Sonnblick' }); }
+      } else lauf(v, wo);
+    }
+  };
+  lauf(galerie, 'Bildergalerie');
+  lauf(packages, 'Angebote & Packages');
+  lauf(hinweis, 'Hinweis');
+  Object.entries(zimmer).forEach(([k, d]) => lauf(d, `Zimmerfotos ${k}`));
+  Object.entries(saisonSeite).forEach(([k, d]) => lauf(d, SAISONEN_SEITEN[k]));
+  if (warnungen.length) console.warn('\n⚠ Fehlende Fotos abgefangen (Website wird trotzdem aktualisiert):\n  - ' + warnungen.join('\n  - ') + '\n');
+})();
+
 /* ------------------------------------------------------------ Helfer */
 const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const isoOk = s => /^\d{4}-\d{2}-\d{2}$/.test(String(s || ''));

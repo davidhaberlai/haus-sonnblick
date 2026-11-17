@@ -5,6 +5,10 @@
 [build]
   command = "node _cms/build.mjs"
   publish = "."
+  # Reine Foto-Uploads/-Löschungen in der Medienbibliothek ändern die Website nicht –
+  # Netlify bricht diesen Build ab (kostet keine Credits). Erst das Speichern des Inhalts
+  # veröffentlicht. Exit 0 = abbrechen; bei Fehler (z. B. unbekannter Stand) wird gebaut.
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- . ':(exclude)assets/img/uploads'"
 
 [build.environment]
   NODE_VERSION = "22"
