@@ -1,6 +1,6 @@
 {
   "bild_oben": {
-    "bild": "images/stories/header/3_pauschalen/sommer/header_6.jpg",
+    "bild": "/images/stories/header/3_pauschalen/sommer/header_6.jpg",
     "de": "Wandergruppe an einem Bergsee in den Nockbergen",
     "en": "Group of hikers by a mountain lake in the Nock Mountains",
     "it": "Gruppo di escursionisti presso un lago alpino sui Monti Nock"
@@ -65,11 +65,11 @@
     ],
     "ausschnitt": "mitte",
     "zeitraum": "Mai bis Oktober",
-    "bild": "images/stories/header/3_pauschalen/sommer/header_6.jpg"
+    "bild": "/images/stories/header/3_pauschalen/sommer/header_6.jpg"
   },
   "highlights": [
     {
-      "bild": "images/stories/header/5_sommer/header_6.jpg",
+      "bild": "/images/stories/header/5_sommer/header_6.jpg",
       "ausschnitt": "mitte",
       "titel": "Kärnten Card",
       "kennzeichen": "Inklusive",
@@ -109,7 +109,7 @@
       }
     },
     {
-      "bild": "images/stories/content/wandern_rast.jpg",
+      "bild": "/images/stories/content/wandern_rast.jpg",
       "ausschnitt": "mitte",
       "titel": "Wandern im Biosphärenpark",
       "kennzeichen": "",
@@ -129,7 +129,7 @@
       }
     },
     {
-      "bild": "images/stories/content/nockbike_1.jpg",
+      "bild": "/images/stories/content/nockbike_1.jpg",
       "ausschnitt": "mitte",
       "titel": "Mountainbiken",
       "kennzeichen": "",
@@ -149,7 +149,7 @@
       }
     },
     {
-      "bild": "images/stories/header/3_pauschalen/sommer/header_7.jpg",
+      "bild": "/images/stories/header/3_pauschalen/sommer/header_7.jpg",
       "ausschnitt": "mitte",
       "titel": "Musi-Wanderwochen",
       "kennzeichen": "",

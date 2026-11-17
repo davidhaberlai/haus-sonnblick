@@ -1,12 +1,12 @@
 {
   "bild_oben": {
-    "bild": "images/stories/header/6_winter/header_2a.jpg",
+    "bild": "/images/stories/header/6_winter/header_2a.jpg",
     "de": "Skifahrer auf der Piste mit Blick über die verschneiten Nockberge",
     "en": "Skier on the slope overlooking the snowy Nock Mountains",
     "it": "Sciatore sulla pista con vista sui Monti Nock innevati"
   },
   "startseite": {
-    "bild": "images/stories/header/6_winter/header_2a.jpg",
+    "bild": "/images/stories/header/6_winter/header_2a.jpg",
     "ausschnitt": "mitte",
     "zeitraum": "Dezember bis März",
     "titel": "Die Pisten im Blick",
@@ -93,7 +93,7 @@
   },
   "highlights": [
     {
-      "bild": "images/stories/content/skifahren5.jpg",
+      "bild": "/images/stories/content/skifahren5.jpg",
       "ausschnitt": "mitte",
       "titel": "Ski-Shuttle vor der Tür",
       "kennzeichen": "",
@@ -113,7 +113,7 @@
       }
     },
     {
-      "bild": "images/stories/winter/skispass_bkk.jpg",
+      "bild": "/images/stories/winter/skispass_bkk.jpg",
       "ausschnitt": "mitte",
       "titel": "Pisten mit Geschichte",
       "kennzeichen": "",
@@ -133,7 +133,7 @@
       }
     },
     {
-      "bild": "images/stories/header/6_winter/header_4.jpg",
+      "bild": "/images/stories/header/6_winter/header_4.jpg",
       "ausschnitt": "links",
       "titel": "Langlauf",
       "kennzeichen": "",
@@ -153,7 +153,7 @@
       }
     },
     {
-      "bild": "images/stories/content/rodelspass.jpg",
+      "bild": "/images/stories/content/rodelspass.jpg",
       "ausschnitt": "mitte",
       "titel": "Abseits der Pisten",
       "kennzeichen": "",

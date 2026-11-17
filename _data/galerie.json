@@ -8,7 +8,7 @@
       "it": "La casa al tramonto"
     },
     {
-      "bild": "images/2025-11-23_Drohne_03_Hotel-Sonnblick_01_Fotos_DJI_0134.JPG",
+      "bild": "/images/2025-11-23_Drohne_03_Hotel-Sonnblick_01_Fotos_DJI_0134.JPG",
       "kategorie": "haus",
       "de": "Das Haus im Winter von oben",
       "en": "The house in winter from above",
@@ -17,7 +17,7 @@
       "hoehe": 1200
     },
     {
-      "bild": "images/stories/header/1_hotel_lage/header_2.jpg",
+      "bild": "/images/stories/header/1_hotel_lage/header_2.jpg",
       "kategorie": "haus",
       "de": "Das Haus im Sommer am Waldrand",
       "en": "The house in summer at the edge of the forest",
@@ -47,7 +47,7 @@
       "it": "Giardino d’inverno"
     },
     {
-      "bild": "images/stories/header/6_winter/header_6.jpg",
+      "bild": "/images/stories/header/6_winter/header_6.jpg",
       "kategorie": "haus",
       "de": "Das Haus im tief verschneiten Winter",
       "en": "The house in deep winter snow",
@@ -63,7 +63,7 @@
       "it": "Camera doppia rinnovata"
     },
     {
-      "bild": "images/IMG_4113_klein.jpeg",
+      "bild": "/images/IMG_4113_klein.jpeg",
       "kategorie": "zimmer",
       "de": "Neu gestaltetes Zimmer",
       "en": "Newly designed room",
@@ -72,7 +72,7 @@
       "hoehe": 811
     },
     {
-      "bild": "images/IMG_3814.jpeg",
+      "bild": "/images/IMG_3814.jpeg",
       "kategorie": "zimmer",
       "de": "Wohn-Schlafzimmer renoviert",
       "en": "Renovated living-bedroom",
@@ -81,7 +81,7 @@
       "hoehe": 948
     },
     {
-      "bild": "images/stories/zimmer/suite/sonnblick_suite3.jpg",
+      "bild": "/images/stories/zimmer/suite/sonnblick_suite3.jpg",
       "kategorie": "zimmer",
       "de": "Sonnensuite, Wohnbereich",
       "en": "Sun Suite, living area",
@@ -90,7 +90,7 @@
       "hoehe": 533
     },
     {
-      "bild": "images/stories/zimmer/halbapp/halbapp_1.jpg",
+      "bild": "/images/stories/zimmer/halbapp/halbapp_1.jpg",
       "kategorie": "zimmer",
       "de": "Familienappartement",
       "en": "Family apartment",
@@ -99,7 +99,7 @@
       "hoehe": 533
     },
     {
-      "bild": "images/stories/zimmer/halbapp/halbapp_6.jpg",
+      "bild": "/images/stories/zimmer/halbapp/halbapp_6.jpg",
       "kategorie": "zimmer",
       "de": "Familienappartement, Bad mit Badewanne",
       "en": "Family apartment, bathroom with bathtub",
@@ -108,7 +108,7 @@
       "hoehe": 800
     },
     {
-      "bild": "images/stories/content/einzelzimmer1_balkon.jpg",
+      "bild": "/images/stories/content/einzelzimmer1_balkon.jpg",
       "kategorie": "zimmer",
       "de": "Einzelzimmer mit Balkon",
       "en": "Single room with balcony",
@@ -124,7 +124,7 @@
       "it": "Bagno"
     },
     {
-      "bild": "images/stories/content/ort_bad_kleinkirchheim.jpg",
+      "bild": "/images/stories/content/ort_bad_kleinkirchheim.jpg",
       "kategorie": "sommer",
       "de": "Bad Kleinkirchheim im Sommer",
       "en": "Bad Kleinkirchheim in summer",
@@ -142,7 +142,7 @@
       "hoehe": 531
     },
     {
-      "bild": "images/stories/content/nockbike_1.jpg",
+      "bild": "/images/stories/content/nockbike_1.jpg",
       "kategorie": "sommer",
       "de": "Mountainbiken in den Nockbergen",
       "en": "Mountain biking in the Nock Mountains",
@@ -151,7 +151,7 @@
       "hoehe": 534
     },
     {
-      "bild": "images/stories/header/3_pauschalen/sommer/header_7.jpg",
+      "bild": "/images/stories/header/3_pauschalen/sommer/header_7.jpg",
       "kategorie": "sommer",
       "de": "Musi-Wanderwoche",
       "en": "Music & Hiking Week",
@@ -160,7 +160,7 @@
       "hoehe": 486
     },
     {
-      "bild": "images/stories/header/6_winter/header_2a.jpg",
+      "bild": "/images/stories/header/6_winter/header_2a.jpg",
       "kategorie": "winter",
       "de": "Skifahren mit Panoramablick",
       "en": "Skiing with a panoramic view",
@@ -169,7 +169,7 @@
       "hoehe": 486
     },
     {
-      "bild": "images/stories/content/skifahren5.jpg",
+      "bild": "/images/stories/content/skifahren5.jpg",
       "kategorie": "winter",
       "de": "Pistenspaß",
       "en": "Fun on the slopes",
@@ -185,7 +185,7 @@
       "it": "Bad Kleinkirchheim in estate"
     },
     {
-      "bild": "images/stories/header/6_winter/header_4.jpg",
+      "bild": "/images/stories/header/6_winter/header_4.jpg",
       "kategorie": "winter",
       "de": "Langlaufen",
       "en": "Cross-country skiing",
@@ -194,7 +194,7 @@
       "hoehe": 486
     },
     {
-      "bild": "images/stories/content/kinder_schnee1.jpg",
+      "bild": "/images/stories/content/kinder_schnee1.jpg",
       "kategorie": "winter",
       "de": "Kinder im Schnee",
       "en": "Children in the snow",
@@ -203,7 +203,7 @@
       "hoehe": 533
     },
     {
-      "bild": "images/stories/content/rodelspass.jpg",
+      "bild": "/images/stories/content/rodelspass.jpg",
       "kategorie": "winter",
       "de": "Rodeln",
       "en": "Tobogganing",
@@ -212,7 +212,7 @@
       "hoehe": 533
     },
     {
-      "bild": "images/stories/header/4_therme/header_1a.jpg",
+      "bild": "/images/stories/header/4_therme/header_1a.jpg",
       "kategorie": "thermen",
       "de": "Außenbecken im Winter",
       "en": "Outdoor pool in winter",
@@ -221,7 +221,7 @@
       "hoehe": 486
     },
     {
-      "bild": "images/stories/content/therme_roemerbad_16.jpg",
+      "bild": "/images/stories/content/therme_roemerbad_16.jpg",
       "kategorie": "thermen",
       "de": "Thermal-Römerbad",
       "en": "Thermal-Römerbad",
@@ -230,7 +230,7 @@
       "hoehe": 531
     },
     {
-      "bild": "images/stories/header/4_therme/header_1.jpg",
+      "bild": "/images/stories/header/4_therme/header_1.jpg",
       "kategorie": "thermen",
       "de": "Thermalbecken in der Halle",
       "en": "Indoor thermal pool",
@@ -239,7 +239,7 @@
       "hoehe": 486
     },
     {
-      "bild": "images/stories/content/therme_kathrein2.jpg",
+      "bild": "/images/stories/content/therme_kathrein2.jpg",
       "kategorie": "thermen",
       "de": "Therme St. Kathrein",
       "en": "Therme St. Kathrein",
@@ -248,7 +248,7 @@
       "hoehe": 533
     },
     {
-      "bild": "images/stories/header/4_therme/header_3.jpg",
+      "bild": "/images/stories/header/4_therme/header_3.jpg",
       "kategorie": "thermen",
       "de": "Sauna im Thermal-Römerbad",
       "en": "Sauna at the Thermal-Römerbad",
