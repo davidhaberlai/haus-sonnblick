@@ -17,6 +17,15 @@
       "hoehe": 1200
     },
     {
+      "bild": "/images/IMG_4113_klein.jpeg",
+      "kategorie": "zimmer",
+      "de": "Neu gestaltetes Zimmer",
+      "en": "Newly designed room",
+      "it": "Camera rinnovata",
+      "breite": 1200,
+      "hoehe": 811
+    },
+    {
       "bild": "/images/stories/header/1_hotel_lage/header_2.jpg",
       "kategorie": "haus",
       "de": "Das Haus im Sommer am Waldrand",
@@ -40,6 +49,22 @@
       "it": "Ingresso con giardino d’inverno e rilievo"
     },
     {
+      "bild": "/images/IMG_3814.jpeg",
+      "kategorie": "zimmer",
+      "de": "Wohn-Schlafzimmer renoviert",
+      "en": "Renovated living-bedroom",
+      "it": "Camera con soggiorno rinnovata",
+      "breite": 1277,
+      "hoehe": 948
+    },
+    {
+      "bild": "/assets/img/dz-golf-1560.jpg",
+      "kategorie": "zimmer",
+      "de": "Doppelzimmer renoviert",
+      "en": "Renovated double room",
+      "it": "Camera doppia rinnovata"
+    },
+    {
       "bild": "/assets/img/wintergarten-1448.jpg",
       "kategorie": "haus",
       "de": "Wintergarten",
@@ -54,31 +79,6 @@
       "it": "La casa nella neve alta",
       "breite": 1472,
       "hoehe": 486
-    },
-    {
-      "bild": "/assets/img/dz-golf-1560.jpg",
-      "kategorie": "zimmer",
-      "de": "Doppelzimmer renoviert",
-      "en": "Renovated double room",
-      "it": "Camera doppia rinnovata"
-    },
-    {
-      "bild": "/images/IMG_4113_klein.jpeg",
-      "kategorie": "zimmer",
-      "de": "Neu gestaltetes Zimmer",
-      "en": "Newly designed room",
-      "it": "Camera rinnovata",
-      "breite": 1200,
-      "hoehe": 811
-    },
-    {
-      "bild": "/images/IMG_3814.jpeg",
-      "kategorie": "zimmer",
-      "de": "Wohn-Schlafzimmer renoviert",
-      "en": "Renovated living-bedroom",
-      "it": "Camera con soggiorno rinnovata",
-      "breite": 1277,
-      "hoehe": 948
     },
     {
       "bild": "/images/stories/zimmer/suite/sonnblick_suite3.jpg",
