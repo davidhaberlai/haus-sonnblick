@@ -17,6 +17,15 @@
       "hoehe": 1200
     },
     {
+      "bild": "/images/IMG_3814.jpeg",
+      "kategorie": "zimmer",
+      "de": "Wohn-Schlafzimmer renoviert",
+      "en": "Renovated living-bedroom",
+      "it": "Camera con soggiorno rinnovata",
+      "breite": 1277,
+      "hoehe": 948
+    },
+    {
       "bild": "/images/IMG_4113_klein.jpeg",
       "kategorie": "zimmer",
       "de": "Neu gestaltetes Zimmer",
@@ -47,15 +56,6 @@
       "de": "Eingang mit Wintergarten und Relief",
       "en": "Entrance with conservatory and relief",
       "it": "Ingresso con giardino d’inverno e rilievo"
-    },
-    {
-      "bild": "/images/IMG_3814.jpeg",
-      "kategorie": "zimmer",
-      "de": "Wohn-Schlafzimmer renoviert",
-      "en": "Renovated living-bedroom",
-      "it": "Camera con soggiorno rinnovata",
-      "breite": 1277,
-      "hoehe": 948
     },
     {
       "bild": "/assets/img/dz-golf-1560.jpg",
