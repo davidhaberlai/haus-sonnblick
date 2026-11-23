@@ -8,6 +8,13 @@
       "it": "La casa al tramonto"
     },
     {
+      "bild": "/assets/img/dz-golf-1560.jpg",
+      "kategorie": "zimmer",
+      "de": "Doppelzimmer renoviert",
+      "en": "Renovated double room",
+      "it": "Camera doppia rinnovata"
+    },
+    {
       "bild": "/images/2025-11-23_Drohne_03_Hotel-Sonnblick_01_Fotos_DJI_0134.JPG",
       "kategorie": "haus",
       "de": "Das Haus im Winter von oben",
@@ -56,13 +63,6 @@
       "de": "Eingang mit Wintergarten und Relief",
       "en": "Entrance with conservatory and relief",
       "it": "Ingresso con giardino d’inverno e rilievo"
-    },
-    {
-      "bild": "/assets/img/dz-golf-1560.jpg",
-      "kategorie": "zimmer",
-      "de": "Doppelzimmer renoviert",
-      "en": "Renovated double room",
-      "it": "Camera doppia rinnovata"
     },
     {
       "bild": "/assets/img/wintergarten-1448.jpg",
