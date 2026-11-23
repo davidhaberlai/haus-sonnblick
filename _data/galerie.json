@@ -33,15 +33,6 @@
       "hoehe": 948
     },
     {
-      "bild": "/images/IMG_4113_klein.jpeg",
-      "kategorie": "zimmer",
-      "de": "Neu gestaltetes Zimmer",
-      "en": "Newly designed room",
-      "it": "Camera rinnovata",
-      "breite": 1200,
-      "hoehe": 811
-    },
-    {
       "bild": "/images/stories/header/1_hotel_lage/header_2.jpg",
       "kategorie": "haus",
       "de": "Das Haus im Sommer am Waldrand",
@@ -81,20 +72,20 @@
       "hoehe": 486
     },
     {
+      "bild": "/images/IMG_4113_klein.jpeg",
+      "kategorie": "zimmer",
+      "de": "Neu gestaltetes Zimmer",
+      "en": "Newly designed room",
+      "it": "Camera rinnovata",
+      "breite": 1200,
+      "hoehe": 811
+    },
+    {
       "bild": "/images/stories/zimmer/suite/sonnblick_suite3.jpg",
       "kategorie": "zimmer",
       "de": "Sonnensuite, Wohnbereich",
       "en": "Sun Suite, living area",
       "it": "Suite Sole, zona giorno",
-      "breite": 800,
-      "hoehe": 533
-    },
-    {
-      "bild": "/images/stories/zimmer/halbapp/halbapp_1.jpg",
-      "kategorie": "zimmer",
-      "de": "Familienappartement",
-      "en": "Family apartment",
-      "it": "Appartamento famiglia",
       "breite": 800,
       "hoehe": 533
     },
@@ -226,6 +217,15 @@
       "it": "Piscina termale coperta",
       "breite": 1472,
       "hoehe": 486
+    },
+    {
+      "bild": "/images/stories/zimmer/halbapp/halbapp_1.jpg",
+      "kategorie": "zimmer",
+      "de": "Familienappartement",
+      "en": "Family apartment",
+      "it": "Appartamento famiglia",
+      "breite": 800,
+      "hoehe": 533
     },
     {
       "bild": "/images/stories/content/therme_kathrein2.jpg",
