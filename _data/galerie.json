@@ -1,6 +1,13 @@
 {
   "bilder": [
     {
+      "kategorie": "zimmer",
+      "bild": "/assets/img/uploads/2333c756-e90d-4508-869b-0f7d3bd8429a.jpeg",
+      "de": "Doppelzimmer renoviert",
+      "en": "Renovated Double Room",
+      "it": "Camera doppia rinnovata"
+    },
+    {
       "bild": "/assets/img/haus-sonnenuntergang-1600.jpg",
       "kategorie": "haus",
       "de": "Das Haus im Abendrot",
