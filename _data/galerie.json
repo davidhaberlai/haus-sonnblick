@@ -1,6 +1,13 @@
 {
   "bilder": [
     {
+      "kategorie": "haus",
+      "bild": "/assets/img/uploads/4479c4ac-be4e-42ca-9df0-825795632db5.jpeg",
+      "de": "Haus im Winter",
+      "en": "Hotel in wintertime",
+      "it": "La casa in inverno"
+    },
+    {
       "kategorie": "zimmer",
       "bild": "/assets/img/uploads/2333c756-e90d-4508-869b-0f7d3bd8429a.jpeg",
       "de": "Doppelzimmer renoviert",
