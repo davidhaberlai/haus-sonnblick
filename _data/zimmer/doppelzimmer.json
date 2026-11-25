@@ -86,16 +86,16 @@
     ],
     "tw": [
       {
-        "bild": "/assets/img/zweibett-ausblick-1200.jpg",
-        "de": "Ausblick vom Balkon des Zweibettzimmers auf Bad Kleinkirchheim",
-        "en": "View from the twin room balcony over Bad Kleinkirchheim",
-        "it": "Vista dal balcone della camera a due letti su Bad Kleinkirchheim"
-      },
-      {
         "bild": "/assets/img/uploads/2635230d-4c48-4f80-a4e1-40d834420a9d.png",
         "de": "Zweibettzimmer",
         "en": "Double Room",
         "it": "Camera matrimoniale"
+      },
+      {
+        "bild": "/assets/img/zweibett-ausblick-1200.jpg",
+        "de": "Ausblick vom Balkon des Zweibettzimmers auf Bad Kleinkirchheim",
+        "en": "View from the twin room balcony over Bad Kleinkirchheim",
+        "it": "Vista dal balcone della camera a due letti su Bad Kleinkirchheim"
       }
     ]
   }
